@@ -1,0 +1,64 @@
+<SellDlg="sellDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundSell", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image9="imgBackGroundSell",image="tankuang5.png",layout="Center",touch=1, offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.14]
+			<Text="txTitleSell", text="物品详情", layout="Center", color=[255,255,0], fontSize="fs_26">
+		>
+
+		<Image9="imgPlantDexDSell",image="tongyongdikuang.png",layout="Center",step=[-1,0], offset=[-68,0], size=[108,135], capInset=[10,10,10,10], visible=0
+			<Image="imgPlantDexSell",image="RW_Box.png",layout="Center">
+			<Text="txPlantDexCountSell",layout="DownRight",text="1",fontSize=20, offset = [-5, -5]>
+		>		
+		
+		
+		<Layer="lyBt", fill=[0.6,0.15],layout="Down",offsetP=[0.05,-0.12]
+			<Button="btnOKSell",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):onOKClick()"
+				<Text="txOKSell",text="确定",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+			<Button="btnBackSell",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):onBackClick()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txBackSell",text="取消",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+				<Image="imgCancelSell",image="guanbicha.png",layout="Center", visible = 0>
+			>
+		>
+		
+		
+		
+		
+		<Image="imgedtCountSell",image="shumukuangdi.png", offsetP=[0.045,-0.05],layout="Center">
+		<Editor="edtCountSell",bgImage="", inputFlag=2, align="Right", fontSize=22, size=[60,42], fontColor=[98,50,13], layout="Center", relative="imgedtCountSell">
+		<Button="btnSubSell",image="chushouanniu2.png",layout="Right",relative="edtCountSell",step=[1.8,0],offset=[0,0],touch=1,onClick="node:Parent(2):SubSellCount()"
+			<Image="imgSubSell",image="chushoujian.png",layout="Center">
+		>
+		
+		<Button="btnMaxSell",image="chushouanniu1.png",layout="Left",relative="btnAddSell",step=[-1,0],offset=[-17,0],touch=1,onClick="node:Parent(2):MaxSellCount()"
+			<Image="imgSubSell",image="zuida.png",layout="Center">
+		>
+		
+		<Button="btnAddSell",image="chushouanniu2.png",layout="Left",relative="edtCountSell",step=[-1.8,0],offset=[0,0],touch=1,onClick="node:Parent(2):AddSellCount()"
+			<Image="imgAddSell",image="chushoujia.png",layout="Center">
+		>
+		
+		<Button="btnMinSell",image="chushouanniu1.png",layout="Right",relative="btnSubSell",step=[1,0],offset=[17,0],touch=1,onClick="node:Parent(2):MinSellCount()"
+			<Image="imgSubSell",image="zuixiao.png",layout="Center">
+		>
+		
+		<Image="imgSLineSell",image="tankuangxuxian.png",layout="UpOut",relative="edtCountSell",offset=[0,-8]>
+		<Image="imgDLineSell",image="tankuangxuxian.png",layout="DownOut",relative="edtCountSell",offset=[0,8]>
+		
+		<Layer="lyd", fill=[0.3,0.12], layout="UpRight", step=[-0.25,-1], offset=[0,0],relative="imgSLineSell"
+			<Text="txCountSell",text="选择出售数量:", layout="Right", fontSize="fs_22", color=[98,50,13]>
+		>
+		<Layer="lySellSell", fill=[0.35,0.10], layout="DownOut", step=[-0.35,0.2],offset=[0,0],relative="imgDLineSell"
+			<Text="txSellSell",text="单个售价 : ",layout="Left",fontSize="fs_22", color=[98,50,13]>
+			<Image="imgSellSell",image="icon_yibi.png",layout="Right",relative="txSellSell",offset=[8,0],step=[1,0], scale=0.5>
+			<Text="txSellNumSell",text="",layout="Right",fontSize="fs_22",relative="imgSellSell",offset=[2,0],step=[1,0], color=[98,50,13]>
+		>
+		<Layer="lyGetSell", fill=[0.35,0.10], layout="DownOut",step=[0.65,0.2],offset=[0,0],relative="imgDLineSell"
+			<Text="txGetSell",text="共计获得 : ",layout="left",fontSize="fs_22", color=[98,50,13]>
+			<Image="imgGetSell",image="icon_yibi.png",layout="Right",relative="txGetSell",offset=[10,0],step=[1,0], scale=0.5>
+			<Text="txGetNumSell",text="0",layout="Right",fontSize="fs_22",relative="imgGetSell",offset=[2,0],step=[1,0], color=[98,50,13]>
+		>
+		
+		
+	>
+>

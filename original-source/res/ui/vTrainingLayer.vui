@@ -1,0 +1,41 @@
+<TrainingLayer="trainingLayer", touch = 1, fit=[1,1], opacity=200
+	<Layer="Layer1", layout = "Left", opacity=200, visible=0>
+    <Layer="Layer2", relative = "Layer1", layout = "UpRightOut", opacity=200, visible=0>
+    <Layer="Layer3", layout = "Right", opacity=200, visible=0>
+    <Layer="Layer4", relative = "Layer1", layout = "DownRightOut", opacity=200, visible=0>
+    
+    <Image9="imgAreaClick", layout = "DownLeft", step = [0, 1], relative = "Layer2", visible=0>
+    
+    <Image9="imgArrow1",  rotate = -90, layout = "UpLeft", step = [-1, 0], relative = "Layer4", visible=0>
+	<Image9="imgArrow2",  rotate = 180, layout = "UpRight", step = [1, 0], relative = "Layer4", visible=0>
+	<Image9="imgArrow3",  rotate = 0, layout = "DownLeft", step = [-1, 0], relative = "Layer2", visible=0>
+	<Image9="imgArrow4", rotate = 90, layout = "DownRight", step = [1, 0], relative = "Layer2", visible=0>
+    
+	<Armature="imgdafu1", jsonName = "DaveArmature", animation="idle", layout = "DownLeft", scale=0.5, step = [-1,0], visible=0
+		
+	>
+	 <Image9="imgdafuWord1",  size = [450, 75], layout = "RightOut", relative = "imgdafu1", offset = [0, -50], capInset=[85,0,1,75], visible=0>
+     <Text = "txdafuWord1", text = "", size = [400, 75], fontSize=20, layout = "Center", color=[0,0,0], relative = "imgdafuWord1", visible=0>
+         
+	<Armature="imgdafu2", jsonName = "DaveArmature", animation="idle", layout = "DownRight", scale=0.5, step = [1,0], visible=0
+		
+	>
+	 <Image9="imgdafuWord2",  size = [450, 75], layout = "LeftOut", relative = "imgdafu2", offset = [0, 50], capInset=[85,0,1,75], visible=0>
+     <Text = "txdafuWord2", text = "", size = [400, 75], fontSize=20, layout = "Center", color=[0,0,0], relative = "imgdafuWord2", visible=0>
+         
+	<Armature="imgcorpse1", jsonName = "NpcArmature", animation="idle", layout = "DownLeft", scale=0.5, step = [-1,0], visible=0
+		 
+	>
+	
+	<Image9="imgcorpseWord1", size = [450, 75], layout = "RightOut", relative = "imgcorpse1", offset = [0, -50], capInset=[85,0,1,75], visible=0>
+    <Text = "txcorpseWord1", text = "", size = [400, 75], fontSize=20, layout = "Center", color=[0,0,0], relative = "imgcorpseWord1", visible=0>
+         
+	<Armature="imgcorpse2", jsonName = "NpcArmature", animation="idle", layout = "DownRight", scale=0.5, step = [1,0], visible=0
+		
+	>
+	
+	 <Image9="imgcorpseWord2", size = [450, 75], layout = "LeftOut", relative = "imgcorpse2", offset = [0, 50], capInset=[85,0,1,75], visible=0>
+         <Text = "txcorpseWord2", text = "", size = [400, 75], fontSize=20, layout = "Center", color=[0,0,0], relative = "imgcorpseWord2", visible=0>
+         
+	
+>

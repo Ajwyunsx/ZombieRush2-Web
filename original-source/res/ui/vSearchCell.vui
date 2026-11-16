@@ -1,0 +1,50 @@
+﻿<SearchCell="searchCell",size=[600,63]
+	
+	<Image9="imgBackGroundBagCSearchC1",image="liebiaokuangdi.png",layout="LeftUp",touch=1,size=[280,55],touch=1
+		<HeadImage="imgFriendSearchC",image="touxiangkuang.png", size = [50,50], offset = [3,0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(1)">
+
+		<Layer="lyn", fill=[0.4,0.3], offset=[15,0], step=[0,-0.6], relative="imgFriendSearchC", layout="RightOut"
+			<Text="txNickSearchC",text="是打发斯蒂芬的", layout="Left", fontSize="fs_18", color="fc_8_">
+		>
+		
+		<Layer="lys", fill=[0.4,0.3], offset=[15,0], step=[0,0.6], relative="imgFriendSearchC", layout="RightOut"
+			<Text="txTimeSearchC",text="女", layout="Left", fontSize="fs_14", color="fc_8_">
+		>
+		<Layer="lylevel", fill=[0.15,0.3], offset = [2,0],relative="lyn", layout="RightOut"
+			<Text="txLevelSearchC",text="Lv99", layout="Left", fontSize="fs_14", color="fc_4_">
+		>
+
+		<Text="txMassegeSearchC",text="已添加", layout="Right",fontSize="fs_18", offset=[-10,0],visible=0, color="fc_10_">
+		<Button="btnAddSearchC", image="tianjiaanniu.png",layout="Right", offset=[-10,0],onClick="node:Parent(2):onAddFriend(1)">
+
+
+		<Image="imgRedBtnSearchC", relative="imgFriendSearchC", layout="UpRight", image="hongdian.png", offset=[10,-10], visible=0
+			<Text="txtUnreadBtnSearchC", layout="Center",text="12", fontSize=16>
+		>
+		<Text="txSaySearchC",text="",layout="LeftUp", size = [290,50], alignV="Top", fontSize=15, offset=[10,5], visible=1>
+	>
+
+	<Image9="imgBackGroundBagCSearchC2",image="liebiaokuangdi.png",layout="RightUp",touch=1,size=[280,55],touch=1
+		<HeadImage="imgFriendSearchC",image="touxiangkuang.png", size = [50,50], offset = [3,0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(2)">
+
+		<Layer="lyn", fill=[0.4,0.3], offset=[15,0], step=[0,-0.6], relative="imgFriendSearchC", layout="RightOut"
+			<Text="txNickSearchC",text="是打发斯蒂芬的", layout="Left", fontSize="fs_18", color="fc_8_">
+		>
+		
+		<Layer="lys", fill=[0.4,0.3], offset=[15,0], step=[0,0.6], relative="imgFriendSearchC", layout="RightOut"
+			<Text="txTimeSearchC",text="女", layout="Left", fontSize="fs_14", color="fc_8_">
+		>
+		<Layer="lylevel", fill=[0.15,0.3], offset = [2,0],relative="lyn", layout="RightOut"
+			<Text="txLevelSearchC",text="Lv9", layout="Left", fontSize="fs_14", color="fc_4_">
+		>
+
+		<Text="txMassegeSearchC",text="已添加", layout="Right",fontSize="fs_18", offset=[-10,0],color="fc_10_">
+		<Button="btnAddSearchC", image="tianjiaanniu.png",layout="Right", offset=[-10,0],visible=0,onClick="node:Parent(2):onAddFriend(2)">
+
+
+		<Image="imgRedBtnSearchC", relative="imgFriendSearchC", layout="UpRight", image="hongdian.png", offset=[10,-10], visible=0
+			<Text="txtUnreadBtnSearchC", layout="Center",text="12", fontSize=16>
+		>
+		<Text="txSaySearchC",text="",layout="LeftUp", size = [290,50], alignV="Top", fontSize=15, offset=[10,5], visible=1>
+	>
+>

@@ -1,0 +1,37 @@
+﻿<ExtraGiftDlg="extraGiftDlg"
+	<Layer="ly", fill=[1,1], touch=1>
+
+	<Layer="zhanjiLayer", size=[500,40], layout="Up", touch=1, offset=[0,10]
+				<Image="imgZhanjitubiao", layout="Left", image="zhanjitubiao.png", offset=[10,0]>
+				<Image="imgZhanji", relative="imgZhanjitubiao", layout="Right", step=[1,0], image="zhanjiwenzi.png", scale=0.9>
+				<Text="txdescribed",text="描述", relative="imgZhanji", layout="RightDown", step=[1,0], offset=[5,-2], fontSize=11, opacity=60>
+			>
+
+	<Image="cardImg", image="carddiban1.png", layout="Center"
+
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3], visible=0
+					<Text="txlevel", layout="RightOut", fontSize="fs_22", color="fc_2_", font="cardNumber.fnt", offset=[0,8]>
+				>
+
+		<Layer="lyitem", size=[100,150], layout="Up", offset=[0,-6]
+			<Image="imgItemPlantC",image="baoxiang.png",layout="Down", fit=[-0.8,-0.8]>
+		>
+
+		<Text="txname", layout="DownOut", text="僵尸", color=[120,156,86], offset=[0,2], fontSize="fs_26">
+
+		
+
+		
+
+	>
+	<Button="btBack", image="yincangguanbi.png", layout="UpRight", offset=[-10,2],onClick="node:Parent():onClose()"
+		>
+
+	<Button="cancelBtn", image="anniu6.png", layout="Down", offsetP=[0,-0.1], onClick="node:Parent():onOK()"
+			<Image="imgGet", image="queding.png", layout="Center", offset=[0,-2]>
+		>
+
+	<Image="imgdescribed", image="zhandouhuodekapai.png", layout="Up", offset=[0,83]
+			<Text="txTime",text="描述", layout="DownOut", offset=[0,5], color=[120,156,86], fontSize=11>
+		>
+>

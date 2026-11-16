@@ -1,0 +1,33 @@
+<BuyFarmerDlg="buyFarmerDlg"
+	<Armature="artUp", jsonName="boxArmature", animation="idle", relative="bgImg", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image="bgImg", image="tankuang4.png", layout="Center"
+		<Layer="lyTitle", fill=[0.5,0.2], layout="UpLeft"
+			<Text="titleText", text="标题标题", layout="Down", color=[255,255,0], fontSize=26, offset=[0,4]>
+		>
+		<Layer="lyTitle2", fill=[1,0.25], layout="UpLeft">
+		<Layer="layBuy", relative="lyTitle2", layout="Down", size=[100,100], fill=[0.8,0.25], step=[0,1], offset=[20,8]
+			<Layer="lay1", size=[100,20], fill=[0.2,1], layout="Left"
+				<Image="daifuIcon", image="mv_daifu.png", layout="Center", offset=[0,0]>
+			>
+			<Layer="lay2", size=[100,20], fill=[0.75,1], relative="lay1", layout="Right", step=[1,0], offset=[8,0]
+				<Image9="centerImg2", image="tankuangdikuang1.png", layout="Center", size=[100,100], fill=[1,1]>
+
+				<Text="bf_staticText1", text="雇佣数量：1", fontSize="fs_22", layout="Left", offset=[12,0], color=[90,40,0]>
+				<Text="bf_staticText0", text="名　　称：戴夫的兄弟", fontSize="fs_22", relative="bf_staticText1", layout="UpLeft", step=[0,-1], offset=[0,-4], color=[90,40,0]>
+				<Text="bf_staticText2", text="雇佣价格：", fontSize="fs_22", relative="bf_staticText1", layout="DownLeft", step=[0,1], offset=[0,4], color=[90,40,0]>
+				<Image="bf_vcoinImage", image="icon_zuanshi_S.png", layout="RightOut", relative="bf_staticText2">
+				<Text="bf_vcoinText", text="999", layout="RightOut", relative="bf_vcoinImage", fontSize="fs_22", color=[90,40,0]>
+			>
+		>
+		<Text="miaosu", text="描述", fontSize="fs_22", color=[90,40,0], relative="layBuy", layout="Down", step=[0,1], offset=[0,8]>
+		<Layer="laymiaoshu", relative="miaosu", layout="Down", size=[100,100], fill=[0.75,0.1], step=[0,1]
+			<Text="bf_staticText33", text="戴夫的兄弟可以在庄园中升级建筑，升星卡牌。", fontSize="fs_18", color=[90,40,0], layout="Left">
+		>
+		<Button="cancelBtn", image="tankuanganniu3.png", relative="laymiaoshu", layout="Down", step=[-0.7,1.5], onClick="node:Parent(2):doPop()"
+			<Text="cancelText", text="取消", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="suerBtn", image="tankuanganniu3.png", relative="laymiaoshu", layout="Down", step=[0.7,1.5]
+			<Text="sureText", text="购买", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+	>
+> 

@@ -1,0 +1,39 @@
+﻿<FriendManageDlg="friendManageDlg"
+	<Image9="imgChatBg", layout="Center", fill=[1,1], image="tongyongbeijing.jpg", touch=1>
+	<Image="imgChat", layout="Center", image="tongyongbeijingkuang.png", offsetP=[0,0.02]
+		<Image="imgChatTitle", layout="LeftUp", image="tongyongbiaotidi.png",step=[0.4,-0.55],offset=[0,0]
+			<Image="imgChatTitleT", layout="Center", image="wodehaoyou.png", offset=[0,-8]>
+		>
+		
+		<Image="imgYuanbaolDSocietyL", image="henlandi.png", layout="RightUp", step=[-0.45,-1.1]
+			<Image="imgYuanbaolSocietyL",image="renshu.png",layout="Left", offset=[-7,-2]>
+			<Text="txYuanbaolSocietyL",text="0",layout="Right", offset=[-10,0],color=[255,255,0], outline=2, effectColor=[0,0,0], fontSize="fs_22">
+		>
+		
+		<Button="btnDeletManage",image="shanchuanniu.png",layout="LeftUp",step = [0.9,0.6], onClick="node:Parent(2):DeleteManage()"
+		>
+		
+		<Layer="tbSocietyLayer", layout="Center", size=[645,235],offset=[0, -25]
+			<TableView="tbFriendDlg",layout="Center",size=[645,235],cell="vFriendCell.vui", touch=1,refreshNum=5,upText="上拉刷新",visible=0>
+		>
+
+		<Text="txTipFriendDlg",text="没有好友",layout="Center",fontSize="fs_22",visible=1>
+		
+		<Button="btnAddManage",layout="Down",step=[0,-1.1],offset=[0,0], image="anniu7.png", onClick="node:Parent(2):AddManage()"
+			<Image="imageInput", image="tianjiahaoyou.png", layout="Center", offset=[3,-2]>
+		>
+		
+		<Layer="lyrDeletChose",layout="Down", fill=[0.5,0.12], step=[0,-1.1], offset=[0,2], visible=0
+			<Button="btnDelet",image="anniu7.png",layout="Right",onClick="node:Parent(3):DeletFriends()"
+				<Image="imaDelet",image="shanchu.png",layout="Center",visible=1>
+			>
+			<Button="btnCancel",image="anniu7.png",layout="Left",onClick="node:Parent(3):CloseDeletManage()"
+				<Image="imaCancel",image="quxiao.png",layout="Center",visible=1>
+			>
+		>
+		
+		<Button="imgDOpen", layout="RightUp", image="fanhui.png", step=[0.25,-0.5], onClick="node:Parent(2):onClose()">
+	>
+	
+	
+>

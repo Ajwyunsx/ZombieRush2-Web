@@ -1,0 +1,18 @@
+<QueryItemSelected="queryItemSelected"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+
+	<CardArmatureLayer="maLy", size=[10,0], size=[350,450], layout="Center", touch=1, offset=[-150,0], onClick="node:Parent(1):queryTheItem(node,1)"
+		<Armature="amt", jsonName="plantAtals", animation="normal", layout="Center", scale=1.2>
+	>
+
+    <CardArmatureLayer="maLy", size=[10,0], fill="Fill", layout="Center", touch=1, offset=[150,0], onClick="node:Parent(1):queryTheItem(node,2)"
+		<Armature="amt", jsonName="monsterAtlas", animation="normal", layout="Center", scale=1.2>
+	>
+
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="tujian.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+	
+    
+>

@@ -1,0 +1,53 @@
+<BannerlotteryDlg="bannerlotteryDlg", touch=1
+	<Image="bgImage", image="tongyongbeijing.jpg", fit="Full", layout="Center"
+		<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+			<Image="titliText", layout="Center", offset=[5,-12], image="chouzhanqi.png", offset=[-5,0]>
+		>
+
+		<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(2):doClose()">
+
+		<Image9="itemBgImg", image="henlandi.png", relative="backBtn", layout="LeftOut", capInset=[25,5,5,5], step=[-1.3,-0.5], touch=1, onClick="node:Parent(2):showZhanxunCameFrom()"
+			<Image="itemImg", image="icon_gongxun.png", layout="Left", offset=[-10,0]>
+			<Text="itemNum", text="9999", color="fc_3_", fontSize="fs_14", layout="Center", offset=[10,0]>
+		>
+		<Image9="zuanShiBgImg", image="henlandi.png", relative="backBtn", layout="LeftOut", capInset=[25,5,5,5], step=[-0.2, -0.5]
+			<Image="zuanShiIcon", image="icon_zuanshi.png", layout="Left", offset=[-5,0] >
+			<Text="zuanShiNum", text="9999", color="fc_3_", fontSize="fs_14", layout="Center", offset=[10,0]>
+		>
+
+		<Image="muImage", image="choukamuban.png", layout="Down">
+		<Image="imageMudiPu", image="choukadi.png", offsetP=[0.171, 0.796], touch=1, onClick="node:Parent(2):puLottery()"
+			<Text="textMiaoShu", layout="Up", color="fc_3_", fontSize="fs_26", text="随机获得一面战旗", offset=[0, -15], effectColor=[0,0,0], outline=3>
+			<Image="imageDi", layout="Center", image="choukaanniu.png", offset=[0, 10]
+				<Image="imageXunZhang", image="icon_gongxun.png", layout="Left", offset=[15,0]>
+				<Text="textXunZhang", layout="RightOut", relative="imageXunZhang", offset=[5, -2], color=[255, 255, 255], fontSize="fs_18", shadow=[1,-1]>
+			>
+		>
+
+		<Image="imageYingZiPu", relative="imageMudiPu", layout="Up", step=[0,-1], image="zhanqiditouying.png", offset=[0,-10]>
+	
+		<Image="imageMudiZuan", image="choukadi.png", offsetP=[0.59, 0.796], touch=1, onClick="node:Parent(2):zuanLottery()"
+			<Text="textMiaoShu", layout="Up", color="fc_3_", fontSize="fs_26", text="必出蓝色以上旗", offset=[0, -15], effectColor=[0,0,0], outline=3>
+			<Image="imageDi", layout="Center", image="choukaanniu.png", offset=[0, 10]
+				<Image="imageZuanShi", image="icon_zuanshi.png", layout="Left", offset=[20, -2]>
+				<Text="textZuanShi", layout="RightOut", relative="imageZuanShi", offset=[5, 0], color=[255, 255, 255], fontSize="fs_18", shadow=[1,-1]>
+			>
+		>
+
+		<Image="imageYingZiZuan", relative="imageMudiZuan", layout="Up", image="zhanqiditouying.png", step=[0, -1], offset=[0, -8]>
+
+		<Layer="layerCover", layout="Center", fill=[1, 1], color=[0,0,0, 220], touch=0, visible=0, onClick="node:Parent(2):showBanner()">
+
+		<Image="imageGuang", layout="Center", visible=0, image="guang.png">
+		<Image="imageBanner", layout="Left", image="bai.png", step=[0, -1], visible=0, onClick="node:Parent(2):showBanner()", touch=1>
+	>
+
+	<Layer="shabixuqiu", size=[820, 64], fill=[1,1], touch=1, onClick="node:Parent(1):shabixuqiuyincang()", visible=0
+		<Image9="shabixuqiu1", relative="itemImg", layout="Down", step=[0,1], offset=[0,-4], size=[260,110], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi11", layout="UpLeft", fontSize=16, text="【战功】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi12", relative="shabixuqiuzi11", layout="DownLeft", step=[0,1], fontSize=16, text="1.掠夺中击杀敌方植物获得", offset=[0,4]>
+			<Text="shabixuqiuzi13", relative="shabixuqiuzi12", layout="DownLeft", step=[0,1], fontSize=16, text="2.农场被攻击时击杀敌方僵尸获得", offset=[0,0]>
+			<Text="shabixuqiuzi14", relative="shabixuqiuzi13", layout="DownLeft", step=[0,1], fontSize=16, text="3.成就获得", offset=[0,0]>
+		>
+	>
+> 

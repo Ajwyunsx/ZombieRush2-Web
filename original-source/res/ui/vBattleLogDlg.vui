@@ -1,0 +1,4 @@
+<BattleLogDlg="battleLogDlg", layout="Center",size=[620,255], offset=[0,10]
+		<TableView=""battleLogTbView"",layout="Down",size=[620,255],cell="vBattleLogCell.vui", refreshNum=3, upText="上拉刷新", touch=1, visible=1,offset=[0,0]>
+		<Text="txNoneLogD", text="你的农场近期没有发生任何战斗，进入肥羊界面掠夺其他玩家吧", color="fc_8_", fontSize="fs_26", layout="Center", visible=0>
+>

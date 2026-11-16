@@ -1,0 +1,7 @@
+<AttackInfo="attackInfo"
+	<Image9="imgBg", layout="Center", image="tongyongrankuang2.png", size=[341,300], capInset=[0,55,341,20]
+		<Text="textTitle", layout="Up", fontSize=22, size=[320,80], text="", align="Center", offset=[0,20]>
+		<Text="textContext", layout="Center", fontSize=22, size=[320,40], text="预计结束时间:", align="Center">
+		<TimeText="textLeftTime", relative="textContext", layout="DownOut", fontSize=22, size=[320,20], text="", auto=1, align="Center">
+	>
+>

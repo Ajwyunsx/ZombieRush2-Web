@@ -1,0 +1,129 @@
+﻿<ComposeOperateDlg="composeOperateDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgbgComposeIO", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image9="imgbgComposeIO", image="tankuang4.png", layout="Center", touch=1, offset=[-33,0]
+		
+		
+		
+		<Layer="lyTitle",size=[155,47], layout="LeftUp", offset=[125,45]
+			<Text="txTitleComposeIO", text="美国队长", layout="Center", color=[255,255,0],fontSize=28>
+		>
+		
+		
+		<Image9="txInfoComposeIO",image="tankuangneikuang2.png",layout="Center", size=[570,148], offset=[33,-40]
+			
+			<Image="imgDexDComposeIO",image="tankuangneikuang1.png",layout="Left", scale=0.8, offset=[15,-13]>
+				
+			<Image="imgComposeDexLvUp", layout="DownRight", scale=0.67, relative="imgDexDComposeIO"
+				<Text="txtComposeLevel", layout="Center", color=[0,0,0], fontSize=18, align="Center", visible=0>
+			>                                     
+			
+			<Image="imgStarLvUp", image="icon_xing_S.png", layout="RightUp", step=[1,0], relative="imgDexDComposeIO", scale=0.8, offset=[15,0], visible=0>
+			<Text="txStarTitle", text="星级", layout="RightOut", relative="imgStarLvUp", offset=[10,0], fontSize=18, size=[80,24], color=[98,50,13], visible=0>
+			<Image="imgStarC1", image="icon_xing_S.png", layout="RightOut", relative="txStarTitle", offset=[30,0], scale=0.8, visible=0>
+			<Image="imgStarC2", image="icon_xing_S.png", layout="RightOut", relative="imgStarC1", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarC3", image="icon_xing_S.png", layout="RightOut", relative="imgStarC2", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarC4", image="icon_xing_S.png", layout="RightOut", relative="imgStarC3", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarC5", image="icon_xing_S.png", layout="RightOut", relative="imgStarC4", offset=[5,0], scale=0.8, visible=0>
+			
+			<Image="imgtStarArrow", image="minijiantou.png", layout="RightOut", relative="imgStarC5", offset=[10,0], visible=0>
+			
+			<Image="imgStarAC1", image="icon_xing_S.png", layout="RightOut", relative="imgtStarArrow", offset=[10,0], scale=0.8, visible=0>
+			<Image="imgStarAC2", image="icon_xing_S.png", layout="RightOut", relative="imgStarAC1", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarAC3", image="icon_xing_S.png", layout="RightOut", relative="imgStarAC2", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarAC4", image="icon_xing_S.png", layout="RightOut", relative="imgStarAC3", offset=[5,0], scale=0.8, visible=0>
+			<Image="imgStarAC5", image="icon_xing_S.png", layout="RightOut", relative="imgStarAC4", offset=[5,0], scale=0.8, visible=0>
+			
+				
+			<Image="mi_hpImage", image="icon_hp.png", layout="RightUp", step=[1,0], relative="imgDexDComposeIO", offset=[-10,3], scale=0.8, visible=0>
+
+				<Layer="ly1", size=[55,24], layout="RightOut", relative="mi_hpImage", offset=[10,0]
+				<Text="mi_hpTitile", text="血 :", layout="Left", fontSize=21, color=[98,50,13]>
+				>
+				<Layer="ly2", size=[62,24], layout="RightOut", relative="ly1", offset=[16,0]
+					<Text="mi_hpText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+				<Image="mi_hpArrow", image="minijiantou.png", layout="RightOut", relative="ly2", scale=1.2, offset=[56,0]>
+
+				<Layer="ly3", size=[62,24], layout="RightOut", relative="mi_hpArrow", offset=[10,0]
+				<Text="mi_hpBaseText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+				
+			<Image="mi_atkImage", image="icon_hp.png", layout="DownOut", relative="mi_hpImage", offset=[0,3], scale=0.8, visible=0>
+
+				<Layer="ly4", size=[55,24], layout="RightOut", relative="mi_atkImage", offset=[10,0]
+				<Text="mi_atkTitile", text="攻 :", layout="Left", fontSize=21, color=[98,50,13]>
+				>
+				<Layer="ly5", size=[62,24], layout="RightOut", relative="ly4", offset=[16,0]
+					<Text="mi_atkText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+				<Image="mi_atkArrow", image="minijiantou.png", layout="RightOut", relative="ly5", scale=1.2, offset=[56,0]>
+
+				<Layer="ly6", size=[62,24], layout="RightOut", relative="mi_atkArrow", offset=[10,0]
+				<Text="mi_atkBaseText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+
+			
+			<Image="mi_speedImage", image="icon_hp.png", layout="DownOut", relative="mi_atkImage", offset=[0,3], scale=0.8, visible=0>
+
+				<Layer="ly7", size=[55,24], layout="RightOut", relative="mi_speedImage", offset=[10,0]
+				<Text="mi_speedTitile", text="速 :", layout="Left", fontSize=21, color=[98,50,13]>
+				>
+				<Layer="ly8", size=[62,24], layout="RightOut", relative="ly7", offset=[16,0]
+					<Text="mi_speedText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+				<Image="mi_speedArrow", image="minijiantou.png", layout="RightOut", relative="ly8", scale=1.2, offset=[56,0]>
+
+				<Layer="ly9", size=[62,24], layout="RightOut", relative="mi_speedArrow", offset=[10,0]
+				<Text="mi_speedBaseText", text="", layout="Left", fontSize=20, color=[98,50,13]>
+				>
+
+				<Layer="lydecs", size=[116,30], layout="DownLeft", step=[0,1], relative="mi_speedImage", offset=[34,4]
+					<Text="txdecsTitle", text="技能:", layout="UpLeft", alignV="Top", align="Left", alignV="Top", size=[363,50], fontSize=21, color=[98,50,13]>
+				>
+		>
+		
+		<Layer="lyd", layout="DownOut", relative="txInfoComposeIO", offset=[0,10], size=[87,27]
+		<Text="txdecs", text="升星条件", fontSize=20, layout="Center", color=[98,50,13]>
+		>
+		
+		<Layer="lybt", size=[418,54], layout="Down", offset=[33,-48]
+			<Button="btUpComposeIO",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):ComposeLvUp()"
+				<Text="bu_upgradeTime", text="升星",layout="Center", fontSize=25, color=[255,248,185]>
+			>
+			<Button="btnBackLvUp",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):doPop()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txCancel", text="取消",layout="Center", fontSize=25, color=[255,248,185]>
+				<Image="imgCancelComposeIO",image="quxiao.png",layout="Center", visible=0>
+			>
+		>
+		
+		<Layer="lyres1", size=[190,28], layout="UpOut", relative="lybt", offset=[-161,-10]
+			<Layer="lyLimit", layout="Left",size=[27,27]
+			<Image="imgLvLimit", image="icon_basecamp.png", layout="Center", fit=[1,1]>
+			>
+			<Text="txLvLimit", text="", layout="RightOut", relative="imgLvLimit", fontSize=18, offset=[5,0], color=[140,95,58]>
+			
+			<Layer="lyTimeI1", layout="Right",size=[27,27]
+			<Image="imgTimeI1", image="icon_daojishi.png", layout="Center", fit=[1,1]>
+			>
+			<TimeText="txTimeSpace1", text="", fontSize=18, layout="RightOut", relative="imgTimeI1", offset=[5,0], color=[140,95,58]>
+		
+		>
+		
+		
+		<Layer="lyres2", size=[156,28], layout="UpOut", relative="lybt", offset=[123,-10]
+			<Layer="lyCostI1", layout="Left",size=[27,27]
+				<Image="imgResCostI1", image="icon_basecamp.png", layout="Center", fit=[1,1]>
+			>
+			<Text="txResCost1", text="", fontSize=18, layout="RightOut", relative="imgResCostI1", offset=[5,0], color=[140,95,58]>
+		
+
+			<Layer="lyCostI2", layout="Right",size=[27,27]
+				<Image="imgResCostI2", image="icon_basecamp.png", layout="Center", fit=[1,1]>
+			>
+			<Text="txResCost2", text="", layout="RightOut", relative="imgResCostI2", fontSize=18, offset=[5,0], color=[140,95,58]>
+		>
+		
+		<Text="txLimitComposeIO", text="", relative="txInfoComposeIO", fontSize=20, layout="DownOut", step = [0.7,0], offset = [0, 35], color=[163,199,252], visible = 0>
+	
+	>
+>

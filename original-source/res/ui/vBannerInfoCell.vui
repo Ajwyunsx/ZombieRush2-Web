@@ -1,0 +1,58 @@
+<BannerInfoCell="bannerInfoCell", size=[220, 92]
+	<Image="imageCellBg", image="bg_normal.png", layout="Center", onClick="node:Parent(1):clickBanner()", touch=1
+		<Image="imageCellIconBg", image="bj_jin.png", layout="Left", offset=[10, 0]
+			<Image="imageCellIcon", image="jin.png", layout="Center", scale=0.4>
+			<Image="imageCellJihuoBg", image="active_frame.png", layout="Center"
+				<Image="imageCellJihuo", image="zhanqiyijihuo.png", layout="Down", offset=[0, -6]>
+			>
+		>
+		<Layer="layerCellInfo", layout="RightOut", relative="imageCellIconBg", offset=[5, 0], size=[150, 75]
+			<Text="textCellName", text="水火战旗", fontSize="fs_18", color="fc_13_">
+			<Text="textCellAttack", text="攻:", fontSize="fs_18", color="fc_6_", offsetP=[0, 0.38]>
+
+			<Image="iamgeCellBgAtk1", relative="textCellAttack", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellAtk1", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgAtk2", relative="iamgeCellBgAtk1", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellAtk2", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgAtk3", relative="iamgeCellBgAtk2", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellAtk3", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgAtk4", relative="iamgeCellBgAtk3", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellAtk4", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgAtk5", relative="iamgeCellBgAtk4", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellAtk5", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Text="textCellDefend", text="防:", fontSize="fs_18", color="fc_6_", relative="textCellAttack", layout="DownOut", step=[0, 0.2]>
+
+			<Image="iamgeCellBgDef1", relative="textCellDefend", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellDef1", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgDef2", relative="iamgeCellBgDef1", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellDef2", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgDef3", relative="iamgeCellBgDef2", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellDef3", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgDef4", relative="iamgeCellBgDef3", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellDef4", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeCellBgDef5", relative="iamgeCellBgDef4", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0]
+				<Image="imageCellDef5", layout="Center", image="banner_attr1.png", visible=0>
+			>
+		>
+
+		<Image="imageArrow", image="jiantou.png", layout="Right", offset=[13, 0], visible=0>
+	>
+>

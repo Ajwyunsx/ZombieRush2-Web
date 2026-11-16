@@ -1,0 +1,14 @@
+<TableViewCell="monsterTableCell", size=[110,54]
+	<Layer="creatureLayer", fill=[1,1], touch=1
+		<Image="selectCreatureImg", image="selectBattleCard.png", layout="Center", offset=[0,-1], scale=1.03>
+		<Image="creatureCard", image="battleCard1.png", layout="Center", offset=[0,0]
+			<Image="creatureIcon", image="BasicZombieCard.png", layout="DownLeft", scale=1, offset=[0,0]>
+			<Text="creatureCount", layout="UpRight", text="x0", font="battleCount.fnt", fontSize=18, offset=[-4,4], scale=1.1>
+			<Text="creatureCost", layout="DownRight", text="0", fontSize=18, offset=[-5,-4], effectColor=[0,0,0], outline=1>
+			<Image="creatureLevel", image="battleStart.png", layout="UpLeft", offset=[2,3]
+				<Text="creatureLevelText", layout="Up", text="0", font="starNumber.fnt", offset=[0,4]>
+			>
+		>
+		<Image="battleArrows", image="battleSelectRightArrow.png", layout="Right", step=[1,0], offset=[0,0]>
+	>
+>

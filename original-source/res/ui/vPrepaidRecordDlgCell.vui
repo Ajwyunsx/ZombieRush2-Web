@@ -1,0 +1,14 @@
+<TableViewCell="prepaidRecordDlgCell", size=[645,80]
+	<Image="prc_bgImage", layout="Center", image="chongzhiditiao.png"
+
+		<Text="prc_moneyText", text="充值100元", fontSize=22, layout="UpLeft", offset=[20,10], color=[70,30,5]>
+		<Text="prc_timeText", text="2014-10-12 14:10:24", fontSize=14, layout="UpRight", offset=[-20,10] , color=[183,137,91]>
+
+		<Text="prc_staticText1", text="用户ID", fontSize=18, layout="Left", offset=[20,10], color=[118,74,40]>
+		<Text="prc_idText", text="89157", fontSize=18, color=[49,105,35], layout="RightOut", relative="prc_staticText1", offset=[5,0] >
+		<Text="prc_chanelText", text="通过支付宝给", fontSize=18, layout="RightOut", relative="prc_idText", offset=[5,0], color=[118,74,40]>
+		<Text="prc_targetText", text="陆仁贾(89151)", fontSize=18, color=[49,105,35], layout="RightOut", relative="prc_chanelText" >
+		<Text="prc_staticText2", text="充值", fontSize=18, layout="RightOut", relative="prc_targetText", color=[118,74,40]>
+		<Text="prc_vcoinText", text="99999钻石", fontSize=18, color=[49,105,35], layout="RightOut", relative="prc_staticText2", offset=[5,0] >
+	>
+>

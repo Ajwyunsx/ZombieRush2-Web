@@ -1,0 +1,5 @@
+<TableViewCell="itemCell", size=[300, 30]
+	<Text="texItemName", layout="Center", fontSize=18, offset=[-10,0], text="">
+	<Image="imgItemIcon", relative="texItemName", layout="Left", step=[-1,0], offset=[-10,5]>
+	<Text="texItemAmount", relative="texItemName", layout="Right", step=[1,0], offset=[10,0], text="">
+>

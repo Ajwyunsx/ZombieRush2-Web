@@ -1,0 +1,77 @@
+<BannerLevelUpDlg="BannerLevelUpDlg"
+	<File="commonUi", fileName="vCommonMsgBox_A.vui"		
+		<Image="imageIconBg", image="tankuangneikuang1.png", layout="Center", step=[-2, -0.2], scale=0.8
+			<Image="imageIcon", image="jin.png", layout="Center", scale=0.55>
+		>
+		<Image9="centerImg", image="tankuangdikuang1.png", size=[341, 82], layout="RightOut", relative="imageIconBg", step=[0.035, 0]
+			<Text="textAttrLevel", text="防御属性", fontSize="fs_18", color="fc_13_",  layout="LeftUp", relative="centerImg", offsetP=[0.05, 0.18]>
+			<Text="textAttrMaxLevel", text="(最大5)", fontSize="fs_18", color="fc_13_", layout="RightOut", relative="textAttrLevel">
+
+			<Image="iamgeAttrBeforeBg5", relative="textAttrMaxLevel", layout="RightOut", image="banner_attr_bg1.png"				
+				<Image="imageAttrBefore5", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrBeforeBg4", relative="iamgeAttrBeforeBg5", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrBefore4", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrBeforeBg3", relative="iamgeAttrBeforeBg4", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrBefore3", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrBeforeBg2", relative="iamgeAttrBeforeBg3", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrBefore2", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrBeforeBg1", relative="iamgeAttrBeforeBg2", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrBefore1", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="imageArrow1", layout="RightOut", relative="iamgeAttrBeforeBg1", image="minijiantou.png", offset=[3, 0]>
+
+			<Image="iamgeAttrAfterBg1", relative="imageArrow1", layout="RightOut", image="banner_attr_bg1.png", offset=[3, 0]
+				<Image="imageAttrAfter1", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrAfterBg2", relative="iamgeAttrAfterBg1", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrAfter2", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrAfterBg3", relative="iamgeAttrAfterBg2", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrAfter3", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrAfterBg4", relative="iamgeAttrAfterBg3", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrAfter4", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Image="iamgeAttrAfterBg5", relative="iamgeAttrAfterBg4", layout="RightOut", image="banner_attr_bg1.png"
+				<Image="imageAttrAfter5", layout="Center", image="banner_attr1.png", visible=0>
+			>
+
+			<Text="textAttrTypeName", text="防御力:", fontSize="fs_18", color="fc_13_", layout="LeftUp", relative="centerImg", offsetP=[0.05, 0.52]>
+
+			<Image="imageArrow2", layout="DownOut", relative="imageArrow1", image="minijiantou.png", step=[0,0.5]>
+
+			<Text="textAttrValueBefore", text="10%", fontSize="fs_18", color="fc_13_", layout="LeftOut", relative="imageArrow2", offset=[-15, 0]>
+			<Text="textAttrValueAfter", text="100%", fontSize="fs_18", color="fc_13_", layout="RightOut", relative="imageArrow2", offset=[15, 0]>
+		>
+
+		<Text="textDesc", text="升级战旗属性等级可以增强属性的效果。", fontSize="fs_18", color="fc_13_", layout="UpOut", relative="centerImg", offsetP=[0.06, -0.02]>
+
+		<Text="textConditionTitle", text="升级条件", fontSize="fs_18", color="fc_13_", layout="Center", relative="commonUi", offsetP=[0.01, 0.1]>
+
+		<Layer="layerCondition", size=[400, 40], layout="DownOut", relative="textConditionTitle"
+			<Layer="layerCenter", size=[10, 40], layout="Center">
+		>
+
+
+		<Button="closeBtn", image="tankuanganniu3.png", layout="Down", relative="commonUi", offsetP=[0.13, -0.18], onClick="node:Parent(2):close()"
+			<Text="cancelTip", text="取消", fontSize="fs_32", color=[255,244,186], offset=[0,-3], shadow=[1.5,-1.5], layout="Center">
+		>
+
+		<Button="levelUpBtn", image="tankuanganniu3.png", layout="Down", relative="commonUi",  offsetP=[-0.11, -0.18], onClick="node:Parent(2):levelUp()"
+			<Text="levelUpTip", text="升级", fontSize="fs_32", color=[255,244,186], offset=[0,-3], shadow=[1.5,-1.5], layout="Center">
+		>
+	>
+>

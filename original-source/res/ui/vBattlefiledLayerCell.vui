@@ -1,0 +1,60 @@
+<TableViewCell="battlefiledLayerCell", size=[620,90]
+	<Image="itemBgLayer", image="tuanzhanrizhitiao.png", layout="Center"
+		<Image="atkUserImg", image="tuanzhanfenye2.png", flipX=1, layout="Left", offset=[0,0]
+			<Text="atkNameText", text="我的名字七个字", layout="UpRight", fontSize=15, offset=[-20,0], color=[91,35,0]>
+			<Text="atkLvText", text="Lv99", layout="Right", fontSize=15, offset=[-25,0], color=[91,35,0]>
+			<Text="totalText", text="/999", fontSize=15, layout="RightDown", offset=[-25,0], color=[91,35,0]>
+			<Text="survivalText", text="999", fontSize=15, layout="LeftOut", color=[255,0,0], relative="totalText">
+		>
+		<HeadImage="atkHeadImg", image="morentouxiang.png", layout="Left", offset=[135,0], size=[55,55], touch=1
+			<Image="atkIcon", image="gong.png", layout="DownLeft">
+		>
+
+		<Image="defUserImg", image="tuanzhanfenye2.png", layout="Left", offset=[238,0]
+			<Text="defNameText", text="我的名字七个字", layout="UpLeft", fontSize=15, offset=[20,0], color=[91,35,0]>
+			<Text="defLvText", text="Lv99", layout="Left", fontSize=15, offset=[25,0], color=[91,35,0]>
+			
+			<Text="survivalText", text="999", fontSize=15, layout="LeftDown", color=[255,0,0], offset=[25,0]>
+			<Text="totalText", text="/999", fontSize=15, layout="RightOut", color=[91,35,0], relative="survivalText">
+		>
+		
+
+		<HeadImage="defHeadImg", image="morentouxiang.png", layout="RightOut", size=[55,55], relative="atkHeadImg", offset=[10,0], touch=1
+			<Image="defIcon", image="fang.png", layout="DownRight">
+		>
+		<Image="vsImg", image="vs.png", layout="Left", offset=[160,0]>
+		<Image="resultImg", image="shenglijiaobiao.png", layout="UpLeft", offset=[-10,0]> 
+		<Image="factionImg", image="jinggongtiao.png", layout="Left", offset=[-3,20]
+		>
+		
+
+		<Image="rewardLayer", image="bftmd.png", layout="Center", offset=[143,10]
+			<Image="casualtyText", image="zhanchangjiangli.png", layout="UpOut", offset=[0,0]>
+			<Text="atkNumTxt", text="可攻击99人", layout="Center", fontSize=16, offset=[0,-10], color=[90,40,0]>
+			<Text="fightingTxt", text="战斗结束可领奖", layout="Center", fontSize=16, offset=[0,10], color=[90,40,0]>
+			<Layer="sunLayer", size=[20,20], layout="LeftUp", offset=[5,8]
+				<Image="sunIcon", image="icon_jinbi_S.png", layout="Center", fit=[-1,-1]>
+				<Text="sunCasualtyNum", text="9999万", fontSize=13, layout="RightOut", offset=[0,0], color=[93,38,0]>
+			>
+
+			<Layer="coinLayer", size=[20,20], layout="Up", offset=[8,8]
+				<Image="coinIcon", image="icon_yibi_S.png", layout="Center", fit=[-1,-1]>
+				<Text="coinCasualtyNum", text="9999万", fontSize=13, layout="RightOut", offset=[0,0], color=[93,38,0]>
+			>
+
+			<Layer="scoreLayer", size=[20,20], layout="Left", offset=[5,10]
+				<Image="scoreIcon", image="icon_jifen_S.png", layout="Center", fit=[-1,-1]>
+				<Text="scoreCasualtyNum", text="9999万", fontSize=13, layout="RightOut", offset=[0,0], color=[93,38,0]>
+			>
+			<Layer="bannerLayer", size=[20,20], layout="Center", offset=[8,10]
+				<Image="bannerIcon", image="icon_gongxun_S.png", layout="Center", fit=[-1,-1]>
+				<Text="bannerCasualtyNum", text="9999万", fontSize=13, layout="RightOut", offset=[0,0], color=[93,38,0]> 
+			>
+			
+
+		>
+		<Button="cellBtn", image="anniu8.png", topImage="lingqujiangli.png", layout="Right", offset=[-15,0]>
+		<TimeText="intervalText", text="23:59:59", fontSize=13, auto=1, max=1, format=2, layout="DownOut", offset=[0,0], relative="cellBtn", color=[91,35,0]>
+		<Image="newTip", image="bfjiaobiao.png", layout="RightUp", offset=[-25,-2]>
+	>
+>

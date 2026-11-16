@@ -1,0 +1,85 @@
+<BattleLogCell="battleLogCell",size=[620,97]
+	<Layer="lyrWarCell",size=[800,120], fill=[1,1],layout="Down"
+		<Image="imgBackGroundWarl",image="tuanzhanrizhitiao.png",layout="Down", offset=[4,0]>
+		
+		<Layer="lymyh", fill=[0.26,1], offsetP=[0.038,0]
+			<Image="atkUserImg", image="tuanzhanfenye.png", flipX=1, layout="Right", offsetP=[-0.3,0]
+				
+			>
+			<HeadImage="atkHeadImg", image="morentouxiang.png", layout="Right", size=[56,56]
+				<Image="atkIcon", image="gong.png", layout="DownLeft">
+				<Text="atkNameText", text="我的名字七个字", layout="UpLeft", step=[-1,0], fontSize="fs_14", offset=[-5,7], color="fc_8_">
+				<Text="atkLvText", text="Lv99", layout="DownLeft", step=[-1,0], fontSize="fs_14", offset=[-5,-7], color="fc_8_">
+			>
+		>
+		
+		
+		<Layer="lymyh", fill=[0.26,1],offset=[5,0], relative="lymyh", layout="RightOut"
+			<Image="defUserImg", image="tuanzhanfenye.png", layout="Left", offsetP=[0.3,0]
+				
+			>
+			
+
+			<HeadImage="imgPlayerWarl", image="morentouxiang.png", layout="Left", size=[56,56],onClick="node:Parent(3):onOpenPlayerOperateDlg()", touch = 1
+				<Image="defIcon", image="fang.png", layout="DownRight">
+				<Text="txNameWarl", text="我的名字七个字", layout="UpRight", step=[1,0], fontSize="fs_14", offset=[5,7], color="fc_8_">
+				<Text="txLevelWarl", text="Lv99", layout="DownRight", step=[1,0], fontSize="fs_14", offset=[5,-7], color="fc_8_">
+			>
+		>
+		
+		<Image="atkUserImg", image="vs.png", layout="Right", relative="lymyh", offset=[2.5,0], step=[0.5,0]>
+		
+		<Layer="lyrResultInfo", fill=[0.094,0.79],layout="Left",offset=[10,-10]
+			<Image="imgResultWarl", image="yangguang.png", layout="LeftUp", offset=[-8,0]>
+			<Image="imgStartWarl",image="jinggongtiao.png", layout="LeftDown", fontSize=15
+				<Image="imgStartTWarl",image="wuqi4.png", layout="Center", offset=[-7,-4], visible=0>
+			>
+		>
+		
+		
+		<Image9="ImgWarInfo", image="shunshishouhuodi.png", layout="Right", offsetP=[-0.156,0.13]
+			<Image9="ImgWarInfo", image="fengexian.png", layout="Center">
+			<Layer="lyrWarHarvestInfo", fill=[0.5,1], layout="Left"
+				
+				<Image="imgWarHarvestTitle", image="shouhuo1.png", layout="UpOut", offset=[0,-1]>
+				<Layer="lyh1", size=[24,24], layout="Left", offset=[6,-20]
+					<Image="imgHarvest1",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txHarvest1", text="0", color="fc_8_", layout="RightOut",relative ="lyh1", fontSize="fs_14", offset=[3,0]>
+				
+				<Layer="lyh2", size=[24,24], layout="DownOut", offset=[0,-4],relative ="lyh1"
+				<Image="imgHarvest2",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txHarvest2", text="0", color="fc_8_", layout="RightOut",relative ="lyh2", fontSize="fs_14", offset=[3,0]>
+				
+				<Layer="lyh3", size=[24,24], layout="DownOut", offset=[0,-4],relative ="lyh2"
+					<Image="imgHarvest3",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txHarvest3", text="0", color="fc_8_", layout="RightOut",relative ="imgHarvest3", fontSize="fs_14", offset=[3,0]>
+				
+				<Text="txWarNoneHarvest", text="无", layout="Center", fontSize="fs_14", offset=[0,5],visible=0>
+			>
+			<Layer="lyrWarLossInfo", fill=[0.5,1], layout="Right"
+				<Image="imgWarLossTitle", image="siwang.png", layout="UpOut", offset=[0,-1]>
+				<Layer="lyl1", size=[24,24], layout="Left", offset=[6,-20]
+				<Image="imgLoss1",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txLoss1", text="0", color="fc_8_", layout="RightOut",relative ="imgLoss1", fontSize="fs_14", offset=[3,0]>
+				<Layer="lyl2", size=[24,24], layout="DownOut", offset=[0,-4],relative ="lyl1"
+				<Image="imgLoss2",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txLoss2", text="0", color="fc_8_", layout="RightOut",relative ="imgLoss2", fontSize="fs_14", offset=[3,0]>
+				<Layer="lyl3", size=[24,24], layout="DownOut", offset=[0,-4],relative ="lyl2"
+				<Image="imgLoss3",image="suipian.png", layout="Center", fit=[0.9,0.9]>
+				>
+					<Text="txLoss3", text="0", color="fc_8_", layout="RightOut",relative ="imgLoss3", fontSize="fs_14", offset=[3,0]>
+				
+				<Text="txWarNoneLoss", text="无", layout="Center", fontSize="fs_14", offset=[0,5],visible=0>
+			>
+		>
+		<Button="btnRevengeWarl",image="anniu8.png",layout="Right", offsetP=[-0.032,-0.01],onClick="node:Parent(2):onPlayback(node:Parent().info)"
+			<Image="imagehf",image="huifang.png", layout="Center">
+			<Text="txTimeWarl",text="3小时前", layout="DownOut", fontSize="fs_14", offset=[0,2], color="fc_8_">
+		>
+	>
+>

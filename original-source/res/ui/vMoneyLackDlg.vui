@@ -1,0 +1,16 @@
+<MoneyLackDlg="moneyLackDlg"
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+		<Text="titleText", text="资源不足", color=[102,47,6], layout="Up", fontSize=22, offset=[0,15]>
+		<Image9="centerImg", image="tankuangdikuang1.png", layout="Center", offset=[0,-15], size=[360,100]
+			<Text="tipText", text="", layout="Center", fontSize="fs_22", color=[97,50,13], size=[320,100]>
+			<Text="rateText", text="1元=10钻石", layout="Down", fontSize="fs_18", color=[142,52,21], offset=[0,-5]>
+		>
+		
+		<Button="LeftBtn", image="tankuanganniu3.png", layout="LeftDown", offset=[70,-25], onClick="node:Parent(2):doPop()"
+			<Text="cancelTip", text="取消", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="RightBtn", image="tankuanganniu3.png", layout="RightDown", offset=[-70,-25], onClick="node:Parent(2):onRechargeBtnClick()"
+			<Text="okTip", text="确定", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+
+>

@@ -1,0 +1,19 @@
+<NotePayDlg="notePayDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center"
+		<Image="rateTipImg", image="rate10.png", layout="RightUpOut", offset=[-100,0], scale=0.8>
+		<Image="tbvBgImg", image="chongzhiduanxintiao.png", layout="Center", offset=[0,-55]
+			<TableView="p_rechargeTbv", layout="Center", size=[660,180], cell="vNotePayDlgCell.vui">
+
+			<Button="sureBtn", image="anniu7.png", topImage="queding.png", layout="DownOut", offset=[0,10], onClick="node:Parent(3):PayBtnClick()">
+		>
+		<Text="tipText", text="充值面额", layout="UpOut", relative="tbvBgImg", offset=[0,0], color=[90,40,0]>
+		<Text="tipText2", text="充值说明:", fontSize=22, layout="LeftDown", offset=[85,-130], color=[90,40,0]>
+		<Text="tipText3", text="每个账号ID每日短信限充值100元，终生短信总限额600元，超过限额请使用支付宝、网银、充值卡充值，谢谢您的配合！若在短信充值过程中遇到问题，请拨打客服热线:0755-28282828(服务时间:9:00-21:00)", fontSize=16, color=[90,40,0], layout="LeftDownOut", offset=[0,0], size=[820,55], relative="tipText2">
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="duanxinchongzhi.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+>

@@ -1,0 +1,43 @@
+﻿<BattleHelpShopDlg="battleHelpShopDlg"
+	<Layer="BattleHelpDlgLayer", size=[145,30], fill=[1,1], touch=1>
+	<Armature="artUp", jsonName="boxArmature", layout="Center", offset = [120,-135], scale=0.75>
+	<Image9="imgbg",image="tankuang4.png",layout="Center",touch=1, offset=[-13,-5]
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,40]
+			<Text="txTitle", text="帮助说明", layout="Center", color=[255,255,0],fontSize="fs_22">
+		>	
+	
+		
+		<Image9="imgdescribeGiftsO",image="tankuangneikuang2.png",layout="Center", offset=[20,-3], size=[456,167]
+			
+			<Image="imgDexDGiftsO",image="tankuangneikuang1.png",layout="Left", offset=[18,-8]
+				<Image="imgDexGiftsO",image="RW_Box.png",layout="Center", visible=0>
+				<Text="txDexGiftsO",text="描述",layout="DownRight",fontSize=14, offset=[-5,-5],visible=0>
+			>
+
+			<Layer="lyt", size=[145,22], relative="imgDexDGiftsO",layout="DownOut", offset=[0,0]
+				<Text="txDexGiftsO1",text="商品名称:",layout="Center",fontSize=14,color="fc_8_">
+			>
+
+			<Layer="lyd", size=[145,22], layout="RightUp", step=[1,0], offset=[10,-12], relative="imgDexDGiftsO"
+				<Text="txdescribe",text="商品名称:",layout="UpLeft", alignV="Top",fontSize=14, size=[300,300], color="fc_8_">
+			>
+		>
+
+		<Layer="lyd", size=[145,22], relative="imgdescribeGiftsO", layout="UpRight", step=[0,-1], offset=[-10,-5]
+			<Text="txDexd",text="新出现的植物/僵尸说明",layout="Right",fontSize=14,color="fc_8_">
+		>
+		
+		<Layer="lybt", size=[440,40], layout="Down", offset=[23,-33]
+			<Button="btnpageup",image="tankuanganniu3.png",layout="Center",onClick="node:Parent(3):onOK()"
+				<Text="txpageup", text="确定",layout="Center", fontSize="fs_22", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+		>
+
+		<Button="btBack", image="yincangguanbi.png", layout="UpRight", step=[0,-1], offset=[-15,-5], onClick="node:Parent(2):onClose()"
+		>
+
+		<Layer="lydescribed",fill=[0.5,0.1], layout="DownOut", step=[0,0],offset=[10,5]
+			<Text="txdescribed",text="描述", layout="Center", fontSize=11, opacity=60>
+		>
+	>
+>

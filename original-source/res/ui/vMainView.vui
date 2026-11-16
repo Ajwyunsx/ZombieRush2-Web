@@ -1,0 +1,178 @@
+<MainView="MainView"
+	<ManorView="manorView", layout="Center", size=[2235, 1350]
+		<Image="bg1", image="farmBg1.jpg", layout="Left", scale=1.54>
+		<Image="bg2", image="farmBg2.jpg", layout="Right", offset=[-2,0], scale=1.54>
+
+		<BuildingSprite="btnAltar", size=[307,325], layout="Center", step=[-1,-1], fscale=1.1, onClick="view:openAltar()", touch=0, offset=[-200,68], buildingType=5, audioEffect="sys_build_armycamp.ogg">
+
+		<BuildingSprite="btnCollege", size=[436,325], layout="Center", step=[0,-1], fscale=1.1, onClick="view:openCollege()", touch=0, offset=[-95,55], buildingType=4, audioEffect="sys_build_laboratory.ogg">
+
+		<BuildingSprite="btnVaults", size=[179, 161], layout="Center", step=[1,-1], fscale=1.8, onClick="view:openVaults()", touch=0, offset=[20,30], buildingType=1, audioEffect="sys_build_barracks.ogg", scale=1.67>
+
+		<BuildingSprite="btnBaseCamp", size=[406,401], layout="Center", step=[-2,0], fscale=1.1, onClick="view:openBaseCamp()", touch=0, offset=[97,260], buildingType=3, level=2000, audioEffect="sys_build_basecamp.ogg">
+
+		<Image="grassField", image="grassField.png", layout="Center", step=[0, -1], offset=[-120,85], scale=1.54>
+
+		<Image="stone", image="stone.png", layout="Center", step=[-3, 1], offset=[-11,16], scale=1.54, level=2000>
+		<Image="block", image="block.png", layout="Center", step=[1, 0], offset=[0,78], scale=1.54, level=2000>
+
+		<ChooseLayer="layerBanner", layout="Down", armatureImage="wu.png", touch=0, onClick="view:openBanner()", offsetP=[0.205, -0.188], level=4000, size=[220, 300], fscale=1.1>
+
+		<FarmLayer="farmLayer", layout="Center", size=[740,320], offsetP=[-0.092,0.27], level=3000>
+	>
+	<Image="userInfoImg", image="mv_ding.png", layout="Up"
+		<HeadImage="imgHead", image="morentouxiang.png", layout="Left", offset=[12,-6], size=[50,50]>
+		<Image="topIcon", image="mv_touxiangkuang.png", layout="Left", offset=[7,-6], touch=1, onClick="node:Parent(2):onOpenMyInfoDlg()"
+			<Layer="LyLevel", size=[40,20], layout="Right", offset=[4,-10]
+				<Text="texLevelNumber", text="111", layout="Up", font="userLevel.fnt">
+			>
+			<Layer="lyVip", size=[60,40], layout="DownRight", offset=[26,15], touch=1, onClick="view:openVipDlg()"
+				<Text="txtVIPTitle", text="v12", font="vipNumber3.fnt", layout="Down", offset=[0,0]>
+			>
+		>
+		<Layer="farmerLayer", size=[150,40], fill=[0.1,0.4], layout="UpLeft", offsetP=[0.145,0], offset=[0,4]
+			<Image="imgFarmerIcon", layout="Left", image="gongren.png", step=[-0.45,0]>
+			<Button="btnFarmerAdd", layout="Right", step=[0.45,0], topImage="farmerAdd.png", image="farmerBtn.png", onClick="view:onFarmerAddBtnClick()">
+			<Text="texFarmerValue", layout="Center", font="numberFont.fnt", offset=[-6,0], text="5/5">
+		>
+		<Layer="sunLayer", size=[185,40], fill=[0.165,0.4], layout="UpLeft", offsetP=[0.295,0], offset=[0,4], touch=1, onClick="view:showGoldCameFrom()"
+			<Image="imgSunIcon", layout="Left", step=[-0.5,0], image="icon_jinbi.png">
+			<Text="texSunLimit", layout="Right", format=1, fontSize=18, text="999999", offset=[-8,2]>
+			<Text="texSunSSSS", layout="LeftOut", fontSize=18, text="/", relative="texSunLimit">
+			<Text="texSunValue", layout="LeftOut", format=1, fontSize=18, text="0", relative="texSunSSSS">
+		>
+		<Layer="coinLayer", size=[230,40], fill=[0.212,0.4], layout="UpLeft", offsetP=[0.484,0], offset=[0,4], touch=1, onClick="view:showYinCameFrom()"
+			<Image="imgGoldIcon", layout="Left", image="icon_yibi.png", step=[-0.5,0]>
+			<Button="btnStore", layout="Right", step=[0.4,0], offset=[0,1], topImage="mv_shangdian.png", image="mv_storeBtn.png", onClick="view:openShop()">
+			<Text="texGoldLimit", layout="LeftOut", format=1, fontSize=18, text="999999", relative="btnStore", offset=[-2,1]>
+			<Text="texGoldSSSS", layout="LeftOut", fontSize=18, text="/", relative="texGoldLimit">
+			<Text="texGoldValue", layout="LeftOut", format=1, fontSize=18, text="99999", relative="texGoldSSSS">
+		>
+		<Layer="vcoinLayer", size=[220,40], fill=[0.18,0.4], layout="UpLeft", offsetP=[0.758,0], offset=[0,4], touch=1, onClick="view:showZuanCameFrom()"
+			<Image="imgCurrenyIcon", layout="Left", image="icon_zuanshi.png", offset=[0,0], step=[-0.4,0]>
+			<Button="btnCurrenyAdd", layout="Right", step=[0.4,0], offset=[0,1], image="mv_rechargeBtn.png", onClick="view:onCurrenyAddBtnClick()", topImage="mv_chongzhi.png">
+			<Text="texCurrenyValue", layout="Left", relative="btnCurrenyAdd", step=[-1,0], offset=[0,1], fontSize=18, text="0", align="Right">
+		>
+	>
+	
+	<Image="imgChatView", layout="Left", offset=[-20, 0], image="cemianliaotianxinxilan.png", touch = 1, onClick="view:openChatView()", level = 1000000, visible = 1
+		<Image="imgRedTip", layout="RightUp", image="xiaoxitishi.png", offset=[10,-10], visible=0
+			<Text="txtUnreadTip", layout="Center", fontSize=16>
+		>
+	>
+
+	<Button="btnUpdateApk", layout="Right", offset=[-5,0], image="updateApkButton.png", onClick="view:openUpateApkFile()", visible=0
+		<Text="texUpdateApk", layout="DownOut", relative="btnUpdateApk", text="", fontSize=16, shadow=[2,-2]>
+	>
+
+	<Layer="LeftOpLayer", layout="DownRight", size=[420,120], fill=[0.4,0.2]
+		<Button="pveBtn", image="mv_guanqiaanniu.png", layout="Left", offset=[5,0], onClick="view:Push('vChapterDlg.vui')", offset=[5,0]
+			<Image="pveTextImg", image="mv_guanqia.png", layout="Down", offset=[0,5]>
+		>
+
+		<Button="btnBattle", layout="RightOut", relative="pveBtn", image="mv_lueduoanniu.png", onClick="view:openRobView()", offset=[5,0]
+			<Image="battleTextImg", image="mv_lueduo.png", layout="Down", offset=[0,5]>
+		>
+
+		<Button="cardBtn", layout="RightOut", relative="btnBattle", image="mv_choukaanniu.png", offset=[5,0], onClick="view:onCardBtnClick()"
+			<Image="cardTextImg", image="mv_chouka.png", layout="Down", offset=[0,5]>
+		>
+
+		<Button="btnMoreFunc", layout="RightOut", relative="cardBtn", image="mv_kuozhananniu.png", onClick="view:openSpecial()", offset=[5,0], level=100
+			<Image="topImage", image="mv_jia.png", layout="Center", offset=[4,-8]>
+		>
+	>
+
+	<Layer="eventAndNoticeLayer", layout="UpLeft", offsetP=[0.07,0.15], size=[700, 64], visible=1
+		<Button="btnHuodong", image="hd_jingcaihuodong.png", layout="Left",  touch=1, onClick="view:openEventEntry()"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+
+		<Button="btnQiandao", image="hd_qiandao.png",  touch=1, onClick="view:openCheckIn()", layout="Left", step=[1.08, 0], visible=1
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+
+		<Button="btnEvent1",  touch=1, layout="Left", step=[2.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent2",  touch=1, layout="Left", step=[3.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent3",  touch=1, layout="Left", step=[4.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent4",  touch=1, layout="Left", step=[5.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent5",  touch=1, layout="Left", step=[6.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent6",  touch=1, layout="Left", step=[7.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent7",  touch=1, layout="Left", step=[8.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent8",  touch=1, layout="Left", step=[9.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent9",  touch=1, layout="Left", step=[10.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+		<Button="btnEvent10",  touch=1, layout="Left", step=[11.08, 0], image="hd_jingcaihuodong.png"
+			<Image="imageCntBg", layout="RightUp", image="zhujiemiantishipaopao.png"
+				<Text="textCnt", layout="Center", text="9", color=[255, 255, 255], fontSize=15>
+			>
+		>
+	>
+	
+	<File="layOperation", fileName="vOperationLayer.vui", layout="Down", offset=[0,-10], visible=0>
+	<File="lyrSystemNotice", fileName="vSystemNoticeLayer.vui", layout="Up">
+	<File="lyrWorldChatNotice", fileName="vWorldChatNoticeLayer.vui", layout="Up">
+
+	<Button="returnSelfFarm", image="otherreturn.png", layout="DownRight", offset=[-10,-10], onClick="view:BacktoSelfFarm()">
+
+	<Button="friendBtn", image="otheraddfriend.png", layout="LeftDown", offset=[10,-10], onClick="view:addFriendClick()">
+
+	<Layer="shabixuqiu", size=[820, 64], fill=[1,1], touch=1, onClick="view:shabixuqiuyincang()", visible=0
+		<Image="shabixuqiu1", relative="imgSunIcon", layout="Down", step=[0,1], offset=[0,-4], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi11", layout="UpLeft", fontSize=16, text="【金币】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi12", relative="shabixuqiuzi11", layout="DownLeft", step=[0,1], fontSize=16, text="1.农场中种植“向日葵”产出", offset=[0,4]>
+			<Text="shabixuqiuzi13", relative="shabixuqiuzi12", layout="DownLeft", step=[0,1], fontSize=16, text="2.关卡获得", offset=[0,0]>
+			<Text="shabixuqiuzi14", relative="shabixuqiuzi13", layout="DownLeft", step=[0,1], fontSize=16, text="3.掠夺其他玩家获得", offset=[0,0]>
+		>
+		<Image="shabixuqiu2", relative="imgGoldIcon", layout="Down", step=[0,1], offset=[0,-4], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi21", layout="UpLeft", fontSize=16, text="【银币】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi22", relative="shabixuqiuzi21", layout="DownLeft", step=[0,1], fontSize=16, text="1.农场中种植“菊花”产出", offset=[0,4]>
+			<Text="shabixuqiuzi23", relative="shabixuqiuzi22", layout="DownLeft", step=[0,1], fontSize=16, text="2.关卡获得", offset=[0,0]>
+			<Text="shabixuqiuzi24", relative="shabixuqiuzi23", layout="DownLeft", step=[0,1], fontSize=16, text="3.掠夺其他玩家获得", offset=[0,0]>
+		>
+		<Image="shabixuqiu3", relative="imgCurrenyIcon", layout="Down", step=[0,1], offset=[0,-4], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi31", layout="UpLeft", fontSize=16, text="【钻石】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi32", relative="shabixuqiuzi31", layout="DownLeft", step=[0,1], fontSize=16, text="1.充值", offset=[0,4]>
+			<Text="shabixuqiuzi33", relative="shabixuqiuzi32", layout="DownLeft", step=[0,1], fontSize=16, text="2.打通关卡章节", offset=[0,0]>
+		>
+	>
+>

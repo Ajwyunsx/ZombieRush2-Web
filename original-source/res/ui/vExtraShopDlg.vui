@@ -1,0 +1,35 @@
+﻿<ExtraShopDlg="extraShopDlg"
+	<Armature="artUp", jsonName="boxArmature", layout="Center", offset = [120,-145], scale=0.75>
+	<Image9="imgBackGround",image="tankuang10.png",layout="Center",touch=1,offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.11]
+			<Text="txTitle", text="物品详情", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+		
+		<Image="imgDexD",image="tankuangneikuang1.png",layout="Left",offsetP=[0.175,-0.05]
+			<Image="imgDex",image="RW_Box.png",layout="Center", fit=[-0.8,0]>
+		>
+
+		<Image9="imgdescribe",image="tankuangneikuang3.png", size=[303,102], relative="imgDexD",layout="RightOut", offset=[16,0]
+			<Layer="lynamed", fill=[0.18,0.3], layout="Left",step=[0,-0.9], offsetP=[0.055,0]
+				<Text="txnamed",text="名称 : ",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycountd", fill=[0.18,0.3], layout="Left",step=[0,0.4], offsetP=[0.055,0]
+				<Text="txDexd",text="数量 : ",layout="Left", fontSize="fs_14", size=[270,60],color="fc_8_">
+			>
+		>
+	
+		<Layer="lydescribed",fill=[0.5,0.1], layout="Down", step=[0,0],offset=[10,8]
+			<Text="txdescribed",text="描述", layout="Center", fontSize=11, opacity=60>
+		>
+
+		<Layer="lyBt", fill=[0.6,0.15],layout="Down",offsetP=[0.04,-0.145]
+			<Button="btnBuy",image="tankuanganniu3.png",layout="Center",onClick="node:Parent(3):CheckBuy()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txBack",text="确定",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+				<Image="imgCancel",image="guanbicha.png",layout="Center", visible = 0>
+			>
+		>
+
+		<Button="btnBack", image="ftguanbi.png", layout="UpRight", offset=[0,5], onClick="node:Parent(2):onClose()">
+	>
+>

@@ -1,0 +1,30 @@
+<TableViewCell="questDlgCell", size=[650,90]
+	<Layer="bgLayer", size=[650,90], layout="Down"
+		<Image="headLayer", image="meirirenwudi.png", layout="Up", touch=1, fit=[-0.95,0]
+			<Layer="qc_questLayer", size=[65,65], layout="Left", offset=[15,0]
+				<Image9="qc_questImage", image="morentouxiang.png", layout="Center", fit="Fill" >
+			>
+			<Image="qc_jiaobiaoImage", image="xinrenwu.png", layout="LeftUp", offset=[20,3]>
+
+			<Text="qc_nameText", text="任务名称任务名称任务名称", fontSize="fs_26", color=[84,43,0], layout="LeftUp", offset=[90,15] >
+			<Text="qc_questExploinText", text="任务简介任务简介任务简介任务简介", color=[109,60,19], fontSize=18, layout="LeftDown", offset=[90,-15] >
+			<Button="qc_finishBtn", image="renwuanniu.png", topImage="lingjiang.png", layout="Right", offset=[-30,0]>
+			<Image="rewardedImg", image="renwuyilingqu.png", layout="Right", offset=[-50,0], visible=1>
+		>
+		<Image9="extendImg", image="meirirenwuzhankai.png", size=[583,110], capInset=[150,10,50,80], layout="DownOut", relative="headLayer", offset=[0,0], visible=0
+			<Layer="conditionBg", size=[550,25], layout="UpLeft", offset=[70,5]
+				<Text="qc_sText", text="任务目标:", fontSize=20, layout="UpLeft", color=[84,43,0]>
+			>
+
+			<Text="qc_staticText", text="任务奖励:",  color=[84,43,0], fontSize=22, layout="LeftDownOut", relative="conditionBg">
+			<Layer="qc_rewardLayer1", size=[500,25], layout="LeftDownOut", relative="qc_staticText"
+				<Image="rewardImage", image="qianbi.png", layout="Left", fit=[0,-1]>
+				<Text="rewardText", text="奖励x99", fontSize=15, color=[119,70,31], layout="RightOut", relative="rewardImage", offset=[5,0] >
+			>
+			<Layer="qc_rewardLayer2", size=[500,25], relative="qc_rewardLayer1", layout="LeftDownOut"
+				<Image="rewardImage", image="qianbi.png", layout="Left", fit=[0,-1]>
+				<Text="rewardText", text="奖励x99", fontSize=15, color=[119,70,31], layout="RightOut", relative="rewardImage", offset=[5,0] >
+			>
+		>
+	>
+>

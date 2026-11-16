@@ -1,0 +1,109 @@
+﻿<ShopCell="shopCell",size=[683,151]
+	<Image="imgbg", image="huojia2.png", layout="Down">
+	<Image="imgjg", image="jiagelang.png", layout="Down", offset=[-1.5,-30]>
+	
+	<Layer="lyrShopCell1",size=[110,125], offset=[28,-39],lock=true, touch=1
+		<Image="imgItemShopC",image="baoxiang.png",layout="Center", offset=[5,5], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,33], layout="Right", offset=[-2,19]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		
+		<Layer="lycost", size=[100,25], layout="DownOut", offset=[-2,0]
+			<Image="imgCostTypeNShopC",image="icon_zuanshi_S.png",layout="Left", offset=[0,0],scale=0.6>	
+			<Text="txCostNShopC",text="512",color=[84,43,13], fontSize="fs_22", layout="Right", step=[1,0], offset=[2,2], relative="imgCostTypeNShopC">
+			<Text="txstratShopC",text="已售完", fontSize="fs_22", layout="Center", color=[75,29,8]>
+		>
+		
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,-3]>
+		<Layer="lyname", size=[142,20], layout="Down", offset=[0,-4]
+			<Text="txNameShopC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgdisShopC",image="dazetiao.png",layout="Left", offset=[-12,23]
+			<Text="txdisShopC", color=[252,238,19], fontSize="fs_22", layout="Center", offset=[-2,-2]>
+		>
+		
+		<Image="imgstratShopC",image="shouyao.png",layout="LeftUp", offset=[0,10]>
+	>
+
+	<Layer="lyrShopCell2",lock=true,size=[110,125], offset=[46.5,-39],step=[1,0], touch=1
+		<Image="imgItemShopC",image="baoxiang.png",layout="Center", offset=[5,5], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,33], layout="Right", offset=[-2,19]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Layer="lycost", size=[100,25], layout="DownOut", offset=[-2,0]
+			<Image="imgCostTypeNShopC",image="icon_zuanshi_S.png",layout="Left", offset=[0,0],scale=0.6>	
+			<Text="txCostNShopC",text="512",color=[84,43,13], fontSize="fs_22", layout="Right", step=[1,0], offset=[2,2], relative="imgCostTypeNShopC">
+			<Text="txstratShopC",text="已售完", fontSize="fs_22", layout="Center", color=[75,29,8]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,-3]>
+		<Layer="lyname", size=[142,20], layout="Down", offset=[0,-4]
+			<Text="txNameShopC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+
+		<Image="imgdisShopC",image="dazetiao.png",layout="Left", offset=[-9,23]
+			<Text="txdisShopC", color=[252,238,19], fontSize="fs_22", layout="Center", offset=[-2,-2]>
+		>
+		<Image="imgstratShopC",image="shouyao.png",layout="LeftUp", offset=[0,10]>
+	>
+
+	<Layer="lyrShopCell3",lock=true,size=[110,125], offset=[66,-39],step=[2,0], touch=1
+		<Image="imgItemShopC",image="baoxiang.png",layout="Center", offset=[5,5], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,33], layout="Right", offset=[-2,19]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Layer="lycost", size=[100,25], layout="DownOut", offset=[-2,0]
+			<Image="imgCostTypeNShopC",image="icon_zuanshi_S.png",layout="Left", offset=[0,0],scale=0.6>	
+			<Text="txCostNShopC",text="512",color=[84,43,13], fontSize="fs_22", layout="Right", step=[1,0], offset=[2,2], relative="imgCostTypeNShopC">
+			<Text="txstratShopC",text="已售完", fontSize="fs_22", layout="Center", color=[75,29,8]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,-3]>
+		<Layer="lyname", size=[142,20], layout="Down", offset=[0,-4]
+			<Text="txNameShopC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		<Image="imgdisShopC",image="dazetiao.png",layout="Left", offset=[-10,23]
+			<Text="txdisShopC", color=[252,238,19], fontSize="fs_22", layout="Center", offset=[-2,-2]>
+		>
+		<Image="imgstratShopC",image="shouyao.png",layout="LeftUp", offset=[0,10]>
+	>
+
+	<Layer="lyrShopCell4",lock=true,size=[110,125], offset=[84.2,-39],step=[3,0], touch=1
+		<Image="imgItemShopC",image="baoxiang.png",layout="Center", offset=[5,5], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,33], layout="Right", offset=[-2,19]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Layer="lycost", size=[100,25], layout="DownOut", offset=[-2,0]
+			<Image="imgCostTypeNShopC",image="icon_zuanshi_S.png",layout="Left", offset=[0,0],scale=0.6>	
+			<Text="txCostNShopC",text="512",color=[84,43,13], fontSize="fs_22", layout="Right", step=[1,0], offset=[2,2], relative="imgCostTypeNShopC">
+			<Text="txstratShopC",text="已售完", fontSize="fs_22", layout="Center", color=[75,29,8]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,-3]>
+		<Layer="lyname", size=[142,20], layout="Down", offset=[0,-4]
+			<Text="txNameShopC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		<Image="imgdisShopC",image="dazetiao.png",layout="Left", offset=[-9,23]
+			<Text="txdisShopC", color=[252,238,19], fontSize="fs_22", layout="Center", offset=[-2,-2]>
+		>
+		<Image="imgstratShopC",image="shouyao.png",layout="LeftUp", offset=[0,10]>
+	>
+	
+	<Layer="lyrShopCell5",lock=true,size=[110,125], offset=[102,-39],step=[4,0], touch=1
+		<Image="imgItemShopC",image="baoxiang.png",layout="Center", offset=[5,5], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,33], layout="Right", offset=[-2,19]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Layer="lycost", size=[100,25], layout="DownOut", offset=[-2,0]
+			<Image="imgCostTypeNShopC",image="icon_zuanshi_S.png",layout="Left", offset=[0,0],scale=0.6>	
+			<Text="txCostNShopC",text="512",color=[84,43,13], fontSize="fs_22", layout="Right", step=[1,0], offset=[2,2], relative="imgCostTypeNShopC">
+			<Text="txstratShopC",text="已售完", fontSize="fs_22", layout="Center", color=[75,29,8]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,-3]>
+		<Layer="lyname", size=[142,20], layout="Down", offset=[0,-4]
+			<Text="txNameShopC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		<Image="imgdisShopC",image="dazetiao.png",layout="Left", offset=[-8,23]
+			<Text="txdisShopC", color=[252,238,19], fontSize="fs_22", layout="Center", offset=[-2,-2]>
+		>
+		<Image="imgstratShopC",image="shouyao.png",layout="LeftUp", offset=[0,10]>
+	>
+>

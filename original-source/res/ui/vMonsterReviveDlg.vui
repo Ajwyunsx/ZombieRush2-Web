@@ -1,0 +1,58 @@
+<MonsterReviveDlg="monsterReviveDlg", touch=1
+	<Image="bgImage", image="tongyongbeijing.jpg", fit="Full", layout="Center">
+	<Image="centerImg", image="kapaijiemiandi.png", layout="Center", offset=[0,8]
+		<Image="option6", image="cardxuanze6.png", layout="Center", offset=[-330,-140], onClick="node:Parent(2):changeQualityOption(6)", touch=1
+			<Image="optionText", image="kaxuanzi6.png", layout="Left", offset=[30,0] >
+		>
+		<Image="option5", image="cardweixuanze5.png", layout="Center", offset=[-327,-85], onClick="node:Parent(2):changeQualityOption(5)", touch=1
+			<Image="optionText", image="kaweixuanzi5.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option4", image="cardweixuanze4.png", layout="Center", offset=[-324,-30], onClick="node:Parent(2):changeQualityOption(4)", touch=1
+			<Image="optionText", image="kaweixuanzi4.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option3", image="cardweixuanze3.png", layout="Center", offset=[-321,25], onClick="node:Parent(2):changeQualityOption(3)", touch=1
+			<Image="optionText", image="kaweixuanzi3.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option2", image="cardweixuanze2.png", layout="Center", offset=[-318,80], touch=1, onClick="node:Parent(2):changeQualityOption(2)"
+			<Image="optionText", image="kaweixuanzi2.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option1", image="cardweixuanze1.png", layout="Center", offset=[-315,135], touch=1, onClick="node:Parent(2):changeQualityOption(1)"
+			<Image="optionText", image="kaweixuanzi1.png", layout="Left", offset=[25,0] >
+		>
+
+
+		<ReviveLayer="reviveLayer", size=[600,315], layout="Center", offset=[30,-15]
+			<Text="reliveTip", text="", fontSize=22, color=[70,30,0], layout="Center">
+			<TableView="cardTbv", layout="Center", size=[600,315], direction="Hor", cell="vReviveLayerCell.vui">
+			<Image="bianjiexian", image="kapaijiexian2.png", layout="LeftOut", offset=[10,0]>
+			<Image="bianjiexian2", image="kapaijiexian1.png", layout="RightOut", offset=[-10,0]>
+		>
+		<Image="bianjiaoImg", image="kapaibianjiao.png", layout="UpRight", offset=[-20,13]>
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", layout="Center", offset=[5,-12], image="jiangshifuhuozi.png">
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+	<Text="rateTipp", text="优先消耗复活药水，8钻石抵扣1药水", fontSize=15, layout="DownLeft", offset=[40,-12], color=[147,133,67]>
+
+	<Button="allReviveBtn", image="anniu6.png", layout="Down", topImage="quanbufuhuozi.png", offset=[0,-2], onClick="node:Parent(1):onReliveAll()">
+
+	<Image="vcoinBgImage", image="henlandi.png", layout="RightUp", offset=[-90,5]
+		<Image="vcoinImage", image="icon_zuanshi.png", layout="Left", offset=[-5,-3], fit=[0,-1]>
+		<Text="vcoinText", text="123456", color=[255,255,0], fontSize="fs_22", layout="Right", offset=[-20,0]>
+	>
+	<Image="pieceBgImage", image="henlandi.png", layout="LeftOut", offset=[-20,0], relative="vcoinBgImage", touch=1, onClick="node:Parent(1):showYaoshuiCameFrom()"
+		<Image="pieceImage", image="icon_yaoshui.png", layout="Left", offset=[-5,-3], fit=[0,-1]>
+		<Text="pieceText", text="123456", color=[255,255,0], layout="Right", offset=[-20,0], fontSize=18>
+	>
+	<Text="tippText", text="全部卡牌：999/999", layout="LeftOut", relative="pieceBgImage", offset=[-20,0], fontSize=15>
+	<Layer="shabixuqiu", size=[820, 64], fill=[1,1], touch=1, onClick="node:Parent(1):shabixuqiuyincang()", visible=0
+		<Image9="shabixuqiu1", relative="pieceImage", layout="Down", step=[0,1], offset=[0,-4], size=[260,110], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi11", layout="UpLeft", fontSize=16, text="【复活药水】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi12", relative="shabixuqiuzi11", layout="DownLeft", step=[0,1], fontSize=16, text="1.签到获得", offset=[0,4]>
+			<Text="shabixuqiuzi13", relative="shabixuqiuzi12", layout="DownLeft", step=[0,1], fontSize=16, text="2.商店购买", offset=[0,0]>
+			<Text="shabixuqiuzi14", relative="shabixuqiuzi13", layout="DownLeft", step=[0,1], fontSize=16, text="3.VIP赠送", offset=[0,0]>
+		>
+	>
+>

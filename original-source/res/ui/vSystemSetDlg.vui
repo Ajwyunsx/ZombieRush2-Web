@@ -1,0 +1,33 @@
+<SystemSetDlg="systemSetDlg"
+	<Layer="lyrSystemSetDlg", layout="Right", step=[1,0], size=[210,480], fill=[0,1]
+		<Image="imgBackGroundlyrBag", image="mv_more.png", level=-100, layout="Center", fit="FitH", touch=1>
+
+		<Button="btnCheckinSystemSetD", image="anniu7.png", layout="Up", onClick="node:Parent(2):openSignDlg()", offset=[0,12]
+			<Image="tipImg", image="mv_qiandao.png", layout="Center", offset=[0,-2]>
+		>
+		<Button="btnEventSystemSetD", image="anniu7.png", layout="Down", relative="btnCheckinSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):openEventEntry()"
+			<Image="tipImg", image="mv_huodong.png", layout="Center", offset=[0,-2]>
+		>
+		<Button="btnQureySystemSetD", image="anniu7.png", layout="Down", relative="btnEventSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):openQueryItemDlg()"
+			<Image="tipImg", image="mv_tujian.png", layout="Center", offset=[0,-2]>
+		>
+		<Button="btnGameSetSystemSetD", image="anniu7.png", layout="Down", relative="btnQureySystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):onGameSet(node:Parent(2).attr)"
+			<Image="tipImg", image="youxishezhi.png", layout="Center", offset=[0,-2]>
+		>
+		<Button="btnAccountSetSystemSetD", image="anniu7.png", layout="Down", relative="btnGameSetSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):onAccountSet()"
+			<Image="imgAccountSetSystemSetD", image="zhanghaoguanli.png", layout="Center", offset=[0,-2]>
+		>
+		
+		<Button="btnServiceSystemSetD", image="anniu7.png", layout="Down", relative="btnAccountSetSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):onService()"
+			<Image="imgServiceSystemSetD", image="lianxikefu.png", layout="Center", offset=[0,-2]>
+		>
+		<Button="btnOutGameSystemSetD", image="anniu7.png", layout="Down", relative="btnServiceSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):onOutGame()"
+			<Image="imgOutGameSystemSetD", image="tuichuyouxi.png", layout="Center", offset=[0,-2]>
+		>
+
+		<Button="btnNoticeSystemSetD", image="anniu7.png", layout="Down", relative="btnAccountSetSystemSetD", step=[0,1], offset=[0,9], onClick="node:Parent(2):onNotice()", visible=0
+			<Image="imgNoticeSystemSetD", image="guanwanggonggao.png", layout="Center", offset=[0,-2]>
+		>
+
+	>
+>

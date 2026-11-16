@@ -1,0 +1,26 @@
+﻿<PrivatChatDlg="privatChatDlg", fill=[1,1]
+	<Image9="imgChatBg", layout="Center", fill=[1,1], image="tongyongbeijing.jpg", touch=1>
+
+	<Image="imgChat", layout="Center", image="tongyongbeijingkuang.png", offset=[0,8]
+		<Button="btnClear", layout="LeftUp", offset=[10,13], image="shanchuliaotian.png", onClick="node:Parent(2):clearMessageLog()", visible=0>
+
+		<TableView="tbMessage", relative="imgChat", layout="Center", size=[370,360], fill=[0.847,0.65], offset=[5,-30], cell="vMessageCell.vui">
+
+		<Layer="bottomBar", layout="Down", offsetP=[0,-0.111], fill=[0.85,0.089], relative="imgChat"
+			<Image="imageInput", image="liaotianshurukuang.png", layout="Left">
+			<Editor="editInput", bgImage="", text="", align="Left", layout="Left", size=[360,42], fontSize=22, offset=[0,0], pFontColor=[220,220,220]>
+			<Button="btnSend", layout="Right", offset=[0,0], image="anniu10.png", onClick="node:Parent(3):sendMessageAction()"
+				<Image="imageInput", image="fasong.png", layout="Center", offset=[0,0]>
+			>
+		>
+	>
+
+	
+
+		
+
+	<Image="imgChatTitle", image="tongyongbiaotidi.png", layout="LetfUp", offset=[93,0]
+			<Text="txChatTitleT", layout="Center", offset=[0,-10], fontSize="fs_26", color=[255,234,0]>
+	>
+	<Button="imgDOpen", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent():closeMessageView()">
+>

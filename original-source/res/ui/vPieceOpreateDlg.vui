@@ -1,0 +1,42 @@
+<PieceOpreateDlg="pieceOpreateDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundPieceO", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image9="imgBackGroundPieceO",image="tankuang4.png",layout="Center",offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.11]
+			<Text="txTitlePieceO", text="物品详情", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+		
+		<Image="imgDexDPieceO",image="tankuangneikuang1.png",layout="Left",offsetP=[0.15,-0.1], scale=0.84
+			<Image="imgDexPieceO",image="RW_Box.png",layout="Center">
+		>
+
+
+		<Image9="imgdescribePieceO",image="tankuangneikuang3.png", relative="imgDexDPieceO",layout="RightOut", offset=[16,-2]
+			<Layer="lynamed", fill=[0.18,0.3], layout="Left",step=[0,-0.7], offset=[0,0]
+				<Text="txDexNamedPieceO",text="名称 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+			<Layer="lyname",fill=[0.6,0.3], layout="RightOut", relative="lynamed", offset=[5,0]
+				<Text="txDexNamePieceO",text="材料",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycountd", fill=[0.18,0.3], layout="Left",step=[0,0.7], offset=[0,0]
+				<Text="txDexCountdPieceO",text="数量 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycount",fill=[0.6,0.3], layout="RightOut", relative="lycountd", offset=[5,0]
+				<Text="txDexCountPieceO",text="99",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+		>
+
+		<Layer="lydescribed",fill=[0.5,0.1], layout="Center", step=[0,0.5],offsetP=[0.05,0.02]
+			<Text="txdescribedPieceO",text="描述", layout="Center", fontSize="fs_22",color="fc_8_">
+		>
+
+		<Layer="lyd", fill=[0.8,0.2], relative="lydescribed", layout="DownOut", offset=[0, 0]
+			<Text="txdescribePieceO",text="描述",layout="UpLeft", alignV="Top",fontSize="fs_22", size=[455,68],color="fc_6_">
+		>
+		<Layer="lyohter", fill=[0.6,0.15],layout="Down",offsetP=[0.05,-0.07]
+			<Text="txpromptPieceO",text="点击任意位置关闭", layout="Center",fontSize="fs_18", color="fc_6_">
+		>
+	>
+	
+>

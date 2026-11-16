@@ -1,0 +1,23 @@
+<ChangeStuffDlg="changeStuffDlg"
+	<File="commonUi", fileName="vCommonMsgBox_B.vui">
+	
+	<Layer="bgLayer", size=[667,367], layout="Center", relative="bgImg", touch=1
+		<Text="tip1", text="请选择转换的数量:", color=[130,90,50], fontSize=15, layout="UpRight", offset=[-100,108]>
+		<Image="lineOne", image="tankuangxuxian.png", layout="Center", offset=[20,-53]>
+		<Editor="inputEdt", bgImage="chongzhishurukuang.png", text="0", layout="Center", size=[110,30], inputMode=2, align="Center", offset=[20,-25]>
+		<Button="leftBtn", image="chushouanniu2.png", topImage="chushoujian.png", layout="LeftOut", relative="inputEdt", offset=[-20,0], onClick="node:Parent(2):turnStuff(-1)", onRepeat="node:Parent(2):turnStuff(-1)">
+		<Button="minBtn", image="chushouanniu1.png", topImage="zuixiao.png", layout="LeftOut", relative="leftBtn", offset=[-20,0], onClick="node:Parent(2):turnMinValue()">
+
+		<Button="RightBtn", image="chushouanniu2.png", topImage="chushoujia.png", layout="RightOut", relative="inputEdt", offset=[20,0], flipX=1, onClick="node:Parent(2):turnStuff(1)", onRepeat="node:Parent(2):turnStuff(1)">
+		<Button="maxBtn", image="chushouanniu1.png", topImage="zuida.png", layout="RightOut", relative="RightBtn", offset=[20,0], onClick="node:Parent(2):turnMaxValue()">
+
+		<Image="lineTwo", image="tankuangxuxian.png", layout="Center", offset=[20,10]>
+		<Text="tip2", text="每消耗2个材料可转换一次，随机转换成一个同品质材料(有一定几率出高品质材料)。", size=[400,55], layout="Center", offset=[20,55], alignV="LeftUp", color=[90,40,0], fontSize=15>
+		<Button="LeftBtn", image="tankuanganniu3.png", layout="LeftDown", offset=[175,-70], onClick="node:Parent(2):doPop()"
+			<Text="topText", text="取消", layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="RightBtn", image="tankuanganniu3.png", layout="RightDown", offset=[-135,-70], onClick="node:Parent(2):changeStuffClick()"
+			<Text="topText", text="转换", layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+	>
+>

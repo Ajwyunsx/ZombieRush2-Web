@@ -1,0 +1,222 @@
+<BattleView="BattleView", touch=1, move=1
+	<Image="sunshineTemplate", image="yangguang.png", visible=0>
+	<Image="bg", image="battleImage.jpg", fit="Full", layout="Center"
+		<Layer="groundLayer", fill=[1,1]
+			<Image="imageGround53", image="battleGround1.png", offsetP=[0.2088,0.1104], visible=0>
+			<Image="imageGround54", image="battleGround6.png", offsetP=[0.4475,0.1125], visible=0>
+			<Image="imageGround55", image="battleGround7.png", offsetP=[0.5263,0.1063], visible=0>
+			<Image="imageGround56", image="battleGround6.png", offsetP=[0.6088,0.1125], visible=0>
+			<Image="imageGround57", image="battleGround8.png", offsetP=[0.6875,0.1063], visible=0>
+
+			<Image="imageGround43", image="battleGround2.png", offsetP=[0.2088,0.2583], visible=0>
+			<Image="imageGround44", image="battleGround7.png", offsetP=[0.445,0.2542], visible=0>
+			<Image="imageGround45", image="battleGround6.png", offsetP=[0.5263,0.2646], visible=0>
+			<Image="imageGround46", image="battleGround7.png", offsetP=[0.6063,0.2542], visible=0>
+			<Image="imageGround47", image="battleGround9.png", offsetP=[0.6838,0.2501], visible=0>
+
+			<Image="imageGround33", image="battleGround3.png", offsetP=[0.2088,0.4208], visible=0>
+			<Image="imageGround34", image="battleGround6.png", offsetP=[0.4463,0.4188], visible=0>
+			<Image="imageGround35", image="battleGround7.png", offsetP=[0.5288,0.4104], visible=0>
+			<Image="imageGround36", image="battleGround6.png", offsetP=[0.6088,0.4208], visible=0>
+			<Image="imageGround37", image="battleGround8.png", offsetP=[0.6875,0.4063], visible=0>
+
+			<Image="imageGround23", image="battleGround4.png", offsetP=[0.2075,0.5625], visible=0>
+			<Image="imageGround24", image="battleGround7.png", offsetP=[0.4438,0.5604], visible=0>
+			<Image="imageGround25", image="battleGround6.png", offsetP=[0.5263,0.5729], visible=0>
+			<Image="imageGround26", image="battleGround7.png", offsetP=[0.6075,0.5604], visible=0>
+			<Image="imageGround27", image="battleGround9.png", offsetP=[0.6888,0.5646], visible=0>
+
+			<Image="imageGround13", image="battleGround5.png", offsetP=[0.2088,0.7208], visible=0>
+			<Image="imageGround14", image="battleGround6.png", offsetP=[0.4475,0.725], visible=0>
+			<Image="imageGround15", image="battleGround7.png", offsetP=[0.5275,0.7125], visible=0>
+			<Image="imageGround16", image="battleGround6.png", offsetP=[0.6088,0.725], visible=0>
+			<Image="imageGround17", image="battleGround8.png", offsetP=[0.6913,0.7188], visible=0>
+		>
+	>
+
+	<Image="battleUserImage", image="battleUserImage.png", offsetP=[0.2,0], visible=1
+		<Layer="centerLayer", size=[74,50], layout="Up">
+
+		<Image="imgDefFrame", image="battleHeadImageFrame.png", layout="Left", offset=[20,0]
+			<HeadImage="imgDefUser", layout="Center", size=[40,40], defaultImage="mourentouxiangM.png", visible=1>
+			<Image="imgDefFrameTemp", image="battleHeadImageFrame.png", layout="Center">
+			<Image="imgDefVipFrame", image="battleVipFrame.png", layout="Up", offset=[0,2]
+				<Text="textDefVip", text="VIP10", layout="Up", fontSize=8, color=[254,252,1], offset=[-1,-2]>
+			>
+		>
+		<Layer="defUserLayer", size=[180,44], relative="centerLayer", layout="UpLeft", step=[-1,0]
+			<Image="imgDefIcon", image="battleDefIcon.png", layout="UpRight", offset=[-4,2], visible=1>
+			<Layer="defUserNameLayer", fill=[1,0.6], layout="Up"
+				<Text="textDefName", layout="Left", offset=[0,0], text="一二三四五六七八", fontSize=16, color=[245,210,6], effectColor=[0,0,0], outline=1>
+				<Text="textDefLevel", relative="textDefName", layout="DownRight", step=[1,0], offset=[4,1], text="LV10", fontSize=14, effectColor=[0,0,0], outline=1>
+			>
+			<Layer="defSpoilsLayer", fill=[1,0.4], layout="Down", offset=[4,-4]
+				<Image="imgDefSlot", image="battleResourceSlot.png", layout="Center"
+					<Image="imgDefSunSlot", image="battleResourceSlotGreen.png", layout="Left", step=[-0.5,0], scale=0.5>
+					<Image="imgDefSun", image="icon_jinbi.png", layout="Left", step=[-0.5, 0], scale=0.6, offset=[4,0]>
+					<Layer="defSunLayer", fill=[0.5,1], layout="Left"
+						<Text="textSpoilsSun", layout="Center", text="99999999", fontSize=16>
+					>
+					<Image="imgDefGoldSlot", image="battleResourceSlotGreen.png", layout="Center", step=[0, 0], offset=[-1,0], scale=0.5>
+					<Image="imgDefGold", image="icon_yibi.png", layout="Center", scale=0.6>
+					<Layer="defGoldLayer", fill=[0.5,1], layout="Right"
+						<Text="textSpoilsGold", layout="Center", text="0", fontSize=16>
+					>
+				>
+			>
+		>
+		<Image="imgDefFlag", image="battleFlagbai.png", relative="imgDefFrame", layout="Left", step=[-1,0], offset=[12,-6], visible=0
+			<Text="textDefFlag2", layout="Up", offset=[1,5], text="", fontSize=12, color=[0,0,0], effectColor=[0,0,0], outline=1, visible=0>
+			<Text="textDefFlag", layout="Up", offset=[0,4], text="", fontSize=12, color=[253,233,5], effectColor=[0,0,0], outline=1, visible=0>
+		>
+
+		<Image="imgAtkFrame", image="battleHeadImageFrame.png", layout="Right", offset=[-20,0]
+			<HeadImage="imgAtkUser", layout="Center", size=[40,40], defaultImage="mourentouxiangM.png">
+			<Image="imgAtkFrameTemp", image="battleHeadImageFrame.png", layout="Center">
+			<Image="imgAtkVipFrame", image="battleVipFrame.png", layout="Up", offset=[0,2]
+				<Text="textAtkVip", text="VIP10", layout="Up", fontSize=8, color=[254,252,1], offset=[-1,-2]>
+			>
+		>
+		<Layer="atkUserLayer", size=[180,44], relative="centerLayer", layout="UpRight", step=[1,0]
+			<Image="imgAtkIcon", image="battleAtkIcon.png", layout="UpLeft", offset=[4,2]>
+			<Layer="atkUserNameLayer", fill=[1,0.6], layout="Up"
+				<Text="textAtkName", layout="Right", offset=[0,0], text="一二三四五六七八", fontSize=16, color=[245,210,6], effectColor=[0,0,0], outline=1>
+				<Text="textAtkLevel", relative="textAtkName", layout="DownLeft", step=[-1,0], offset=[-4,1], text="LV10", fontSize=14, effectColor=[0,0,0], outline=1>
+			>
+			<Layer="atkSpoilsLayer", fill=[1,0.4], layout="Down", offset=[0,-4]
+				<Image="imgAtkSlot", image="battleResourceSlot.png", layout="Center"
+					<Image="imgAtkSunSlot", image="battleResourceSlotGreen.png", layout="Left", step=[-0.5,0], scale=0.4>
+					<Image="imgAtkSun", image="icon_jinbi.png", layout="Left", step=[-0.5, 0], scale=0.6, offset=[4,0]>
+					<Layer="atkSunLayer", fill=[0.4,1], layout="Left", offset=[4,0]
+						<Text="textGetSun", layout="Center", text="0", fontSize=16>
+					>
+					<Image="imgAtkGoldTemp", image="battleGold.png", layout="Left", offsetP=[0.4,0], step=[0.4,0], scale=1.05, visible=0>
+					<Image="imgAtkGoldSlot", image="battleResourceSlotGreen.png", relative="imgAtkGoldTemp", layout="Left", step=[-0.5,0], scale=0.4>
+					<Image="imgAtkGold", image="icon_yibi.png", layout="Left", offsetP=[0.4,0], scale=0.6>
+					<Layer="atkGoldLayer", fill=[0.4,1], relative="imgAtkGoldSlot", layout="Left", step=[0.5,0], offset=[4,0]
+						<Text="textGetGold", layout="Center", text="0", fontSize=16>
+					>
+					<Image="imgAtkItem", image="suipian.png", layout="Left", offsetP=[0.78,0], step=[0.2,0], scale=1>
+					<Layer="atkItemLayer", fill=[0.1,1], relative="imgAtkItem", layout="Right", step=[1,0], offset=[-4,0]
+						<Text="textGetObj", layout="Left", text="10", fontSize=16>
+					>
+				>
+			>
+		>
+		<Image="imgAtkFlag", image="battleFlagbai.png", relative="imgAtkFrame", layout="Right", step=[1,0], offset=[-12,-6], visible=0
+			<Text="textAtkFlag2", layout="Up", offset=[1,5], text="", fontSize=12, color=[0,0,0], effectColor=[0,0,0], outline=1, visible=0>
+			<Text="textAtkFlag", layout="Up", offset=[0,4], text="", fontSize=12, color=[253,233,5], effectColor=[0,0,0], outline=1, visible=0>
+		>
+
+		<Layer="starLayer", size=[74,50], layout="Up"
+			<Image="imgStar1", image="battleStart.png", layout="UpLeft", offset=[8,6], visible=0>
+			<Image="imgStar2", image="battleStart.png", layout="Up", visible=0>
+			<Image="imgStar3", image="battleStart.png", layout="UpRight", offset=[-8,6], visible=0>
+			<Text="textTime", text="180", fontSize=24, layout="Down", offset=[0,-4], color=[245,210,6], effectColor=[0,0,0], outline=1, visible=0>
+		>
+	>
+
+	<Image="imgSunshineFrame", image="zhanchangheikuang.png", layout="UpLeft", scale=1.2, offset=[4,6], visible=1
+		<Text="textSunshine", layout="Right", offset=[-6,0], text="100", fontSize=18, color=[245,210,6], effectColor=[0,0,0], outline=1>
+	>
+	<Image="imgSunshine", image="battleSun.png", relative="imgSunshineFrame", layout="Left", offset=[-8,0]>
+	<TableView="monsterTable", size=[144,400], fill=[0,0.8], layout="Left", step=[0,0], offset=[0,-10], cell="vMonsterTableViewcell.vui">
+	<Image="battleBackupImage", image="zhanchangyuanjundi.png", layout="DownLeft", scale=1, offset=[0, 4], visible=0
+		<Image="battleBackupText", image="guanqiayuanbing.png", layout="Left", offset=[4,2], scale=1>
+		<Image="backupCard", image="battleCard1.png", relative="battleBackupText", layout="Right", step=[1,0], offset=[14,1], touch=1, onClick="view:supportCardOnClick()"
+			<Image="backupIcon", image="BasicZombieCard.png", layout="DownLeft", scale=1, offset=[0,0]>
+			<Text="backupCount", layout="UpRight", text="x0", font="battleCount.fnt", fontSize=18, offset=[-4,4], scale=1.1>
+			<Text="backupCost", layout="DownRight", text="0", fontSize=18, offset=[-5,-4], effectColor=[0,0,0], outline=1>
+			<Image="backupLevel", image="battleStart.png", layout="UpLeft", offset=[2,3]
+				<Text="backupLevelText", layout="Up", text="0", font="starNumber.fnt", offset=[0,4]>
+			>
+			<Image="backupFlash", image="guanqianyuanjunshan1.png", layout="UpLeft", offset=[2,3], visible=0>
+		>
+		<Image="backupSelect", image="selectBattleCard.png", layout="Center", relative="backupCard", scale=1.03, visible=0>
+		<Image="backupArrow", image="battleHandArrow.png", layout="Right", relative="backupCard", step=[1,0], offset=[4,0], visible=0>
+	>
+
+	<Layer="battleLayer", fill=[0.8,0.76], offsetP=[0.216,0.12], color=[200,0,0], opacity=0
+		<Layer="touchLayerForSize", layout="UpRight", step=[-1,0], fill=[0.1,0.2], visible=0>
+
+		<Layer="touchLayer5", layout="UpRight", step=[0,0], fill=[0.3,0.2], touch=1, road=5, onClick="view:touchAndCreateMonster(node)", visible=0>
+		<Layer="touchLayer4", relative="touchLayer5", layout="DownOut", fill=[0.3,0.2], touch=1, road=4, onClick="view:touchAndCreateMonster(node)", visible=0>
+		<Layer="touchLayer3", relative="touchLayer4", layout="DownOut", fill=[0.3,0.2], touch=1, road=3, onClick="view:touchAndCreateMonster(node)", visible=0>
+		<Layer="touchLayer2", relative="touchLayer3", layout="DownOut", fill=[0.3,0.2], touch=1, road=2, onClick="view:touchAndCreateMonster(node)", visible=0>
+		<Layer="touchLayer1", relative="touchLayer2", layout="DownOut", fill=[0.3,0.2],  touch=1, road=1, onClick="view:touchAndCreateMonster(node)", visible=0>
+ 
+		<Armature="carArmature5",  jsonName="battleCar", road=5, relative="touchLayer5", layout="Right", visible=0>
+		<Armature="carArmature4",  jsonName="battleCar", road=4, relative="touchLayer4", layout="Right", visible=0>
+		<Armature="carArmature3",  jsonName="battleCar", road=3, relative="touchLayer3", layout="Right", visible=0>
+		<Armature="carArmature2",  jsonName="battleCar", road=2, relative="touchLayer2", layout="Right", visible=0>
+		<Armature="carArmature1",  jsonName="battleCar", road=1, relative="touchLayer1", layout="Right", visible=0>
+
+		<Layer="carLayer5", relative="carArmature5", layout="Center", size=[1,2], offset=[-6,0], color=[255,0,0], visible=0>
+		<Layer="carLayer4", relative="carArmature4", layout="Center", size=[1,2], offset=[-6,0], color=[0,255,0], visible=0>
+		<Layer="carLayer3", relative="carArmature3", layout="Center", size=[1,2], offset=[-6,0], color=[255,0,0], visible=0>
+		<Layer="carLayer2", relative="carArmature2", layout="Center", size=[1,2], offset=[-6,0], color=[255,0,0], visible=0>
+		<Layer="carLayer1", relative="carArmature1", layout="Center", size=[1,2], offset=[-6,0], color=[255,0,0], visible=0>
+
+		<Layer="endLayer5", layout="UpLeft", size=[1,70], offset=[-40,0], color=[0,255,25], visible=0>
+		<Layer="endLayer4", relative="endLayer5", layout="DownOut", size=[1,70], color=[0,255,255], visible=0>
+		<Layer="endLayer3", relative="endLayer4", layout="DownOut", size=[1,70], color=[255,255,0], visible=0>
+		<Layer="endLayer2", relative="endLayer3", layout="DownOut", size=[1,70], color=[255,0,255], visible=0>
+		<Layer="endLayer1", relative="endLayer2", layout="DownOut", size=[1,70], color=[120,135,255], visible=0>
+		<Layer="endBoxLayer", layout="UpLeft", size=[1,70], offset=[-68,0], color=[0,255,25], visible=0>
+
+		<Text="touchTipsText", text="点击放僵尸", relative="endLayer3", layout="Right", size=[16,160], color=[34,236,13], effectColor=[0,0,0], outline=1, fontSize=14, offset=[-20,0], visible=0>
+		<Image9="touchMonsterLightImage", image="battleHighLightTouch.png", fill=[0.3,1], layout="Right", step=[0,0], offsetP=[-0.15,0], scale=-1, visible=0>
+		<Image9="touchPlantLightImage", image="battleHighLightTouch.png", fill=[0.5,1], layout="Left", step=[0,0], offset=[-16,0], visible=0>
+	>
+
+	<Layer="sunshineLayer", fill=[1,1], offset=[0,0], color=[200,0,0], opacity=0>
+	
+	<Text="textSearchTime", text="30秒后自动开战", fontSize=20, color=[255,0,0], layout="Center", effectColor=[0,0,0], outline=1, visible=0>
+	<Text="textNotEnoughSun", text="阳光不足", fontSize=28, color=[255,0,0], layout="Center", effectColor=[0,0,0], outline=1, visible=0>
+
+	<Button="btnUpRightClose", layout="UpRight", offset=[-4,4], image="fanhui.png", onClick="view:closeBtnClick()", visible=0>
+	<Button="btnClose", layout="DownRight", step=[-0.6,0], offset=[0,-4], image="redButton.png", onClick="view:closeBtnClick()", visible=0
+		<Image="battleRunAway", image="battleRunAway.png", layout="Center">
+	>
+	<Button="btnSpeed", relative="btnClose", layout="Left", step=[-1,0], offset=[-10,0], image="orangeButton.png", onClick="view:changeSpeedBtnClick()"
+		<Text="textSpeed", text="x1", layout="Center", font="battleNumber.fnt", offset=[0,2]>
+	>
+	<Image="btnShovel", relative="btnSpeed", layout="Left", step=[-1,0], offset=[-10,0], image="shovelButton.png", touch=1, onClick="view:selectShovelBtnClick()", visible=0>
+	<Button="btnPass", relative="btnClose", layout="UpOut", image="anniu6.png", size=[80, 50], text="跳过", textColor=[255, 0, 0], onClick="view:passBattle()", visible=0>
+
+
+	<Armature="DaveArmature",  jsonName="DaveArmature", layout="DownRight", scale=0.8, visible=0>
+	<Image="battleTalkingFrame", image="battleTalkingFrame.png", relative="DaveArmature", layout="Up", step=[-0.2,-0.85], visible=0
+		<Text="talkingTitle1", layout="Up", text="主人植物都睡着了，", offset=[6,16], fontSize="fs_22", effectColor=[0,0,0], outline=1>
+		<Text="talkingTitle2", relative="talkingTitle1", layout="DownLeft", step=[0,1], offset=[0,8], text="让我们去抢吧", fontSize="fs_22", effectColor=[0,0,0], outline=1>
+		<Image="btnAttack", layout="Center", image="tankuanganniu3.png", offset=[0,-16], onClick="view:attackBattle()", touch=1
+			<Text="btnAttackTitle", layout="Center", text="进　　攻", offset=[0,-2], fontSize="fs_22", effectColor=[0,0,0], outline=1>
+		>
+		<Image="btnRevive", relative="btnAttack", layout="Down", image="tankuanganniu3.png", step=[0,1], offset=[0,12], onClick="view:ReviveBattle()", touch=1
+			<Image="imgRevivePoint", image="zhujiemiantishipaopao.png", layout="UpLeft", offset=[-4,-4], scale=1.2, visible=0
+				<Text="textReviveNum", layout="Center", text="99", offset=[0,0], fontSize=12, effectColor=[0,0,0], outline=1>
+			>
+			<Text="btnAttackTitle", layout="Center", text="复活僵尸", offset=[0,-2], fontSize="fs_22", effectColor=[0,0,0], outline=1>
+		>
+	>
+
+	<Text="textTips", text="", layout="Down", offset=[0,-8], fontSize="fs_22", effectColor=[0,0,0], outline=1>
+
+	<Layer="detailMonsterLayer",  fill=[1,1], touch=1, onClick="view:closeDetailMonsterLayer()", visible=0
+		<Layer="LeftLayer", size=[144,380], fill=[0,0.8], layout="Left", offset=[0,-10]>
+		<TableView="detailMonsterTable", size=[120,270], relative="LeftLayer", layout="Right", step=[1,0], offset=[0,0], cell="vMonsterTableViewcell.vui">
+	>
+	<Image="imgBattleTitle", image="BattleTitleAttack.png", layout="Center", visible=0>
+	<Image="imgWaveZombieTitle", image="waveZombie.png", layout="Center", visible=0>
+	<Layer="animationTouchLayer", fill=[1,1], touch=1, visible=0>
+
+	<Layer="battleTestLayer", layout="Down", visible=0, fill=[0.5,0.2]
+		<Button="btnTest1", layout="Down", image="anniu6.png", text="【-】", step=[-1,0], offset=[-8,0], onClick="view:testBattleA()", visible=1>
+		<Button="btnTest2", layout="Down", image="anniu6.png", text="【0】", step=[0,0], offset=[0,0], onClick="view:testBattleB()", visible=1>
+		<Button="btnTest3", layout="Down", image="anniu6.png", text="【+】", step=[1,0], offset=[8,0], onClick="view:testBattleC()", visible=1>
+
+		<Text="textTest3", text=" ", layout="Down", offset=[0,0], fontSize=32>
+		<Text="textTest2", text="2", relative="textTest3", layout="Up", step=[0,-2], fontSize=32, color=[255,0,0]>
+		<Text="textTest1", text="1", relative="textTest2", layout="Up", step=[0,-1], fontSize=32>
+	>
+>

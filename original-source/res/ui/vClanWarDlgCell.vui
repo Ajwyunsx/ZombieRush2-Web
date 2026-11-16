@@ -1,0 +1,38 @@
+<ClanWarCell="dfLayerCell", size=[120,290]
+	<Layer="defendLayer", size=[10,15], fill="Fill", layout="Up", offset=[0,5]
+		<Image="defendImg", image="tuanzhanfkuang.png", layout="Center" 
+			<Text="nameText", text="我的名字起各自", fontSize=12, color=[88,58,41], layout="Up", offset=[0,5]>
+				
+
+			<Image="exploinBgImg", image="tuanzhanfenye.png", layout="Right", offset=[0,-15]
+				<Image="indexIcon", image="tuanzhanbianhao.png", layout="RightUp", offset=[-18,5]>
+				<Text="lvText", text="Lv99", fontSize=14, color=[91,63,45], layout="RightDown", offset=[-10,-5]>
+			>
+			<HeadImage="headImage", image="morentouxiang.png", size=[55,55], layout="Left", offset=[5,-15]>
+
+			<Text="creatureText", text="剩余道路：3", color=[80,50,30], fontSize=14, layout="Center", offset=[0,25]>
+			
+			<Button="attackBtn", image="anniu11.png", topImage="gongji.png", layout="Down", offset=[0,-5]>
+			<Text="defendTip", text="防守中", fontSize=14, layout="Down", offset=[0,-10], color=[80,50,30]>
+			<Image="deadIcon", image="yizhenwang.png", layout="Center", offset=[0,10]>
+		>
+		<Image9="blinkImg", image="tuanzhanlvkuang.png", layout="Center", size=[110,145]>
+	>
+	<Layer="attackLayer", size=[10,10], fill="Fill", layout="Down", offset=[0,-3]
+		<Image="attackImg", image="tuanzhanakuang.png", layout="Center"
+			<Image="exploinBgImg", image="tuanzhanfenye.png", layout="Right", offset=[0,-0]
+				<Image="indexIcon", image="tuanzhanbianhao.png", layout="RightUp", offset=[-18,5]>
+				<Text="lvText", text="Lv99", fontSize=14, color=[91,63,45], layout="RightDown", offset=[-10,-5]>
+			>
+			<HeadImage="headImage", image="morentouxiang.png", size=[55,55], layout="Left", offset=[5,-0]>
+
+			<Text="nameText", text="我的名字起各自", fontSize=12, layout="Up", color=[88,58,41], offset=[0,5]>
+			<Text="creatureText", text="突破道路：3", color=[80,50,30], fontSize=14, layout="Down", offset=[0,-10]>
+			<Image="deadIcon", image="yizhenwang.png", layout="Center", offset=[0,10]>
+		>
+		<Image="blinkImg", image="tuanzhanlvkuang.png", layout="Center">
+	>
+	<Image="fightBgImg", image="tuanzhanckuang.png", layout="Center", visible=1
+		<TimeText="fightTime", text="23:59:59", suffix="后结束", fontSize=14, layout="Center", offset=[0,20], auto=1, max=1, color=[255,235,13]>
+	>
+>

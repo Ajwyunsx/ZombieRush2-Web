@@ -1,0 +1,58 @@
+<ClanWarDlg="clanWar"
+	<Image="bgImage", fit="Full", image="tuanzhanbeijing.jpg", touch=1>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+	<Image="centerImg", image="tuanzhantoumingdi.png", layout="Center", offset=[0,-8]
+		
+		<TimeText="reinforceTime", text="23:59:59", fontSize=18, layout="UpOut", offset=[0,0], auto=1, max=1, color=[171,34,2]>
+
+		<Text="timeEnd", text="后团战结束", fontSize=18, layout="RightOut", relative="reinforceTime", color=[90,60,43]>
+		<Button="helpBtn", image="bangzhuanniu.png", layout="LeftOut", relative="reinforceTime", offset=[0,0], onClick="node:Parent(2):Push('vClanHelpTip.vui')">
+		<Text="timeTipEnd", text="(最后9分钟不能增援)", fontSize=14, color=[90,60,43], layout="UpOut", relative="reinforceTime", offset=[40,0]>
+
+		<Text="scoreText", text="获得战功:", color=[90,60,43], layout="RightOut", relative="reinforceTime", offset=[150,0], fontSize=18>
+		<Image="scoreIcon", image="icon_jifen.png", layout="LeftOut", relative="scoreText", offset=[0,0]>
+		<Text="scoreNum", text="99999", layout="RightOut", relative="scoreText", fontSize=18, offset=[2,0], color=[90,60,43]>
+
+		<Image="tbvBgImg", image="tuanzhanliebiaodi.png", layout="Right", offset=[-10,0]>
+		<Layer="commonLayer", size=[100,300], layout="LeftOut", relative="tbvBgImg", offset=[15,0]
+			<Image="commonImg", image="clancommon.png", layout="Center", fit=[-1,-1]>
+		>
+
+		<Image="defendIcon", image="dun2.png", layout="LeftUp", offset=[23,25]
+		>
+		<Image="nickDefBar", image="tuanzhantiao.png", layout="DownOut", relative="defendIcon", offset=[0,5]
+			<Text="defendNick", text="我的名字七个", fontSize=12, color=[83,42,0], layout="Center", offset=[0,0]>
+		>
+		<Image="popDefBar", image="tuanzhantiao.png", layout="DownOut", relative="nickDefBar", offset=[0,5]
+			<Text="defenderCount", text="守方:99人", fontSize=12, color=[83,42,0], layout="Right", offset=[-10,0]>
+		>
+
+		<Image="atkIcon", image="wuqi2.png", layout="Left", offset=[20,55]
+		>
+		<Image="scoreAtkBar", image="tuanzhantiao.png", layout="DownOut", relative="atkIcon", offset=[0,0]
+			<Text="atkNick", text="我的名字七个", fontSize=12, color=[83,42,0], layout="Center", offset=[0,0]>
+		>
+		<Image="popAtkBar", image="tuanzhantiao.png", layout="DownOut", relative="scoreAtkBar", offset=[0,5]
+			<Text="atkCount", text="攻方:99人", fontSize=12, color=[83,42,0], layout="Right", offset=[-10,0]>
+		>
+
+		<Layer="tbvBgLayer", size=[600,290], layout="Right", offset=[-10,0]
+			<TableView="clanTbv", direction="Hor", layout="Center", size=[600,290], cell="vClanWarDlgCell.vui">
+		>
+		<Text="resultTip", text="战斗已经结束，您获得了辉煌的胜利！", fontSize=22, color=[90,60,43], layout="DownOut", offset=[0,15]>
+		<Image="resultIconD", image="shenglijiaobiao.png", layout="UpLeft", offset=[0,0]>
+		<Image="resultIconA", image="shenglijiaobiao.png", layout="Left", offset=[0,15]>
+	>
+
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="tuanzhan.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="assistBtn", image="anniu10.png", layout="RightDown", offset=[-170,-25], topImage="qiuyuan.png", visible=1, onClick="node:Parent(1):AssistBtnOnClick()">
+
+	<Button="logBtn", image="anniu10.png", topImage="rizhi3.png", layout="RightDown", offset=[-60,-25], onClick="node:Parent(1):onLogBtnClick()", visible=1>
+	<Button="chatBtn", image="anniu10.png", topImage="liaotian.png", layout="LeftDown", offset=[40,-25], onClick="node:Parent(1):onChatBtnClick()", visible=1>
+	<Image9="msgImg", image="tuanzhanqipao.png", layout="RightOut", offset=[0,-5], relative="chatBtn", visible=1
+		<Text="msgText", text="", fontSize=18, layout="Center">
+	>
+	<Button="joinBtn", image="anniu7.png", topImage="jiarugongfang.png", layout="RightDown", offset=[-50,-25], onClick="node:Parent(1):onJoinGroupBattleBtnClick()", visible=1>
+>

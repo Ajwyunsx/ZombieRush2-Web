@@ -1,0 +1,12 @@
+<OutLineLogDlg="outLineLogDlg"
+	<File="commonUi", fileName="vCommonMsgBox_A.vui", touch=1>
+	<Layer="layoutLayer", size=[480,200], layout="Center", relative="bgImg", offset=[20,10]
+		<TableView="tbv", layout="Center", size=[480,200], cell="vOutLineLogDlgCell.vui">
+	>
+	<Button="cancelBtn", image="huangsetongyonganniu.png", layout="Down", offset=[-100,-20], relative="bgImg", onClick="node:Parent(1):doPop()"
+		<Text="cancelText", text="关闭", color=[255,244,186], offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="Center", fontSize=18>
+	>
+	<Button="logBtn", image="huangsetongyonganniu.png", layout="Down", offset=[130,-20], relative="bgImg", onClick="node:Parent(1):onLogBtnClick()"
+		<Text="cancelText", text="日志详情", color=[255,244,186], offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="Center", fontSize=18>
+	>
+>

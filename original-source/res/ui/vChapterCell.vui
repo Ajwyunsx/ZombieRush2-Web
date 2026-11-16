@@ -1,0 +1,59 @@
+﻿<ChapterCell="chapterCell", size=[720,375]
+	<Layer="lyChapterItem1", size=[180,200], fill=[0.25, 0.53], layout="Left", offset=[0,0], level=4
+
+		<Text="txchapter", text="关卡0", layout="Down", offset=[0,56], fontSize="fs_22", color=[67,209,231]>
+		
+		<Image9="imgLock", image="zhangjiesuo.png", layout="UpOut", relative="txchapter", offset=[0,-3], touch=1>
+		
+		<Layer="lyStarBg", size=[95,33], layout="Down", offset=[0,90]
+			<Image="imgStar", image="guanqiadaxing.png", layout="Left", offset=[0,0], scale=0.7>
+			<Text="txStarhas", text="10", relative="imgStar", layout="RightOut", offset=[7,0], fontSize="fs_22", color=[67,209,231]>
+			<Text="txStarAll", text="", relative="txStarhas", layout="RightOut", offset=[0,0], fontSize="fs_22", color=[67,209,231]>
+			
+		>
+		
+		<Image9="imgtaijie", image="taijie0.png", layout="Right", offset=[75,35]>
+	>
+	<Layer="lyChapterItem2", size=[180,200], fill=[0.25, 0.53], layout="Left", step=[1,0], level=3
+
+		<Text="txchapter", text="关卡0", layout="Center", offset=[0,79], fontSize="fs_22", color=[67,209,231]>
+		
+		<Image9="imgLock", image="zhangjiesuo.png", layout="UpOut", relative="txchapter", offset=[0,-3], touch=1>
+		
+		<Layer="lyStarBg", size=[95,33], layout="Center", offset=[0,110]
+			<Image="imgStar", image="guanqiadaxing.png", layout="Left", offset=[0,0], scale=0.7>
+			<Text="txStarhas", text="10", relative="imgStar", layout="RightOut", offset=[7,0], fontSize="fs_22", color=[67,209,231]>
+			<Text="txStarAll", text="", relative="txStarhas", layout="RightOut", offset=[0,0], fontSize="fs_22", color=[67,209,231]>
+		>
+		<Image9="imgtaijie", image="taijie1.png", layout="DownRight", offset=[25,-10]>
+		
+	>
+	<Layer="lyChapterItem3", size=[180,200], fill=[0.25, 0.53], layout="Left", step=[2,0], level=2
+
+		<Text="txchapter", text="关卡0", layout="Down", offset=[0,56], fontSize="fs_22", color=[67,209,231]>
+		
+		<Image9="imgLock", image="zhangjiesuo.png", layout="UpOut", relative="txchapter", offset=[0,-3], touch=1>
+		
+		<Layer="lyStarBg", size=[95,33], layout="Down", offset=[0,90]
+			<Image="imgStar", image="guanqiadaxing.png", layout="Left", offset=[0,0], scale=0.7>
+			<Text="txStarhas", text="10", relative="imgStar", layout="RightOut", offset=[7,0], fontSize="fs_22", color=[67,209,231]>
+			<Text="txStarAll", text="", relative="txStarhas", layout="RightOut", offset=[0,0], fontSize="fs_22", color=[67,209,231]>
+			
+		>
+		<Image9="imgtaijie", image="taijie0.png", layout="Right", offset=[75,35]>
+	>
+	<Layer="lyChapterItem4", size=[180,200], fill=[0.25, 0.53], layout="Left", step=[3,0], level=1
+		
+		<Text="txchapter", text="关卡0", layout="Center", offset=[0,79], fontSize="fs_22", color=[67,209,231]>
+		
+		<Image9="imgLock", image="zhangjiesuo.png", layout="UpOut", relative="txchapter", offset=[0,-3], touch=1>
+		
+		<Layer="lyStarBg", size=[95,33], layout="Center", offset=[0,110]
+			<Image="imgStar", image="guanqiadaxing.png", layout="Left", offset=[0,0], scale=0.7>
+			<Text="txStarhas", text="10", relative="imgStar", layout="RightOut", offset=[7,0], fontSize="fs_22", color=[67,209,231]>
+			<Text="txStarAll", text="", relative="txStarhas", layout="RightOut", offset=[0,0], fontSize="fs_22", color=[67,209,231]>
+		>
+		<Image9="imgtaijie", image="taijie1.png", layout="DownRight", offset=[25,-10]>
+		
+	>
+>

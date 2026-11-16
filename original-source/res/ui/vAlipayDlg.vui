@@ -1,0 +1,14 @@
+<AlipayDlg="alipayDlg"
+	<File="commonUi", fileName="vCommonMsgBox_B.vui", touch=1>
+	<Layer="centerLayer", size=[569,288], layout="Center", relative="bgImg"
+		
+		<Editor="inputEditor", bgImage="chongzhishurukuang.png", size=[265,35], inputMode=2, layout="Center", offset=[20,0], fontColor=[90,40,0] >
+		<Text="tipText", text="请输入充值金额(元):", color=[79,31,0], fontSize=18, layout="UpOut", relative="inputEditor", offset=[0,-5]>
+		<Button="LeftBtn", image="tankuanganniu3.png", layout="LeftDown", offset=[110,-45], onClick="node:Parent(2):doPop()"
+			<Text="cancelText", text="取消", layout="Center", color=[255,244,186], shadow=[2,-2], effectColor=[0,0,0,127], offset=[0,-3]>
+		>
+		<Button="RightBtn", image="tankuanganniu3.png", layout="RightDown", offset=[-90,-45], onClick="node:Parent(2):SureBtnClick()"
+			<Text="cancelText", text="确定", layout="Center", color=[255,244,186], shadow=[2,-2], effectColor=[0,0,0,127], offset=[0,-3]>
+		>
+	>
+>

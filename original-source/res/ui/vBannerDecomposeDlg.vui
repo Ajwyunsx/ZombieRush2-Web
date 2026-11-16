@@ -1,0 +1,25 @@
+<BannerDecomposeDlg="bannerDecomposeDlg"
+	<File="commonUi", fileName="vCommonMsgBox_A.vui"
+		<Text="textDesc1", text="是否确认分解", fontSize="fs_18", color="fc_13_", layout="Center", relative="commonUi", offsetP=[-0.1, -0.15]>
+		<Text="textBannerName", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textDesc1">
+		<Text="textDesc2", text="，分解后可以获得：", fontSize="fs_18", color="fc_13_", layout="RightOut", relative="textBannerName">
+		<Image9="centerImg", image="tankuangdikuang1.png", layout="Center", relative="commonUi", size=[400,130], offsetP=[0.019, 0.025]
+			<Layer="layerGains", size=[400, 130], layout="Center"
+				<Layer="layerCenter", size=[10, 130], layout="Center">
+			>
+
+		>
+
+		<Text="textNotice", text="分解后战旗会消失", fontSize="fs_14", color="fc_12_", layout="DownOut",
+		relative="centerImg", offset=[0, 5]> 
+
+		<Button="closeBtn", image="tankuanganniu3.png", layout="Down", relative="commonUi", offsetP=[0.11, -0.18], onClick="node:Parent(2):doClose()"
+			<Text="cancelTip", text="取消", fontSize="fs_32", color=[255,244,186], offset=[0,-3], shadow=[1.5,-1.5], layout="Center">
+		>
+
+		<Button="decomposeBtn", image="tankuanganniu3.png", layout="Down", relative="commonUi",  offsetP=[-0.08, -0.18], onClick="node:Parent(2):decompose()"
+			<Text="decomposeTip", text="分解", fontSize="fs_32", color=[255,244,186], offset=[0,-3], shadow=[1.5,-1.5], layout="Center">
+		>
+
+	>
+>

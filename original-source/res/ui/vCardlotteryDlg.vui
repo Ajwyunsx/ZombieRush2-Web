@@ -1,0 +1,14 @@
+﻿<CardlotteryDlg="cardlotteryDlg"
+	<File="layerBg", fileName="vCommonDlg.vui">
+	
+	<Image="imgLight", image="guang.png", layout="Center", offset=[-233,0], visible=0>
+	
+	<Button="l_evolveImage", image="chouzhiwutubiao.png", layout="Center", offset=[-233,34]>
+
+	<Button="l_iheritImage", image="choujiangshitubiao.png", layout="Center", offset=[20,34]>
+
+	<Button="l_bannerImage", image="chouzhanqitubiao.png", layout="Center", offset=[244,34]
+		<Image="image_suo", image="suolian.png", layout="Up" , visible=0, offset=[0, 30]>
+		<Text="l_bannerText" text="战旗", layout="Center", offset=[0,0], color=[255,0,0], visible=0>
+	>
+>

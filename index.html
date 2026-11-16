@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>僵尸农场 · 植物僵尸大乱斗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- 全局自适应16:10/16:9舞台容器（确保完整全屏显示，不裁剪任何一行） -->
+    <div id="stageRoot" class="stage-root">
+
+      <!-- ============ 1. 登录标题界面 ============ -->
+      <section id="screenLogin" class="screen">
+        <canvas id="loginCanvas" width="960" height="540"></canvas>
+        <div class="login-overlay">
+          <div class="login-logo">
+            <div class="logo-sub">ZOMBIE RUSH 2 · HTML5 完整还原版</div>
+            <h1>僵尸农场 · 植物僵尸大乱斗</h1>
+          </div>
+          <div class="login-actions">
+            <div class="save-summary" id="saveSummary">档案载入中...</div>
+            <div class="login-btn-row">
+              <button id="btnEnterFarm" class="gbtn gbtn-gold gbtn-lg">进入僵尸农场</button>
+              <button id="btnQuickBattle" class="gbtn gbtn-green gbtn-lg">快速开始战斗</button>
+            </div>
+            <div class="login-sub-row">
+              <button id="btnLoginAudio" class="gbtn gbtn-sm">🎵 音乐: 开</button>
+              <button id="btnLoginFs" class="gbtn gbtn-sm">⛶ 全屏游戏</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. 农场家园主城界面 ============ -->
+      <section id="screenFarm" class="screen hidden">
+        <canvas id="farmCanvas" width="960" height="540"></canvas>
+
+        <!-- 顶部玩家信息与资源栏 -->
+        <div class="farm-topbar">
+          <div class="player-pill">
+            <div class="avatar-ring">🌻</div>
+            <div>
+              <div class="p-name">农场指挥官 <span id="farmLv">LV.1</span></div>
+              <div class="p-stars">总星数 ★ <span id="farmStars">0</span></div>
+            </div>
+          </div>
+
+          <div class="res-pills">
+            <div class="res-pill" title="阳光（用于培养植物与出战）">
+              <span class="res-ico">☀️</span>
+              <span id="farmSun">500</span>
+            </div>
+            <div class="res-pill" title="金币（用于强化、升星与召唤）">
+              <span class="res-ico">🪙</span>
+              <span id="farmGold">1200</span>
+            </div>
+            <div class="res-pill" title="钻石">
+              <span class="res-ico">💎</span>
+              <span id="farmGem">100</span>
+            </div>
+          </div>
+
+          <div class="farm-sys-btns">
+            <button id="btnFarmBgm" class="gbtn gbtn-sm">🎵 音乐</button>
+            <button id="btnFarmFs" class="gbtn gbtn-sm">⛶ 全屏</button>
+            <button id="btnBackLogin" class="gbtn gbtn-sm">标题</button>
+          </div>
+        </div>
+
+        <!-- 底部功能导航栏 -->
+        <div class="farm-dock">
+          <button id="btnDockBattle" class="dock-btn dock-main">⚔️ 冒险关卡 (165关)</button>
+          <button id="btnDockEndless" class="dock-btn">♾️ 无尽挑战</button>
+          <button id="btnDockAtlas" class="dock-btn">📖 植物与僵尸图鉴/升星</button>
+          <button id="btnDockLottery" class="dock-btn">🎁 召唤祭坛抽奖</button>
+          <button id="btnDockDeck" class="dock-btn">🃏 出战编队</button>
+        </div>
+
+        <div class="farm-tip" id="farmTip">提示：点击农场建筑或下方按钮进入玩法；点击农田中的阳光可收获，点击空地可种植物！</div>
+      </section>
+
+      <!-- ============ 3. 战斗界面 (vBattleView 还原) ============ -->
+      <section id="screenBattle" class="screen hidden">
+        <canvas id="gameCanvas" width="800" height="480"></canvas>
+
+        <!-- 悬浮顶部原版战斗HUD（位于顶部62px天空/篱笆区域，绝不遮挡5行草坪） -->
+        <div class="battle-hud-overlay">
+          <div class="hud-sun-slot" title="当前阳光">
+            <canvas id="sunIconCanvas" width="32" height="32"></canvas>
+            <span id="sunAmount">100</span>
+          </div>
+
+          <div class="hud-cards" id="cardBar"></div>
+
+          <button id="btnShovel" class="hud-shovel" title="铲子：点击后可移除植物">
+            <canvas id="shovelCanvas" width="34" height="34"></canvas>
+          </button>
+
+          <div class="hud-right">
+            <div class="hud-meta">
+              <span id="modeBadge" class="hud-badge">防守</span>
+              <span id="levelName" class="hud-lvl">1-2 秘境小屋</span>
+            </div>
+            <div class="hud-prog-row">
+              <div class="hud-wave-bar"><div id="waveBarFill" class="hud-wave-fill"></div></div>
+              <span id="waveText" class="hud-wave-txt">0/0</span>
+            </div>
+          </div>
+
+          <div class="hud-ctrl-btns">
+            <button id="btnSpeed" class="cbtn" title="倍速">1x</button>
+            <button id="btnMute" class="cbtn" title="音乐/音效">🔊</button>
+            <button id="btnBattleFs" class="cbtn" title="全屏">⛶</button>
+            <button id="btnBattleDeck" class="cbtn" title="更换出战编队">🃏</button>
+            <button id="btnBattleLevels" class="cbtn" title="切换关卡">🗺️</button>
+            <button id="btnRestart" class="cbtn" title="重开本关">🔄</button>
+            <button id="btnRetreat" class="cbtn cbtn-red" title="返回农场">🏠</button>
+          </div>
+        </div>
+
+        <!-- 戴夫开场对话提示 & 波次横幅 -->
+        <div id="daveBubble" class="dave-bubble hidden">
+          <canvas id="daveCanvas" width="84" height="84"></canvas>
+          <div class="dave-text" id="daveText">准备迎战！</div>
+        </div>
+        <div id="bannerMsg" class="banner-msg hidden"></div>
+      </section>
+
+      <!-- ============ 4. 章节关卡地图弹窗 (15章 165关) ============ -->
+      <div id="levelModal" class="modal hidden">
+        <div class="modal-card modal-xl">
+          <div class="modal-header">
+            <h2>冒险征战 · 原版15大章节关卡图</h2>
+            <div class="modal-header-right">
+              <button class="tab-btn active" data-filter="all">全部</button>
+              <button class="tab-btn" data-filter="defense">防守篇</button>
+              <button class="tab-btn" data-filter="attack">进攻篇</button>
+              <button class="btn-x" data-close="levelModal">✕</button>
+            </div>
+          </div>
+          <div id="chapterTabs" class="chapter-tabs"></div>
+          <div id="levelGrid" class="level-grid"></div>
+        </div>
+      </div>
+
+      <!-- ============ 5. 图鉴/培养/升星弹窗 ============ -->
+      <div id="atlasModal" class="modal hidden">
+        <div class="modal-card modal-xl">
+          <div class="modal-header">
+            <h2>植物与僵尸图鉴 · 升级升星培养</h2>
+            <div class="modal-header-right">
+              <button class="tab-btn active" data-atlas-tab="plant">🌿 植物阵营 (40)</button>
+              <button class="tab-btn" data-atlas-tab="monster">🧟 僵尸阵营 (39)</button>
+              <button class="btn-x" data-close="atlasModal">✕</button>
+            </div>
+          </div>
+          <div class="atlas-body">
+            <div id="atlasList" class="atlas-list"></div>
+            <div class="atlas-detail">
+              <canvas id="previewCanvas" width="240" height="220"></canvas>
+              <div class="preview-anims">
+                <button class="gbtn gbtn-xs" data-anim="idle">待机</button>
+                <button class="gbtn gbtn-xs" data-anim="attack">攻击</button>
+                <button class="gbtn gbtn-xs" data-anim="walk">行走</button>
+                <button class="gbtn gbtn-xs" data-anim="skill">技能</button>
+              </div>
+              <h3 id="atlasTitle">向日葵</h3>
+              <div id="atlasMeta" class="atlas-meta"></div>
+              <p id="atlasDesc" class="atlas-desc"></p>
+              <div class="atlas-actions">
+                <button id="btnUpgradeUnit" class="gbtn gbtn-gold">✨ 升星强化</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 6. 出战编队弹窗 ============ -->
+      <div id="deckModal" class="modal hidden">
+        <div class="modal-card modal-xl">
+          <div class="modal-header">
+            <h2 id="deckModalTitle">出战编队（最多 8 张）</h2>
+            <div class="modal-header-right">
+              <button class="tab-btn active" data-deck-side="defense">防守植物卡组</button>
+              <button class="tab-btn" data-deck-side="attack">进攻僵尸卡组</button>
+              <button class="btn-x" data-close="deckModal">✕</button>
+            </div>
+          </div>
+          <p class="modal-sub">点击下方单位加入/移出当前出战卡组，将自动使用已培养的最高星级属性上场！</p>
+          <div id="deckPool" class="deck-pool"></div>
+          <div class="modal-footer">
+            <button id="btnDeckDone" class="gbtn gbtn-green">确认编队</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 7. 召唤祭坛抽奖弹窗 ============ -->
+      <div id="lotteryModal" class="modal hidden">
+        <div class="modal-card modal-md">
+          <div class="modal-header">
+            <h2>🎁 神秘祭坛召唤</h2>
+            <button class="btn-x" data-close="lotteryModal">✕</button>
+          </div>
+          <div class="lottery-stage">
+            <canvas id="lotteryPreview" width="200" height="170"></canvas>
+            <div id="lotteryResultText" class="lottery-res">花费 150 金币或 100 阳光，随机召唤强力植物/僵尸并提升星级！</div>
+          </div>
+          <div class="modal-footer" style="justify-content:center;">
+            <button id="btnDrawSun" class="gbtn gbtn-green">☀️ 100 阳光召唤</button>
+            <button id="btnDrawGold" class="gbtn gbtn-gold">🪙 150 金币高级召唤</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 8. 战斗结算弹窗 ============ -->
+      <div id="resultModal" class="modal hidden">
+        <div class="modal-card result-card">
+          <h2 id="resultTitle">战斗胜利！</h2>
+          <div id="resultStars" class="stars">★★★</div>
+          <p id="resultDesc">你成功守住了家园！</p>
+          <div id="resultReward" class="result-reward"></div>
+          <div class="modal-footer" style="justify-content:center;">
+            <button id="btnResultFarm" class="gbtn">返回农场</button>
+            <button id="btnResultReplay" class="gbtn">再玩一次</button>
+            <button id="btnResultNext" class="gbtn gbtn-green">下一关</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/atlas.js"></script>
+  <script src="js/armature.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<ShopDlg="shopDlg"
+
+	<Image="bgImage", touch=1, fit="Full", image="tongyongbeijing.jpg">
+	
+	<Layer="imgShowShop", size=[698,385],layout="Down", offset=[45,-25]
+		<Image="imgMuLShop",image="zuocemutiao.png",layout="LeftUp", offset=[-42,42]>
+		<Image="imgMuRShop",image="youcemutiao.png",layout="RightUp", offset=[37,34]>
+		
+		
+		<Text="txNoneShop",text="没有物品",layout="Center",visible=0>
+		
+		<Button="btnTabShop1",image="mubanxuanzhong.png",layout="Right",onClick="node:Parent(2):ChageTable(1)",offset=[-688,-114]
+			<Image="imgTabShop1",image="shangdianwenzi1.png",layout="Center">
+		>
+	
+		<Button="btnTabShop2",image="mubanweixuanzhong.png",layout="Right",onClick="node:Parent(2):ChageTable(2)",offset=[-756,9], visible=0
+			<Image="imgTabShop2",image="shenmishangren2.png",layout="Center">
+		>
+		
+		<Button="btnTabShop3",image="mubanweixuanzhong.png",layout="Right",onClick="node:Parent(2):ChageTable(3)",offset=[-756,-61], visible=0
+			<Image="imgTabShop3",image="zhifenshangdian2.png",layout="Center">
+		>
+		<TableView="tbShop",layout="Center",size=[698,385], cell="vShopCell.vui",visible=1>
+	>
+
+	
+	<Image="imgMuRShop",image="xiacemutiao.png",layout="Down">
+	
+	<Image="imgTimeShop",image="shuaxindi1.png",layout="RightDown", offset=[-37,0]
+		<Layer="lytime", size=[145,21], layout="Up", offset=[0,3]
+			<Text="refreshTimeText", text="", fontSize="fs_18", layout="Center" , color=[124,78,44], visible = 0>
+			<Text="secretTimeText", text="", fontSize="fs_18", layout="Center", color=[124,78,44], visible = 0 >
+		>
+		
+		
+		
+		
+		<Button="btnTimeShop", image="choukaanniu.png", layout="Center", offset=[3,10], onClick="node:Parent(2):onbtnReqRefreshClick()"
+		
+			<Image="refreshCostImage", image="icon_jifen.png", layout="Left", offset=[5,-2]>
+			<Text="refreshCostText", text="免费", fontSize="fs_22", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="RightOut", relative="refreshCostImage" >
+		>
+	>
+	
+	<Image="imgTimeShop",image="shuaxindi2.png",layout="LeftDown", offset=[75,0]
+		<Button="btnJinbiShop",image="tankuanganniu3.png",layout="Center", offset=[0,8], onClick="view:Push('vPaymentDlg.vui')", touch=1
+			<Text="txChongzhiShop", text="充值", fontSize="fs_22", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="Center">
+		>
+	>
+
+	<Layer="shopResBgImage", layout="Up", offset=[130,10], size=[376,36]
+		<Image="imgSunDShop", image="henlandi.png", layout="Left", visible=0
+			<Image="imgSunShop",image="icon_jinbi.png",layout="Left", offset=[-10,0]>
+			<Text="txSunShop",text="0",layout="Right", offset=[-20,0],color=[255,255,0], fontSize="fs_18">
+		>
+		
+		<Image="imgJinbiDShop", image="henlandi.png", layout="Center",visible=0
+			<Image="imgJinbiShop",image="icon_jinbi.png",layout="Left", offset=[-10,-2]>
+			<Text="txJinbiShop",text="0",layout="Right", offset=[-20,0],color=[255,255,0], fontSize="fs_18">
+		>
+		
+		<Image="imgYuanbaoDShop", image="henlandi.png", layout="Right"
+			<Image="imgYuanbaoShop",image="icon_zuanshi.png",layout="Left", offset=[-10,-2]>
+			<Text="txYuanbaoShop",layout="Right", offset=[-20,0],color=[255,255,0], fontSize="fs_18">
+		>
+		
+		<Image="imgjifenDShop", image="henlandi.png", layout="Center", touch=1, onClick="node:Parent(2):showGongxunCameFrom()"
+			<Image="imgjifenShop",image="icon_jifen.png",layout="Left", offset=[-10,-2]>
+			<Text="txjifenShop",layout="Right", offset=[-20,0],color=[255,255,0], fontSize="fs_18">
+		>
+	>
+	
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", layout="Center", offset=[5,-8]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent():doPop()">
+
+	<Layer="shabixuqiu", size=[820, 64], fill=[1,1], touch=1, onClick="node:Parent(1):shabixuqiuyincang()", visible=0
+		<Image9="shabixuqiu1", relative="imgjifenShop", layout="Down", step=[0,1], offset=[0,-4], size=[260,110], image="ziyuanlaiyuankuang.png", visible=0
+			<Text="shabixuqiuzi11", layout="UpLeft", fontSize=16, text="【功勋】主要获得途径", offset=[10,16]>
+			<Text="shabixuqiuzi12", relative="shabixuqiuzi11", layout="DownLeft", step=[0,1], fontSize=16, text="1.参与团战（包括援攻、援防）", offset=[0,4]>
+			<Text="shabixuqiuzi13", relative="shabixuqiuzi12", layout="DownLeft", step=[0,1], fontSize=16, text="2.VIP赠送", offset=[0,0]>
+		>
+	>
+>

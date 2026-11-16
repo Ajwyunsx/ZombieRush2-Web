@@ -1,0 +1,17 @@
+<TableViewCell="battleSpoilsCell", size=[600, 70]
+	<Image="bgImg", layout="Center", image="jiesuandi4.png", scale=0.85>
+	<Layer="layObj1", size=[260,70], relative="bgImg", layout="Left", visible=0
+		<Layer="iconLayer1", size=[60,60], layout="Left", offset=[8,0]
+			<Image="objIcon1", layout="Left", image="yangguang.png">
+		>
+		<Text="objName1", relative="iconLayer1", layout="Right", step=[1,-0.5], text="0", color=[245,210,6], fontSize=20, offset=[2,-2]>			
+		<Text="objCount1", relative="iconLayer1", layout="Right", step=[1,0.5], text="0", color=[245,210,6], fontSize=20, offset=[4,2]>
+	>
+	<Layer="layObj2", size=[260,70], relative="bgImg", layout="Right", visible=0
+		<Layer="iconLayer2", size=[60,60], layout="Left", offset=[8,0]
+			<Image="objIcon2", layout="Left", image="yangguang.png">
+		>
+		<Text="objName2", relative="iconLayer2", layout="Right", step=[1,-0.5], text="0", color=[245,210,6], fontSize=20, offset=[2,-2]>
+		<Text="objCount2", relative="iconLayer2", layout="Right", step=[1,0.5], text="0", color=[245,210,6], fontSize=20, offset=[4,2]>
+	>
+>

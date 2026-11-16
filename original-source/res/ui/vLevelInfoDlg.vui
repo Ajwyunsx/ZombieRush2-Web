@@ -1,0 +1,118 @@
+<LevelInfoDlg="levelInfoDlg"
+	<Armature="artUp", jsonName="boxArmature", layout="Center", offset = [120,-135], scale=0.75>
+	<Image9="imgbg",image="tankuang4.png",layout="Center",touch=1, offset=[-13,-5]
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,40]
+			<Text="txTitle", text="美国队长", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+		<Image9="imgChapter", image="guanqiaxiangqingtu1.png", layout="Right", offset=[-38,-5]>
+		<Text="txChapter", text="进攻模式", layout="RightUpOut", relative="imgChapter", offset=[-73,-3], fontSize="fs_18">
+		<Image="imgStar1", image="guanqiaxiaoxing2.png", relative="txChapter", layout="RightOut", offset=[5,0]>
+		<Image="imgStar2", image="guanqiaxiaoxing2.png", relative="imgStar1", layout="RightOut", offset=[2,0]>
+		<Image="imgStar3", image="guanqiaxiaoxing2.png", relative="imgStar2", layout="RightOut", offset=[2,0]>
+		<Button="bthelp", image="bangzhuanniu.png", relative="txChapter", layout="LeftOut", offset=[-5,-1],onClick="node:Parent(2):OpenHelp()">
+		
+		<Image9="imgStarBg1", image="jianglihenlandi1.png", layout="Left", offset=[70,-66], step=[1,0]
+			<Layer="lyre", size=[36,21], layout="LeftOut", offset=[-8,0]
+				<Text="txReward", text="奖励", layout="Left",fontSize="fs_18", color="fc_7_">
+			>
+			<Image="imgbgStar1", image="guanqiaxiaoxing2.png", layout="LeftOut", relative="lyre", offset=[-8,0]>
+			
+			<Image="imgDReward", image="xiaobiaokuang.png", layout="Left", offset=[-6,0], scale=1
+				<Image="imgReward", image="yangguang.png", layout="Center", fit=[-0.8,-0.8], offset=[0,-2]>
+			>
+			<Text="txRewardnum", text="9999", layout="RightOut", shadow=[2,-2], effectColor=[0,0,0,127], relative="imgDReward", offset=[5,-2], fontSize="fs_18">
+			
+			<Image="imgGet", image="jianglihuodetubiao.png", layout="Right", offset=[7,-5], visible=0>
+		>
+		
+		<Image9="imgStarBg2", image="jianglihenlandi1.png", layout="Left", offset=[70,-25], step=[1,0]
+			<Layer="lyre", size=[36,21], layout="LeftOut", offset=[-8,0]
+				<Text="txReward", text="奖励", layout="Left",fontSize="fs_18", color="fc_7_">
+			>
+			<Image="imgbgStar1", image="guanqiaxiaoxing2.png", layout="LeftOut", relative="lyre", offset=[-8,0]>
+			<Image="imgbgStar2", image="guanqiaxiaoxing2.png", relative="imgbgStar1", layout="LeftOut", offset=[-1,0]>
+			
+			<Image="imgDReward", image="xiaobiaokuang.png", layout="Left", offset=[-6,0], scale=1
+				<Image="imgReward", image="yangguang.png", layout="Center", fit=[-0.8,-0.8], offset=[0,-2]>
+			>
+			<Text="txRewardnum", text="9999", layout="RightOut", shadow=[2,-2], effectColor=[0,0,0,127], relative="imgDReward", offset=[5,-2], fontSize="fs_18">
+			
+			<Image="imgGet", image="jianglihuodetubiao.png", layout="Right", offset=[7,-5], visible=0>
+		>
+		
+		<Image9="imgStarBg3", image="jianglihenlandi1.png", layout="Left", offset=[70,17], step=[1,0]
+			<Layer="lyre", size=[36,21], layout="LeftOut", offset=[-8,0]
+				<Text="txReward", text="奖励", layout="Left",fontSize="fs_18", color="fc_7_">
+			>
+			<Image="imgbgStar1", image="guanqiaxiaoxing2.png", layout="LeftOut", relative="lyre", offset=[-8,0]>
+			<Image="imgbgStar2", image="guanqiaxiaoxing2.png", relative="imgbgStar1", layout="LeftOut", offset=[-1,0]>
+			<Image="imgbgStar3", image="guanqiaxiaoxing2.png", relative="imgbgStar2", layout="LeftOut", offset=[-1,0]>
+			
+			<Image="imgDReward", image="xiaobiaokuang.png", layout="Left", offset=[-6,0], scale=1
+				<Image="imgReward", image="yangguang.png", layout="Center", fit=[-0.8,-0.8], offset=[0,-2]>
+			>
+
+			<Text="txRewardnum", text="9999", layout="RightOut", shadow=[2,-2], effectColor=[0,0,0,127], relative="imgDReward", offset=[5,-2], fontSize="fs_18">
+			
+			<Image="imgGet", image="jianglihuodetubiao.png", layout="Right", offset=[7,-5], visible=0>
+		>
+		
+		<Image9="imgNetBg", image="jianglihenlandi2.png", layout="Left", offset=[70,57], step=[1,0]
+			<Layer="lyre", size=[36,21], layout="LeftOut", offset=[-40,0]
+				<Text="txReward", text="联网奖励", layout="Left",fontSize="fs_18", color="fc_7_">
+			>
+			
+			
+			<Image="imgDReward1", image="xiaobiaokuang.png", layout="Left", offset=[-6,-15], scale=1
+				<Image="imgReward1", image="yangguang.png", layout="Center", fit=[-0.8,-0.8], offset=[0,-2]>
+			>
+			<Text="txRewardnum1", text="9999", layout="RightDown", shadow=[2,-2], effectColor=[0,0,0,127], step=[1,0], relative="imgDReward1", offset=[5,-2], fontSize="fs_18">
+			
+			<Image="imgDReward2", image="xiaobiaokuang.png", layout="Left", offset=[-6,15], scale=1
+				<Image="imgReward2", image="yangguang.png", layout="Center", fit=[-0.8,-0.8], offset=[0,-2]>
+			>
+			<Text="txRewardnum2", text="9999", layout="RightUp", shadow=[2,-2], effectColor=[0,0,0,127], step=[1,0], relative="imgDReward2", offset=[5,2], fontSize="fs_18">
+			
+			<Button="btGet", image="wangluojianglianniu.png", layout="Right", offset=[18,0], onClick="node:Parent(3):GetNetReward()",gray=1,touch=0
+				<Image="imgGetz",image="dianjilingqu.png",layout="Center",gray=1>
+			> 
+			<Image="imgGet", image="jianglihuodetubiao.png", layout="Right", offset=[-20,-5], visible=0>    
+		>
+		
+		<Text="txlimit", text="", layout="DownOut", relative="imgChapter", step=[0,0], offset=[70,1], fontSize="fs_18", color="fc_5_">
+		
+		<Image="imgBuy", image="guanqiagoumaidi.png", relative="imgChapter", layout="Right", offset=[-10,2], visible=0
+			<Image="imgCard1", image="carddiban4.png",layout="LetfUp", rotate=-20, offset=[-8,1],scale=0.58
+				
+			>
+			<Image="imgCard2", image="carddiban4.png",layout="LetfUp", rotate=-15, offset=[-8,1],scale=0.58
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+
+				<Image="imgItem", image="", layout="Down", offset=[0,-20], fit=[0,-0.6]>
+			>
+			
+			
+			
+			<Text="txdecs", text="", size=[85,58], shadow=[2,-2], effectColor=[0,0,0,127], offset=[-5,-12], alignV="Top", layout="Right", fontSize=14>
+			<Image="imgBuyTitle", image="guanqiagoumaibiaoti.png",layout="RightUp", offset=[2,10]
+				<Text="txBuyTitle", text="美国队长", layout="Center", offset=[0,-3], fontSize="fs_18", shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+			<Button="btnBuy",image="guanqiagoumaianniu.png",layout="Down", offsetP=[0,-0.071], onClick="node:Parent(3):OpenDungeonShop()"
+				<Image="imgOKPlantDefO",image="goumaikapai.png",layout="Center">
+			>
+			<Image="imghasBuy",image="yigoumai.png",layout="Down", offsetP=[0.0311,-0.199], visible=0>
+		>
+		
+		<Layer="lybt", size=[344,42], layout="Down", offset=[33,-30]
+			<Button="btnChallenge",image="fangshouanniu1.png", offset=[0,-3],layout="Right",onClick="node:Parent(3):Challenge()"
+				<Text="txChallenge", text="挑战",layout="Center", fontSize="fs_26", color=[255,255,0],visible=0>
+			>
+			<Button="btnBackPlantDefO",image="quxiaoanniu.png",layout="Left",onClick="node:Parent(3):onClose()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txCancel", text="取消",layout="Center", fontSize="fs_26", color=[255,255,0],visible=0>
+				<Image="imgCancelPlantDefO",image="quxiao.png",layout="Center", visible=0>
+			>
+		>
+	>
+>

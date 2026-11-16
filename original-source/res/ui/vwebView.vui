@@ -1,0 +1,5 @@
+<WebView="WebView", layout="Center", size=[673, 378], touch=1
+	<Image9="imgBg", image="tankuang7.png", layout="Center", size=[673, 378]>
+	<Layer="webViewjava", layout="Center", size=[517, 281]>
+	<Button="btnClose", image="tankuanganniu3.png", text="关闭", layout="Down", offset=[0, -23], onClick="node:Parent(1):closeView()">
+>

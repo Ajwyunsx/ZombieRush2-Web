@@ -1,0 +1,12 @@
+<EventEntryCell="eventEntryCell", size=[630,72]
+
+	<Image="imageCell1", layout="Left", size=[304,72], touch=1
+		<Image="imageNew", layout="LeftUp", image="event_new.png">
+		<Image="imageLj", layout="Right", image="event_lingjiang.png", offset=[-5, 0]>
+	>
+
+	<Image="imageCell2", layout="Right", size=[304,72], touch=1
+		<Image="imageNew", layout="LeftUp", image="event_new.png">
+		<Image="imageLj", layout="Right", image="event_lingjiang.png", offset=[-5, 0]>
+	>
+>

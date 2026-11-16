@@ -1,0 +1,91 @@
+<BannerRouletteResultDlg="bannerRouletteResultDlg", onClick="node:close()", touch=1
+	<File="commonUi", fileName="vCommonMsgBox_A.vui">
+	<Image9="centerImg", image="tankuangdikuang1.png", layout="Center", relative="bgImg", size=[450,190], offset=[20,25]
+
+		<Text="textTs", text="战旗统率:", fontSize="fs_22", color="fc_13_", layout="LeftUp", offsetP=[0.3, 0.05]>
+
+		<Layer="layerCreatures", layout="Right", size=[310, 60], offsetP=[0.02, -0.2]
+			<Image="imageCreatureBg1", layout="Left", image="banner_creature_icon_bg.png"
+				<Image="imageCreature1", layout="Center", scale=0.35>
+			>
+			<Image="imageCreatureBg2", layout="RightOut", relative="imageCreatureBg1", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature2", layout="Center", scale=0.38>
+			>
+			<Image="imageCreatureBg3", layout="RightOut", relative="imageCreatureBg2", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature3", layout="Center", scale=0.38>
+			>
+			<Image="imageCreatureBg4", layout="RightOut", relative="imageCreatureBg3", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature4", layout="Center", scale=0.38>
+			>
+			<Image="imageCreatureBg5", layout="RightOut", relative="imageCreatureBg4", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature5", layout="Center", scale=0.38>
+			>
+			<Image="imageCreatureBg6", layout="RightOut", relative="imageCreatureBg5", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature6", layout="Center", scale=0.38>
+			>
+			<Image="imageCreatureBg7", layout="RightOut", relative="imageCreatureBg6", image="banner_creature_icon_bg.png", offset=[6,0]
+				<Image="imageCreature7", layout="Center", scale=0.38>
+			>
+		>
+
+		<Text="textSx", text="攻防属性:",  fontSize="fs_22", color="fc_13_", layout="DownOut", relative="textTs", offsetP=[0, 0.25]>
+
+		<Image="imageAtk", relative="textSx", layout="DownOut", image="zhanqigong.png", offset=[-8, 5]>
+		<Text="textAtk", relative="imageAtk", layout="RightOut", text="火系攻击", fontSize="fs_18", color=[83,42,0]>
+		<Image="iamgeBgAtk1", relative="textAtk", layout="RightOut", image="banner_attr_bg1.png", offset=[15, 0]
+			<Image="imageAtk1", layout="Center", image="banner_attr1.png">
+		>
+		<Image="iamgeBgAtk2", relative="iamgeBgAtk1", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageAtk2", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgAtk3", relative="iamgeBgAtk2", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageAtk3", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgAtk4", relative="iamgeBgAtk3", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageAtk4", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgAtk5", relative="iamgeBgAtk4", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageAtk5", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgAtk6", relative="iamgeBgAtk5", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageAtk6", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+
+		<Image="imageDef", relative="imageAtk", layout="DownOut", image="zhanqifang.png", offset=[0, 10]>
+		<Text="textDef", relative="imageDef", layout="RightOut", text="水系防御", fontSize="fs_18", color="fc_6_">
+
+		<Image="iamgeBgDef1", relative="textDef", layout="RightOut", image="banner_attr_bg1.png", offset=[15, 0]
+			<Image="imageDef1", layout="Center", image="banner_attr1.png">
+		>
+		<Image="iamgeBgDef2", relative="iamgeBgDef1", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageDef2", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgDef3", relative="iamgeBgDef2", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageDef3", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgDef4", relative="iamgeBgDef3", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageDef4", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgDef5", relative="iamgeBgDef4", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageDef5", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="iamgeBgDef6", relative="iamgeBgDef5", layout="RightOut", image="banner_attr_bg1.png", offset=[10, 0]
+			<Image="imageDef6", layout="Center", image="banner_attr1.png", visible=0>
+		>
+
+		<Image="mi_amtBgImg", image="tankuangneikuang1.png", layout="Left", offset=[15,0]
+			<Image="imageBanner", image="zi.png", layout="Center", scale=0.6>
+		>
+	> 
+	
+	<Text="descripeText", text="点击任意位置关闭", relative="bgImg", fontSize="fs_14", layout="Down", color="fc_6_", step=[0, -1.5]>
+>

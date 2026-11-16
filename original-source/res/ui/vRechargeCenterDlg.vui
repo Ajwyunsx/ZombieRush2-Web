@@ -1,0 +1,73 @@
+<RechargeCenterDlg="rechargeCenterDlg", touch=1
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg">
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center", offset=[0,8]
+		<Image="rateTipImg", image="rate10.png", layout="RightUpOut", offset=[-100,-5], scale=0.8>
+		<Image="rc_topImage", image="chongzhiditiao.png", layout="Up", offset=[0,65] 
+			<HeadImage="headImg", image="morentouxiang.png", layout="Left", offset=[20,0], size=[52,52]>
+			<Text="rc_idText", text="ID：陆仁贾路人",  fontSize=15, color=[106,50,0], layout="LeftUp", offset=[90,10] >
+			<Text="rc_nameText", text="昵称：",  fontSize=15, color=[106,50,0], layout="Left", offset=[90,0] >
+			<Text="rc_moneyText", text="余额：",  fontSize=15, color=[106,50,0], layout="LeftDown", offset=[90,-10] >
+
+			<Button="rc_otherRechargeBtn", image="anniu15.png", topImage="xiugaiid.png", capInset=[40,20,5,5], layout="Right", offset=[-30,0], onClick="node:Parent(3):onOtherRechargeBtnClick()">
+
+			<Button="recordBtn", image="anniu16.png", topImage="chongzhijilu2.png", layout="Right", offset=[-30,0], onClick="view:Push('vPrepaidRecordDlg.vui')">
+		>
+		<Layer="rc_chanelLayer", size=[615,150], layout="DownOut", relative="rc_topImage", offset=[0,20]
+			<Button="rc_payBtn1", image="chongzhianniudi.png", layout="UpLeft" , onClick="node:Parent(3):onShowNewAlipayView(1)", offset=[-5,0]
+				<Image="rc_alipayImage", image="zhifubaoicon.png", layout="Up", offset=[0,10] >
+				<Text="rc_alipayText", text="支付宝充值",  fontSize=18, layout="DownOut", relative="rc_alipayImage", color=[110,66,13]>
+			>
+			<Button="rc_payBtn2", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn1", onClick="node:Parent(3):onShowNewAlipayView(12)", offset=[30,0]
+				<Image="rc_unionpayImage", image="yinlianicon.png", layout="Up", offset=[0,5] >
+				<Text="rc_unionpayText", text="网银充值",  fontSize=18, layout="DownOut", relative="rc_unionpayImage", color=[110,66,13]>
+			>
+			<Button="rc_payBtn3", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn2", onClick="node:Parent(3):onGIROPay()", offset=[30,0]
+				<Image="channelIcon", image="zhuanzhangicon.png", layout="Up", offset=[0,5]>
+				<Text="rc_scdmaText", text="转账充值", fontSize=18, layout="DownOut", color=[110,66,13], relative="channelIcon", offset=[0,-3]>
+			>
+			<Button="rc_payBtn4", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn3", onClick="node:Parent(3):onShowYeePayDlg(1)", offset=[30,0]
+				<Image="chanelIcon", image="yidongicon.png", layout="Up", offset=[0,3]>
+				<Text="rc_scdmaText", text="移动充值卡",  fontSize=18, layout="DownOut", color=[110,66,13], relative="chanelIcon", offset=[0,-3]>
+			>
+			<Button="rc_payBtn5", image="chongzhianniudi.png", layout="LeftDown", onClick="node:Parent(3):onShowYeePayDlg(2)", offset=[-5,0]
+				<Image="channelIcon", image="dianxinicon.png", layout="Up", offset=[0,5]>
+				<Text="rc_scdmaText", text="电信充值卡",  fontSize=18, layout="DownOut", color=[110,66,13], relative="channelIcon", offset=[0,-3]>
+			>
+			<Button="rc_payBtn6", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn5", offset=[30,0], onClick="node:Parent(3):onShowYeePayDlg(3)"
+				<Image="channelIcon", image="liantongicon.png", layout="Up", offset=[0,6]>
+				<Text="rc_scdmaText", text="联通充值卡", fontSize=18, layout="DownOut", color=[110,66,13], relative="channelIcon">
+			>
+
+			<Button="rc_payBtn7", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn6", offset=[30,0], onClick="node:Parent(3):onShowAlipayDlg(107)"
+				<Image="channelIcon", image="wxPayIcon.png", layout="Up", offset=[0,0]>
+				<Text="rc_scdmaText", text="微信支付", fontSize=18, layout="DownOut", color=[110,66,13], relative="channelIcon">
+			>
+			<Button="rc_payBtn8", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn7", offset=[30,0], onClick="node:Parent(3):onGIROPay(3)", visible=0
+				
+			>
+			<Button="rc_payBtn9", image="chongzhianniudi.png", layout="RightOut", relative="rc_payBtn8", offset=[30,0], visible=0>
+		>
+		<Layer="rc_chanelLayerI4", size=[615,150], layout="DownOut", relative="rc_topImage", offset=[0,20], visible=0
+			<Button="rc_payBtnI4", image="chongzhianniudi.png", layout="UpLeft" , onClick="node:Parent(3):onShowAlipayDlg(1)", offset=[-5,0]
+				<Image="rc_alipayImageI4", image="zhuanzhangicon.png", layout="Up", offset=[0,10] >
+				<Text="rc_alipayTextI4", text="爱思充值",  fontSize=18, layout="DownOut", relative="rc_alipayImage", color=[110,66,13]>
+			>
+		>
+		<Layer="rc_chanelLayerXY", size=[615,150], layout="DownOut", relative="rc_topImage", offset=[0,20], visible=0
+			<Button="rc_payBtnXY", image="chongzhianniudi.png", layout="UpLeft" , onClick="node:Parent(3):onShowAlipayDlg(1)", offset=[-5,0]
+				<Image="rc_alipayImageXY", image="zhuanzhangicon.png", layout="Up", offset=[0,10] >
+				<Text="rc_alipayTextXY", text="XY充值",  fontSize=18, layout="DownOut", relative="rc_alipayImage", color=[110,66,13]>
+			>
+		>
+		<Layer="rc_chanelLayerUUC", size=[615,150], layout="DownOut", relative="rc_topImage", offset=[0,20], visible=0
+			<Button="rc_payBtnUUC", image="chongzhianniudi.png", layout="UpLeft" , onClick="node:Parent(3):onShowAlipayDlg(1)", offset=[-5,0]
+				<Image="rc_alipayImageI4", image="zhuanzhangicon.png", layout="Up", offset=[0,10] >
+				<Text="rc_alipayTextI4", text="充值",  fontSize=18, layout="DownOut", relative="rc_alipayImage", color=[110,66,13]>
+			>
+		>
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+> 

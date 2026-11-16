@@ -1,0 +1,52 @@
+<GiftsOpreateDlg="GiftsOpreateDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundGiftsO", layout="UpRight", offset=[0,-20], scale=0.9>	
+	<Image9="imgBackGroundGiftsO",image="tankuang4.png",layout="Center",touch=1,offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.11]
+			<Text="txTitleGiftsO", text="物品详情", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+
+		<Image="imgDexDGiftsO",image="tankuangneikuang1.png",layout="Left",offsetP=[0.15,-0.1], scale=0.84
+			<Image="imgDexGiftsO",image="RW_Box.png",layout="Center">
+		>
+
+		
+		<Image9="imgdescribeGiftsO",image="tankuangneikuang3.png", relative="imgDexDGiftsO",layout="RightOut", offset=[16,-2]
+			<Layer="lynamed", fill=[0.18,0.3], layout="Left",step=[0,-0.7], offset=[0,0]
+				<Text="txNamedGiftsO",text="名称 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+			<Layer="lyname",fill=[0.6,0.3], layout="RightOut", relative="lynamed", offset=[5,0]
+				<Text="txNameGiftsO",text="材料",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycountd", fill=[0.18,0.3], layout="Left",step=[0,0.7], offset=[0,0]
+				<Text="txDexdGiftsO",text="数量 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycount",fill=[0.6,0.3], layout="RightOut", relative="lycountd", offset=[5,0]
+				<Text="txDexGiftsO",text="99",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+		>
+
+		<Layer="lydescribed",fill=[0.5,0.1], layout="Center", step=[0,0.5],offsetP=[0.05,0.02]
+			<Text="txdescribedGiftsO",text="描述", layout="Center", fontSize="fs_22",color="fc_8_">
+		>
+
+		<Layer="lyd", fill=[0.8,0.2], relative="lydescribed", layout="DownOut", offset=[0, 0]
+			<Text="txdescribeGiftsO",text="描述",layout="UpLeft", alignV="Top",fontSize="fs_22", size=[455,68],color="fc_6_">
+		>
+
+		<Layer="lyBt", fill=[0.6,0.15],layout="Down",offsetP=[0.05,-0.07]
+			<Button="btnSellGiftsO",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):onUseClick()", visible=0
+				<Text="txSellGiftsO",text="打开",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+			<Button="btnCostGiftsO",image="tankuanganniu.png",layout="Right",onClick="node:Parent(3):onBuyClick()", visible=0
+				<Text="txCostGiftsO",layout="Center", offset=[5,0]>
+				<Image="imgCostGiftsO",image="zuanshi.png",relative="txCostGiftsO",layout="LeftOut", offset=[-5,0], scale=0.5>
+			>
+			<Button="btnBackGiftsO",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):onBackClick()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txBackGiftsO",text="取消",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+				<Image="imgCancelGiftsO",image="guanbicha.png",layout="Center", visible = 0>
+			>
+		>
+	>
+>

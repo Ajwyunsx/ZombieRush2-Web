@@ -1,0 +1,17 @@
+<BattleFaildTip="bttleFaildTip"
+	<Image="bgImg", image="tankuang7.png", layout="Center", touch=1
+		<Image="titleImg", image="tankuangbiaoti.png", layout="Up", offset=[0,-25]
+			<Text="titleText", text="标题标题", fontSize=22, layout="Center", offset=[0,-8], color=[249,209,49]>
+		>
+		<Button="returnBtn", image="ftguanbi.png", layout="UpRight", offset=[10,-10], onClick="node:Parent(2):close()">
+		<Image="centerImg", image="guanggaobeijing1.jpg", relative="titleImg", layout="Down", step=[0,1], offset=[0,24]
+			<TableView="tbv", layout="Right", size=[230,208], offset=[-8,0], cell="vBattleFaildTipCell.vui">
+		>
+		<TimeText="timeText", text="限时优惠：2小时后消失", fontSize=20, color=[175,43,21], layout="UpOut", relative="centerImg", offset=[0,-4]>
+		<Button="rechargeBtn", image="ftanniu.png", layout="Down", offset=[0,-30]
+			<Layer="lytx", size=[40,25], layout="Left", offset=[70,0]
+				<Text="costText", text="9999元领取", color=[255,245,129], layout="Left", fontSize=18>
+			>
+		>
+	>
+>

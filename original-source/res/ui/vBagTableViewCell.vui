@@ -1,0 +1,73 @@
+<BagTableViewCell="bagTableViewCell",size=[683,151]
+	<Image="imgbg", image="huojia2.png", layout="Down">
+	<Layer="lyrBagCell1",size=[110,125], offset=[28,-39], touch=1,onClick="node:Parent():onStoreCellClick(1)"
+		<Image="imgItemBagC",image="baoxiang.png",layout="Center", offset=[0,0], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,25], layout="Right", offset=[-2,22]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,1]>
+		<Layer="lyname", size=[142,20], layout="Down"
+			<Text="txNameBagC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgTipBagC",image="zhujiemiantishipaopao.png", offset=[-10,5], layout="UpRight"
+				<Text="txTipBagC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrBagCell2",lock=true,size=[110,125], offset=[46.5,-39],step=[1,0], touch=1,onClick="node:Parent():onStoreCellClick(2)"
+		<Image="imgItemBagC",image="baoxiang.png",layout="Center", offset=[0,0], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,25], layout="Right", offset=[-2,22]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,1]>
+		<Layer="lyname", size=[142,20], layout="Down"
+			<Text="txNameBagC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgTipBagC",image="zhujiemiantishipaopao.png", offset=[-10,5], layout="UpRight"
+				<Text="txTipBagC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrBagCell3",lock=true,size=[110,125], offset=[66,-39],step=[2,0], touch=1,onClick="node:Parent():onStoreCellClick(3)"
+		<Image="imgItemBagC",image="baoxiang.png",layout="Center", offset=[0,0], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,25], layout="Right", offset=[-2,22]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,1]>
+		<Layer="lyname", size=[142,20], layout="Down"
+			<Text="txNameBagC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgTipBagC",image="zhujiemiantishipaopao.png", offset=[-10,5], layout="UpRight"
+				<Text="txTipBagC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrBagCell4",lock=true,size=[110,125], offset=[84.2,-39],step=[3,0], touch=1,onClick="node:Parent():onStoreCellClick(4)"
+		<Image="imgItemBagC",image="baoxiang.png",layout="Center", offset=[0,0], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,25], layout="Right", offset=[-2,22]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,1]>
+		<Layer="lyname", size=[142,20], layout="Down"
+			<Text="txNameBagC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgTipBagC",image="zhujiemiantishipaopao.png", offset=[-10,5], layout="UpRight"
+				<Text="txTipBagC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrBagCell5",lock=true,size=[110,125], offset=[102,-39],step=[4,0], touch=1,onClick="node:Parent():onStoreCellClick(5)"
+		<Image="imgItemBagC",image="baoxiang.png",layout="Center", offset=[0,0], fit=[-0.7,-0.7]>
+		<Layer="lycount", size=[39,25], layout="Right", offset=[-2,22]
+			<Text="textItemCount",text="18", fontSize="fs_22", layout="Right", color=[252,238,19]>
+		>
+		<Image="imgd", image="dianban1.png", layout="Down", offset=[-1,1]>
+		<Layer="lyname", size=[142,20], layout="Down"
+			<Text="txNameBagC",text="商城物品", color="fc_1_", fontSize="fs_18", layout="Center">
+		>
+		
+		<Image="imgTipBagC",image="zhujiemiantishipaopao.png", offset=[-10,5], layout="UpRight"
+				<Text="txTipBagC",text="",layout="Center", fontSize=15>
+		>
+	>
+>

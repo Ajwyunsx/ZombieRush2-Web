@@ -1,0 +1,117 @@
+<LevelDlg="levelDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch = 1>
+	
+	<Image="imgChapter", layout="Center", image="tongyongbeijingkuang.png", offset=[0,8]
+		<Image="imgMap", layout="Center", image="guanqiaditu.png", offset=[0,-7]>
+		<Image="imgChatTitle", layout="LeftUp", image="tongyongbiaotidi.png", offset=[74,-36]
+			<Image="imgChatTitleT", layout="Center", image="guanqia.png", offset=[0,-12],visible=0>
+			<Text="txChatTitleT", text="秘境小屋", layout="Center", offset=[0,-10], fontSize="fs_26", color="fc_3_">
+		>
+		<Layer="lyStarBg", layout="LeftUp", size=[120, 45], offset=[54, 29]
+			<Image="imgStar", image="guanqiadaxing.png", layout="Left", offset=[0,0]>
+			<Text="txStarhas", text="10/", relative="imgStar", layout="RightOut", offset=[5,0], color="fc_8_", fontSize="fs_26">
+			<Text="txStarAll", text="10", relative="txStarhas", layout="RightOut", offset=[0,0], color="fc_8_", fontSize="fs_26">
+		>
+
+        <Image = "imgLine1", image = "luxian1.png", offset = [82,114], visible=1>
+        <Image = "imgLine2", image = "luxian2.png", offset = [102,194], visible=0>
+        <Image = "imgLine3", image = "luxian3.png", offset = [140,98], visible=0>
+        <Image = "imgLine4", image = "luxian4.png", offset = [229,99], visible=0>
+        <Image = "imgLine5", image = "luxian5.png", offset = [264,178], visible=0>
+        <Image = "imgLine6", image = "luxian6.png", offset = [267,132], visible=0>
+        <Image = "imgLine7", image = "luxian7.png", offset = [373,131], visible=0>
+        <Image = "imgLine8", image = "luxian8.png", offset = [431,210], visible=0>
+        <Image = "imgLine9", image = "luxian9.png", offset = [476,156], visible=0>
+        <Image = "imgLine10", image = "luxian10.png", offset = [567,156], visible=0>
+        <Image = "imgLine11", image = "luxian11.png", offset = [658,218], visible=0>
+        <Image = "imgLine12", image = "luxian12.png", offset = [503,106], visible=0>
+        <Image = "imgLine13", image = "luxian13.png", offset = [647,228], visible=0>
+
+        <Layer = "lylevel1", size = [57, 62], offset=[69,205]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel2", size = [57, 62], offset=[129,152]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+           <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel3", size = [57, 62], offset=[194,68]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel4", size = [57, 62], offset=[261,138]
+            <Image = "imglevel", image = "weijiesuomixiang.png", layout = "Down">
+           <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel5", size = [57, 62], offset=[245,233]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+           <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel6", size = [57, 62], offset=[350,104]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel7", size = [57, 62], offset=[410,176]
+            <Image = "imglevel", image = "weijiesuomixiang.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel8", size = [57, 62], offset=[448,263]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel9", size = [57, 62], offset=[541,122]
+            <Image = "imglevel", image = "weijiesuoguanqia.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel10", size = [57, 62], offset=[631,180]
+            <Image = "imglevel", image = "weijiesuomixiang.png", layout = "Down">
+            <Image = "imgclevel", image = "dangqianguanqia.png", relative="imglevel", layout = "Center", level=-1, visible=0>
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+        <Layer = "lylevel11", size = [57, 62], offset=[480,52]
+            <Image = "imglevel", image = "weijiesuoboss.png", layout = "Down">
+            <Image = "imageStar1", image = "guanqiaxiaoxing2.png", layout = "UpLeft", step = [0, -1], offset = [2, 12]>
+            <Image = "imageStar2", image = "guanqiaxiaoxing2.png", layout = "UpOut", offset = [-1, 6]>
+            <Image = "imageStar3", image = "guanqiaxiaoxing2.png", layout = "UpRight", step=[0, -1], offset = [-4, 12]>
+        >
+	>
+
+    <Button="btBuy", layout="Right", offset=[-30,-130], image="shangdiantishianniu.png", onClick="node:Parent():OpenExtraShop()", visible=0
+        <Image = "imageStar3", image = "shangdiantishidi.png", layout = "DownOut", offset=[0,-10]
+            <Text="txtime", text="00:00:00后消失", layout="Center", fontSize=18, color="fc_3_">
+        >
+    >
+
+	<Button="backBtn", layout="RightUp", image="fanhui.png", relative="imgChapter", offset=[16,-33], onClick="node:Parent():onClose()">
+	<Button="nextBtn", layout="RightDown", image="xiayizhang.png", relative="imgChapter", offset=[-85,-15], scale=1, onClick="node:Parent():onNextChatper()",visible=0>
+	
+>

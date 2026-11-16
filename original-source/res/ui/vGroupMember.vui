@@ -1,0 +1,18 @@
+<GroupMember="groupMember"
+	<File="commonUi", fileName="vCommonMsgBox_A.vui", touch=1>
+	<Image9="topImg", image="tankuangdikuang1.png", size=[445,95], layout="Center", offset=[20,-30], relatove="bgImg"
+		<HeadImage="headImage", image="morentouxiang.png", size=[55,55], layout="Left", offset=[20,0]>
+		<Text="name", text="昵称 : ", fontSize=18, color=[70,30,0], layout="UpLeft", offset=[90,10]>
+		<Text="level", text="Lv1", fontSize=14, color=[157,78,15], layout="RightOut", relative="name", offset=[5,0]>
+		<Text="kill", text="杀敌 : ", fontSize=18, color=[70,30,0], relative="name", layout="LeftDownOut", offset=[0,0]>
+		<Text="creature", text="僵尸 : ", fontSize=18, color=[70,30,0], relative="kill", layout="LeftDownOut", offset=[0,0]>
+		<Text="idTxt", text="ID : ", fontSize=18, color=[70,30,0], relative="name", layout="Left", offset=[220,0]>
+		<Text="score", text="战功 : ", fontSize=18, color=[70,30,0], relative="idTxt", layout="LeftDownOut", offset=[0,0]>
+		<Text="power", text="战力 : ", fontSize=18, color=[70,30,0], relative="score", layout="LeftDownOut", offset=[0,0]>
+	>
+	<Button="btn0", image="lvsetongyonganniu.png", text="访问农场", fontSize=22, layout="RightUpOut", offset=[-20,0], relative="topImg">
+	<Button="btn1", image="tankuanganniu3.png", text="", layout="DownOut", relative="topImg", offset=[-120,15], fontSize=22>
+	<Button="btn2", image="tankuanganniu3.png", text="", layout="DownOut", relative="topImg", offset=[120,15], fontSize=22>
+	<Button="btn3", image="tankuanganniu3.png", text="取消", layout="DownOut", relative="btn1", offset=[0,15], onClick="node:Parent(1):doPop()", fontSize=22>
+	<Button="btn4", image="tankuanganniu3.png", text="聊天", layout="DownOut", relative="btn2", offset=[0,15], onClick="node:Parent(1):onChatClick()", fontSize=22>
+>

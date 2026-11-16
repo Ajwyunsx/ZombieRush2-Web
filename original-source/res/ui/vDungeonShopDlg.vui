@@ -1,0 +1,62 @@
+<DungeonShopDlg="dungeonShopDlg"
+	<Armature="artUp", jsonName="boxArmature", layout="Center", offset = [120,-135], scale=0.75>
+	<Image9="imgBackGroundGiftsO",image="tankuang4.png",layout="Center",touch=1, offset=[-13,-5]
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,40]
+			<Text="txTitle", text="美国队长", layout="Center", color=[255,255,0],fontSize="fs_22">
+		>
+		
+		
+			
+			<Image="imgDexDGiftsO",image="tankuangneikuang1.png",layout="Left", offset=[90,-20], scale=0.84
+				<Image="imgDexGiftsO",image="RW_Box.png",layout="Center", fit=[-1,0]>
+				<Text="txDexGiftsO",text="描述",layout="DownRight",fontSize="fs_18", offset=[-5,-5],visible=0>
+			>
+
+	<Image9="imgdescribeGiftsO",image="tankuangneikuang3.png", relative="imgDexDGiftsO",layout="RightOut", offset=[12,-2]
+			<Layer="ly1", size=[40,20], layout="LeftUp", offset=[20,8]
+				<Text="txDexGiftsO1",text="商品名称:",layout="Left", fontSize=14,color="fc_8_">
+			>
+			<Layer="ly2", size=[40,20], relative="ly1",layout="DownOut", offset=[0,3]
+			<Text="txDexGiftsO2",text="僵尸名称:",layout="Left",fontSize=14,color="fc_8_">
+			>
+			<Layer="ly3", size=[40,20], relative="ly2",layout="DownOut", offset=[0,3]
+			<Text="txDexGiftsO3",text="价    格:",layout="Left",fontSize=14,color="fc_8_">
+			>
+
+			
+			
+		>
+
+		<Layer="lyd", size=[40,30], relative="imgDexDGiftsO", layout="DownOut", offset=[-25, 7]
+			<Text="txdescribe",text="描述",layout="UpLeft", alignV="Top",fontSize=14, size=[438,67],color="fc_6_">
+		>
+		
+		<Layer="lydecs2", size=[40,30], relative="imgdescribeGiftsO", layout="UpOut", offset=[-33,-6]
+			<Text="txdescribe2",text="5折优惠",layout="LeftDown",color="fc_11_",fontSize="fs_22">
+		>
+		
+		<Layer="lydecs3", size=[40,30],layout="RightOut",relative="lydecs2", offset=[45,0]
+			<Text="txdescribe3",text=", 仅限本窗口有效。",layout="LeftDown",color="fc_8_",fontSize=14>
+		>
+		
+		<Layer="lydecs1", size=[40,30],layout="LeftUp", step=[0,-1], relative="lydecs2",offset=[0,-1]
+			<Text="txdescribe1",text="换上更厉害的僵尸继续战斗吧!",layout="LeftDown",color="fc_8_",fontSize=14>
+		>
+		
+		<Button="btnCostGiftsO",image="tankuanganniu.png",layout="Down",offset=[0,-45],onClick="node:Parent(2):CheckBuy()", visible=0
+				<Text="txCostGiftsO",layout="Center", offset=[5,0],fontSize=22, color=[255,255,0]>
+				<Image="imgCostGiftsO",image="icon_zuanshi.png",relative="txCostGiftsO",layout="LeftOut", offset=[-5,0], scale=0.5,visible=0>
+		>
+		
+		<Layer="lyBt", size=[330,42], layout="Down", offset=[15,-30]
+			<Button="btnCostGiftsO1",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):CheckBuy()"
+				<Text="txSellGiftsO1",text="出售",layout="Center", fontSize="fs_22", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+			
+			<Button="btnBackCrystalO",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):onClose()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txBackCrystalO",text="取消",layout="Center", fontSize="fs_22", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+				<Image="imgCancelCrystalO",image="guanbicha.png",layout="Center", visible = 0>
+			>
+		>
+	>		
+>

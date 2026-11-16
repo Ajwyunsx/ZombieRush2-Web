@@ -1,0 +1,34 @@
+<PlantBagDlg="plantBagDlg"
+	<Image9="imgBackGroundBag",image="tankuang4.png",layout="Center", offset=[-15,-5],touch=1, level=2
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,40]
+			<Text="txTitleBag", text="选择植物", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+
+		<Layer="lydecs", size=[140,30], layout="UpRight", offset=[-50,45]
+			<Text="txdecs",text="点击植物即可种植",layout="Right", color="fc_7_", fontSize="fs_18">
+		>
+	
+		
+		<Layer="lyShowBag",layout="Center",size=[445,176],offset=[30,2]
+			<TableView="tbPlantBag",layout="Center",size=[445,176],cell="vPlantViewCell.vui",visible=1>
+			<Text="txNonePlantBag",text="您现在没有植物可以种植，可以通过抽卡或挑战关卡获得新的植物。",layout="Center", size=[400, 100], fontSize="fs_26", color="fc_8_",visible=0>
+		>
+		
+		<Button="btnAllPlantBag",image="cebianyekaxuanzhong.png",layout="UpRight",step=[1,0],offset=[-5,5],onClick="node:Parent(2):ChageTable('ALLPLANT')",visible=0
+			<Text="txTextBag",text="全部",layout="Center",size=[30,60],offset=[0,-5],color=[240,149,15]>
+		>
+		<Button="btnDefBag",image="cebianyeka.png",layout="UpRight",step=[1,1],offset=[-5,10],onClick="node:Parent(2):ChageTable('PLANTWAR')",visible=0
+			<Text="txTextBag",text="防守",layout="Center",size=[30,60],offset=[0,-5],color=[95,104,154]>
+		>
+		<Button="btnResBag",image="cebianyeka.png",layout="UpRight",step=[1,2],offset=[-5,20],onClick="node:Parent(2):ChageTable('PLANTRES')",visible=0
+			<Text="txTextBag",text="资源",layout="Center",size=[30,60],offset=[0,-5],color=[95,104,154]>
+		>
+		
+		<Button="btnCloseBag",image="tankuanganniu3.png",layout="Down",offset=[21,-31],onClick="node:Parent(2):onbtnCloseClick()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txCancel", text="取 消",layout="Center", offset=[0,-2], fontSize="fs_26", shadow=[2,-2], effectColor=[0,0,0,127], color="fc_2_">
+				<Image="imgCloseWordBag",image="quxiao.png",layout="Center", visible=0>
+		>
+	>
+
+	<Armature="artUp", jsonName="boxArmature", layout="Center", relative="imgBackGroundBag", offsetP = [0.18,-0.3], scale=0.75, level=1>
+>

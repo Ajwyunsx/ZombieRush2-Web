@@ -1,0 +1,6 @@
+﻿<WorldChatNoticeLayer="worldChatNoticeLayer", size=[380,28], offset=[0,100]
+	<Image9="imgWorldChatNotice", image="gonggaolan.png", layout="Center", size=[380,28]>
+	<Layer="layWorldChatNoticeLayer", layout="Center", size=[340, 28], clip=1
+		<Text="texWorldChatNotice", layout="RightOut", fontSize=15, text="", effectColor=[0,0,0], outline=1>
+	>
+>

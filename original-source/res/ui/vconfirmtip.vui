@@ -1,0 +1,14 @@
+<ConfirmTip="confirmtip", level=1000
+	<Image9="showtipBg", image="xiaotankuang1.png", layout="Center"
+		<Text="texMsg", layout="Center", size=[380,120], align="Center", text=" ", color=[80,30,0], offset=[0,-25], fontSize="fs_18">
+
+		<Layer="layBtn", fill=[1,0.2], relative="texMsg", layout="Down", step=[0,1], offset=[0,-8]
+			<Button="btnOK", image="tankuanganniu3.png", layout="Center", step=[0.6,0], offset=[0,0], onClick="node:Parent(3):onOKAction()"
+				<Text="okTip", text="ok", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[1.5,-1.5], effectColor=[0,0,0,127], fontSize="fs_26">
+			>
+			<Button="btnCancel", image="tankuanganniu3.png", layout="Center", step=[-0.6,0], offset=[0,0], onClick="node:Parent(3):onCancelAction()"
+				<Text="cancelTip", text="cancel", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[1.5,-1.5], effectColor=[0,0,0,127], fontSize="fs_26">
+			>
+		>
+	>
+>

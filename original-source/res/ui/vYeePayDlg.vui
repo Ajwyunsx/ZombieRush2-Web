@@ -1,0 +1,26 @@
+<YeePayDlg="yeePayDlg", touch=1
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center", offset=[0,8]
+		<Image="rateTipImg", image="rate10.png", layout="RightUpOut", offset=[-100,-5], scale=0.8>
+
+		<Image="tbvBgImg", image="chongzhiduanxintiao.png", layout="Center", offset=[0,-55]
+			<TableView="tbv", layout="Center", size=[633,154], cell="vNotePayDlgCell.vui">
+
+			<Text="yp_noText", text="充值卡序列号:", fontSize=18, color=[90,40,0], layout="LeftDownOut", offset=[10,22]>
+			<Editor="rc_cardIdEditor", bgImage="chongzhishurukuang.png", relative="yp_noText", fontSize=30, size=[196,34], fontColor=[90,40,0], inputMode=2, layout="RightOut", offset=[0,0], placeHolder="请输入充值卡序列号", pFontColor=[163,125,84] >
+			<Text="yp_pswText", text="充值卡密码:", fontSize=18, color=[90,40,0], layout="DownOut", offset=[60,22]>
+			<Editor="rc_cardPswEditor", bgImage="chongzhishurukuang.png", fontSize=30, fontColor=[90,40,0], size=[196,34], inputMode=2, relative="yp_pswText", layout="RightOut", offset=[0,0], placeHolder="请输入充值卡密码", pFontColor=[163,125,84]>
+			
+		>
+		<Text="tipText", text="充值卡面额", layout="UpOut", relative="tbvBgImg", offset=[0,0], color=[90,40,0]>
+
+		<Button="sureBtn", image="anniu7.png", topImage="queding.png", layout="Down", offset=[0,-60], onClick="node:Parent(2):onYeePayBtnClick()">
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="congzhi.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+
+
+>

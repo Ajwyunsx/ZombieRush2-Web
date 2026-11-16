@@ -1,0 +1,11 @@
+<WorldMessageCell="WorldMessageCell", size=[100,50], fill=[1,0]
+	<HeadImage="imgHead", image="morentouxiang.png", layout="LeftUp", size=[45,45], offset=[5,0], touch=1, onClick="node:Parent(1):headImageAction()">
+	
+	<Text="txtVIPTitle", layout="DownOut", relative="imgHead", text="", font="vipLevelNumber.fnt", offset=[0,5]>
+
+	
+	<Text="texNick", relative="imgHead", layout="RightUp", offset=[0,0], text="", color=[129,84,51], fontSize="fs_18">
+	<Image9="imgContextBG", layout="RightOut", relative="texNick", image="liaotiankuang2.png", size=[100,50], capInset=[14,25,40,20], offset=[5,50]>
+	<Text="texTime", relative="texNick", layout="RightOut", offset=[7,0], text="", color=[188,155,110], fontSize="fs_14", align="Left">
+	<Text="texContext", relative="imgContextBG", layout="Center", text="", fontSize="fs_18", align="Left">
+>

@@ -1,0 +1,45 @@
+﻿<SearchFriendDlg="searchFriendDlg"
+	<Image9="imgSearchBg", layout="Center", fill=[1,1], image="tongyongbeijing.jpg", touch=1>
+	<Image="imgSearch", layout="Center", image="tongyongbeijingkuang.png", offsetP=[0,0.02]
+		<Image="imgSearchTitle", layout="LeftUp", image="tongyongbiaotidi.png",step=[0.4,-0.55],offset=[0,0]
+			<Image="imgSearchTitleT", layout="Center", image="chazhaowanjia.png", offset=[0,-10]>
+		>
+		<Button="imgDOpen", layout="RightUp", image="fanhui.png", step=[0.25,-0.5], onClick="node:Parent(2):doPop()">
+		
+		<Layer="lyrFindFriend",fill=[0.55,0.8],offsetP=[0,-0.03],layout="Center",visible=1
+			<Layer="lyrIDChatBg",layout="Up", fill=[1,0.15],step=[0,1], offsetP=[-0.04,0]
+				<Editor="edtIDChatBg",placeHolder="请输入玩家游戏ID", offset=[57,0], pFontSize=21, pFontColor=[157,119,80], fontSize="fs_22", maxLength = 18, align="Left", fontColor=[157,119,80],bgImage="chazhaohaoyoushurukuang.png", layout="Center", size=[235,37]>
+				<Text="txIDChatBg",text="玩家ID :",layout="LeftOut",relative="edtIDChatBg", offset=[-15,-3], fontSize="fs_22", color=[96,58,7]>
+			>
+			<Layer="lyrNameChatBg",layout="DownOut",fill=[1,0.15],step=[0,0.4],relative="lyrIDChatBg",offset=[0,0]
+				
+				<Editor="edtNameChatBg",placeHolder="请输入玩家昵称", offset=[57,0], pFontSize=21, pFontColor=[157,119,80], fontSize="fs_22", maxLength = 18, align="Left", fontColor=[157,119,80],bgImage="chazhaohaoyoushurukuang.png",text="",layout="Center",size=[235,37]>
+				<Text="txNameChatBg",text="玩家昵称 :",layout="LeftOut",relative="edtNameChatBg", offset=[-15,-3], fontSize="fs_22", color=[96,58,7]>
+			>
+			<Layer="lyrSexChatBg",layout="DownOut", fill=[1,0.15], step=[0,0.3], relative="lyrNameChatBg",offset=[0,0]
+
+				<CheckBox="btnMChatFriendl", image="xuanzekuangdi.png",layout="Center",step=[-1.25,0],offset=[2,0],onClick="node:Parent(4):onSexClick(2)"
+					<Image="imgManChatBg",image="xuangzhong.png",layout="Center", visible=0>
+					<Text="txManChatBg",text="男",layout="Right", fontSize="fs_22", step=[1,0], offset=[5,0], color=[96,58,7]>
+				>
+				<CheckBox="btnWChatFriendl", image="xuanzekuangdi.png",layout="Center",step=[1.0,0],onClick="node:Parent(4):onSexClick(1)"
+					<Image="imgWanChatBg",image="xuangzhong.png",layout="Center", visible=0>
+					<Text="txWanChatBg",text="女",layout="Right", fontSize="fs_22", step=[1,0], offset=[5,0], color=[96,58,7]>
+				>
+				<CheckBox="btnNChatFriendl", image="xuanzekuangdi.png",layout="Center",step=[3.2,0],offset=[0,0],onClick="node:Parent(4):onSexClick(3)"
+					<Image="imgNoneChatBg",image="xuangzhong.png",layout="Center", visible=0>
+					<Text="txNoneChatBg",text="不限",layout="Right", fontSize="fs_22", step=[1,0], offset=[5,0], color=[96,58,7]>
+				>
+				<Text="txSexChatBg",text="玩家性别 :",layout="LeftOut",relative="btnMChatFriendl", offset=[-15,-3], fontSize="fs_22", color=[96,58,7]>		
+			>
+
+			<Button="btnDel", layout="Down", step=[0,-0.5],offset=[10,0], image="anniu7.png", onClick="node:Parent(3):ReqSearchListInfo()"
+				<Image="imageInput", image="chazhao.png", layout="Center", offset=[3,-2]>
+			>
+		>
+		<Layer="lyrShowSearch",size=[600,295],offset=[0,-10],layout="Center",visible=0
+			<TableView="tbSearchS",layout="Center",size=[600,295],cell="vSearchCell.vui",refreshNum=1,upText="上拉刷新",visible=1,touch=1>
+			<Text="txTipSChatBg",text="没有搜索到符合条件的信息",layout="Center",fontSize="fs_18",visible=0>
+		>
+	>
+>

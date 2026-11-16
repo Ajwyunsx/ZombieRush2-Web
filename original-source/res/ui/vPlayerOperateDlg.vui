@@ -1,0 +1,36 @@
+<PlayerOperateDlg="VPlayerOperateDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundPlayerO", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image9="imgBackGroundPlayerO",image="tankuang4.png",layout="Center",touch=1,offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.11]
+			<Text="txTitlePlayerO", text="选择操作", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+	>
+	<Image9="imgShowPlayerO",image="tankuangneikuang2.png",relative="imgBackGroundPlayerO",layout="Center",offsetP=[0.03,-0.06],offset=[3,0]>
+		<HeadImage="imgPlantDexPlayerO",image="morentouxiang.png",relative="imgShowPlayerO", size = [56,56],layout="Left",offset=[25,0]>
+		<Text="txNamePlayerO",text="杰克", fontSize="fs_22",layout="RightOut", step=[0,-1],relative="imgPlantDexPlayerO",offset=[15,0], color="fc_8_">			
+		<Text="txLevelPlayerO",text="13",fontSize="fs_22",layout="RightOut",relative="txNamePlayerO",offset=[15,0],color="fc_4_">
+		<Text="txSexPlayerO",text="女",fontSize="fs_22",layout="RightOut",step=[0,0],relative="imgPlantDexPlayerO",offset=[15,0], color="fc_8_">
+		<Text="txIDPlayerO",text="1111",fontSize="fs_22",layout="RightOut",step=[0,1],relative="imgPlantDexPlayerO",offset=[15,0], color="fc_8_">
+
+		<Button="btnfwPlayerO",image="tankuanganniu2.png",relative="imgShowPlayerO",layout="DownRight", offset=[-12,-12],onClick="node:Parent():onLookFarmClick()",visible=0
+			<Text="txfwPlayerO",text="访问农场",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+
+	<Layer="lyrBt3PlayerO",size=[300,95],relative="imgBackGroundPlayerO",layout="Down", offsetP=[0.03,-0.08]
+		<Button="btnChatPlayerO",image="tankuanganniu3.png",layout="DownRight",onClick="node:Parent(2):onChatClick()"
+			<Image="imgOKPlayerO",image="liaotian.png",layout="Center",visible=0>
+			<Text="txOKPlayerO",text="聊天",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="btnLookFarmPlayerO",image="tankuanganniu3.png",layout="UpRight",onClick="node:Parent(2):onLookFarmClick()"
+			<Text="txLookFarmPlayerO",text="访问农场",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="btnAddOrDelPlayerO",image="tankuanganniu3.png",layout="UpLeft",onClick="node:Parent(2):onAddOrDelClick()"
+			<Image="imgAddOrDelPlayerO",image="shanchu.png",layout="Center",visible=0>
+			<Text="txAddOrDelPlayerO",text="加为好友",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="btnChannelPlayerO",image="tankuanganniu3.png",layout="DownLeft",onClick="node:Parent(2):onChannelClick()"
+			<Image="imgCancelPlayerO",image="quxiao.png",layout="Center",visible=0>
+			<Text="txCancelPlayerO",text="取消",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+	>
+>

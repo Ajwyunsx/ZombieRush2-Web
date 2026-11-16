@@ -1,0 +1,24 @@
+<TableViewCell="rewardTipCell", size=[360,70]
+	<Layer="layoutLayer", size=[360,70], layout="Down"
+		<Layer="bgLayer", size=[360,70], layout="Center"
+			<Layer="itemLayer1", size=[180,70], layout="Left"
+				<Image="itemBgImg", image="rewarditem.png", layout="Center"
+					<Image="iconBg", image="rewardicon.png", layout="Left", offset=[5,-1]
+						<Image="itemImg", image="shard_AdultLady.png", fit=[-0.8,-0.8], layout="Center">
+						<Text="itemName", text="物品名称六字", color=[90,40,0], fontSize=15, layout="RightOut", offset=[5,-12]>
+						<Text="countText", text="数量:99999", fontSize=15, color=[90,40,0], layout="RightOut", offset=[5,12]>
+					>
+				>
+			>
+			<Layer="itemLayer2", size=[180,70], layout="Right"
+				<Image="itemBgImg", image="rewarditem.png", layout="Center"
+					<Image="iconBg", image="rewardicon.png", layout="Left", offset=[5,-1]
+						<Image="itemImg", image="shard_AdultLady.png", fit=[-0.8,-0.8], layout="Center">
+						<Text="itemName", text="物品名称六字", color=[90,40,0], fontSize=15, layout="RightOut", offset=[5,-12]>
+						<Text="countText", text="数量:99999", fontSize=15, color=[90,40,0], layout="RightOut", offset=[5,12]>
+					>
+				>
+			>
+		>
+	>
+>

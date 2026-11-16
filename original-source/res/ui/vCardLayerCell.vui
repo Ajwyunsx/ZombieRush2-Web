@@ -1,0 +1,21 @@
+<TableViewCell="cardCell", size=[135,315]
+	<Image9="CardItem", image="kapiandi.png", layout="Center", size=[135,315]
+		<Image="cardBtn", image="carddiban5.png", layout="Down", offset=[0,-150], touch=1
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="99", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="nameText", text="僵尸", layout="Center", fontSize=14, offset=[0,-2]>
+			>
+		>
+		<Text="tipText", text="分解获得", fontSize=18, layout="DownOut", offset=[0,10], relative="cardBtn", color=[90,40,0]>
+		<Image="tipImg", image="shuzibeijing.png", layout="DownOut", offset=[0,10], relative="tipText"
+
+			<Image="suitIcon", image="suipian.png", layout="Left", fit=[0,-0.8], offset=[10,0]>
+
+			<Text="suitCount", text="x5", fontSize=18, color=[90,40,0], layout="Right", offset=[-10,0]>
+		>
+		<Button="resolveBtn", image="lvsetongyonganniu.png", layout="Down", topImage="fenjiezi.png", offset=[0,-20] >
+	>
+>

@@ -1,0 +1,30 @@
+<AlterPhotoDlg="alterPhotoDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundAlterPhoto", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image="imgBackGroundAlterPhoto", image="tankuang5.png", layout="Center", touch=1, offset=[-10,-14]
+		<Layer="lyTitle", fill=[0.5,0.25], layout="UpLeft"
+			<Text="txTitle", text="修改头像", layout="Down", color=[255,255,0], fontSize=26>
+		>
+		<Layer="lyTitle2", fill=[1,0.25], layout="UpLeft", visible=0>
+		<Image9="imgShowAlterPhoto", image="tankuangdikuang1.png", relative="lyTitle2", layout="Down", size=[100,100], fill=[0.78,0.6], step=[0,1], offset=[20,8]
+			<Layer="lyrFirstAlter", fill=[1,1], visible=1
+				<Layer="laySet1", size=[100,30], fill=[0.4,1], layout="Left"
+					<HeadImage="imgHeadAlterPhoto", size=[130,130], layout="Left", offset=[20,0], defaultImage="morentouxiang.png">	
+				>
+				<Layer="laySet2", size=[100,30], fill=[0.6,1], layout="Right", offset=[-8,0]
+					<Button="btnCameraAlterPhoto", image="tankuanganniu3.png", layout="Left", step=[0,-1], offset=[0,8], onClick="node:Parent(5):onCameraClick()"
+						<Text="imgCameraAlterPhoto", text="照相机", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+					>
+					<Button="btnPictrueAlterPhoto", image="tankuanganniu3.png", layout="Right", step=[0,-1], offset=[0,8], onClick="node:Parent(5):onPictrueClick()"
+						<Text="imgPictrueAlterPhoto", text="图片库", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+					>
+					<Button="btnSaveAlterPhoto", image="tankuanganniu3.png", layout="Right", step=[0,1], offset=[0,-8], onClick="node:Parent(5):onSaveClick()"
+						<Text="imgOKAlterPhoto", text="保存", image="queding.png", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+					>
+					<Button="btnCancelAlterPhoto", image="tankuanganniu3.png", layout="Left", step=[0,1], offset=[0,-8], onClick="node:Parent(5):onCloseClick()"
+						<Text="imgCancelAlterPhoto", text="取消", image="quxiao.png", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+					>
+				>
+			>
+		>
+	>
+>

@@ -1,0 +1,59 @@
+<CardLevelUpDlg="cardLevelUpDlg"
+	
+	<Image9="bgImg",image="tankuang8.png",layout="Center",touch=1, offset=[-13,-8], level=2
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,60]
+			<Text="titleText", text="卡牌升星", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+
+	
+		<Image9="botImg", image="tankuangdikuang1.png", size=[439,108], layout="Up", offsetP=[0.04,0.264]
+			<Image="jiantouImg", image="shengxingjiantou.png", layout="Center">
+			<Image="leftCardImg", image="carddiban1.png", layout="Left", offset=[60,0], fit=[0,-0.9]
+				<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-15], fit=[-0.9,-0.9]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+				
+				<Image="cardNameBg", image="kabeilou.png", layout="Down"
+					<Text="cardName", text="僵尸名字六字", layout="Center", fontSize="fs_18", offset=[0,-2], color=[249,247,219]>
+				>
+			>
+			<Image="rightCardImg", image="carddiban1.png", layout="Right", offset=[-60,0], fit=[0,-0.9]
+				<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-15], fit=[-0.9,-0.9]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+				
+				<Image="cardNameBg", image="kabeilou.png", layout="Down"
+					<Text="cardName", text="僵尸名字六字", layout="Center", fontSize="fs_18", offset=[0,-2], color=[249,247,219]>
+				>
+			>
+		>
+		<Text="changeTip", text="升星变化", fontSize="fs_14", color=[70,30,0], layout="DownOut", relative="botImg", offset=[0,1]>
+		<Text="descText", text="升星描述", fontSize="fs_14", color=[160,120,80], size=[439,65], layout="DownOut", offset=[0,1], relative="changeTip", alignV="Up">
+		<Text="conditionTip", text="升星条件", fontSize="fs_14", color=[70,30,0], layout="DownOut", relative="descText">
+		<Layer="costLayer", fill=[0.66,0.052], offset=[-20,0], layout="DownOut", relative="conditionTip"
+			<Image="conditionIcon1", image="icon_basecamp.png", layout="Left", fit=[0,-1]>
+			<Text="conditionText1", text="需要庄园99级", fontSize="fs_14", color=[90,40,0], size=[130,30], layout="RightOut", relative="conditionIcon1">
+
+			<Image="conditionIcon2", image="icon_daojishi_S.png", fit=[0,-1], offsetP=[0.39,0]>
+			<Text="conditionText2", text="24小时59分", fontSize="fs_14", color=[90,40,0], size=[110,30], layout="RightOut", relative="conditionIcon2">
+
+			<Image="conditionIcon3", image="icon_basecamp.png", fit=[0,-1], offsetP=[0.65]>
+			<Text="conditionText3", text="9999万", fontSize="fs_14", color=[90,40,0], size=[100,30], layout="RightOut", relative="conditionIcon3">
+
+			<Image="conditionIcon4", image="icon_basecamp.png", layout="Right", fit=[0,-1]>
+			<Text="conditionText4", text="9999万", fontSize="fs_14", color=[90,40,0], size=[100,30], layout="RightOut", relative="conditionIcon4">
+		>
+		<Layer="lybt", fill=[0.57,0.1], layout="Down", offsetP=[0.047,-0.057]
+			<Button="cancelBtn", image="tankuanganniu3.png", layout="Left", onClick="node:Parent(3):doPop()"
+				<Text="cancelTip", text="取消", fontSize="fs_26", color=[255,244,186], offset=[0,-3], shadow=[2,-2], layout="Center", effectColor=[0,0,0,127]>
+			>
+			<Button="sureBtn", image="tankuanganniu3.png", layout="Right"
+				<Text="cancelTip", text="升星", fontSize="fs_26", color=[255,244,186], offset=[0,-3], shadow=[2,-2], layout="Center", effectColor=[0,0,0,127]>
+			>
+		>
+	>
+
+	<Armature="artUp", jsonName="boxArmature", layout="Center", relative="bgImg", offsetP = [0.18,-0.328], scale=0.75, level=1>
+>

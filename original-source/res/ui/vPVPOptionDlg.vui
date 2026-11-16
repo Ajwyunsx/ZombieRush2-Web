@@ -1,0 +1,53 @@
+<PVPOptionDlg="pvpOptionDlg", touch=1
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg">
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center", offset=[0,18]>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[100,0]
+		<Image="titliText", image="lueduo3.png", layout="Center", offset=[5,-8]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+	<Image="sunBgImg", image="henlandi.png", layout="Up", offset=[-10,10]
+		<Image="sunImg", image="icon_jinbi.png", layout="Left", offset=[-5,-3], fit=[0,-1]>
+		<Text="sunNum", text="9999", fontSize=18, layout="Right", offset=[-20,0], color=[255,255,0]>
+	>
+	<Image="vcoinBgImg", image="henlandi.png", layout="Up", offset=[250,10]
+		<Image="vcoinImg", image="icon_zuanshi.png", layout="Left", offset=[-5,-3], fit=[0,-1]>
+		<Text="vcoinNum", text="9999", fontSize=18, layout="Right", offset=[-20,0], color=[255,255,0]>
+	>
+	<Image="coinBgImg", image="henlandi.png", layout="Up", offset=[120,10]
+		<Image="coinImg", image="icon_yibi.png", layout="Left", offset=[-5,-3], fit=[0,-1]>
+		<Text="coinNum", text="9999", fontSize=18, color=[255,255,0], layout="Right", offset=[-20,0]>
+	>
+	<Image="optionBgImg", image="lueduoqianye.png", layout="Center", offset=[0,8], level=100
+		<Image="defIcon", image="dun3.png", layout="RightUpOut", offset=[-140,8]
+			<Text="defCount", text="99", fontSize=15, color=[255,0,0], layout="RightOut", offset=[5,0]>
+			<Text="defLimit", text="/99", fontSize=15, color=[86,56,40], layout="RightOut", relative="defCount">
+
+		>
+		<Image="atkIcon", image="wuqi3.png", layout="RightUpOut", offset=[-70,8]
+			<Text="atkCount", text="99", fontSize=15, color=[255,0,0], layout="RightOut", offset=[5,0]>
+			<Text="atkLimit", text="/99", fontSize=15, color=[86,56,40], layout="RightOut", relative="atkCount">
+
+		>
+		<File="robOption", fileName="vRobOptionLayer.vui", visible=0>
+		<File="battlefieldOption", fileName="vBattlefiledLayer.vui", visible=0>
+		<File="battleLogDlg", fileName="vBattleLogDlg.vui", visible=0>
+		<File="friendOption", fileName="vPvpFriendLayer.vui", visible=0>
+		<File="enemyOption", fileName="vPvpEnemyLayer.vui", visible=0>
+	>
+	<Image="option1", image="pvpxuanxiang1.png", relative="optionBgImg", layout="LeftUpOut", offset=[30,20], onClick="node:Parent(1):onOptionBtnClick(1)", touch=1, level=110
+		<Image="ttopImage", image="lueduoxuanze1.png", layout="Center">
+	>
+	<Image="option2", image="pvpxuanxiang2.png", touch=1, layout="LeftUpOut", relative="optionBgImg", offset=[125,20], onClick="node:Parent(1):onOptionBtnClick(2)", level=90
+		<Image="ttopImage", image="lueduoweixuan2.png", layout="Center">
+	>
+	<Image="option3", image="pvpxuanxiang2.png", touch=1, layout="LeftUpOut", relative="optionBgImg", offset=[220,20], onClick="node:Parent(1):onOptionBtnClick(3)", level=90
+		<Image="ttopImage", image="lueduoweixuan3.png", layout="Center">
+	>
+	<Image="option4", image="pvpxuanxiang2.png", touch=1, layout="LeftUpOut", relative="optionBgImg", offset=[315,20], onClick="node:Parent(1):onOptionBtnClick(4)", level=90
+		<Image="ttopImage", image="lueduoweixuan4.png", layout="Center">
+	>
+	<Image="option5", image="pvpxuanxiang2.png", touch=1, layout="LeftUpOut", relative="optionBgImg", offset=[405,20], onClick="node:Parent(1):onOptionBtnClick(5)", level=90
+		<Image="ttopImage", image="lueduoweixuan5.png", layout="Center">
+	>
+>

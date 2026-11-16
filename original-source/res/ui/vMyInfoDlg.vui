@@ -1,0 +1,101 @@
+<MyInfoDlg="myInfoDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+	
+	<Image="imgShowMyI", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34], visible=0
+		<Layer="layHeadMy", layout="Left", fill=[0.35,1]
+			<Image="imgHeadDMyI", image="xiangkuangdi1.png", layout="Right", offset=[0,-20], visible=0>
+			<HeadImage="imgHeadMyInfoDlg", size=[144,144], relative="imgHeadDMyI", layout="Center", defaultImage="morentouxiang.png", touch=1, onClick="node:Parent(3):onHeadCClick()">
+			<Image="imgHeadDMySet", image="touxiangshezhi.png", relative="imgHeadMyInfoDlg", layout="DownRight", offset=[-6,-6]>
+			<Layer="lyid", layout="DownOut", size=[145,40], relative="imgHeadDMyI", offset=[0,3]
+				<Text="txIDMyI", text="ID : 1242341234", layout="Up", fontSize=20, color="fc_6_">
+			>
+		>
+		
+		<Layer="layMyInfo", layout="Right", fill=[0.65,1]
+			<Layer="lyname", size=[145,44], fill=[1,0], layout="Left", step=[0,-2.5]
+				<Text="txNameMyI", text="账号 : ", layout="Left", offset=[16,0], fontSize=18, color="fc_7_">
+				<Editor="edNameMyI", bgImage="gerenxinxixiugaikuang.png", text="", pFontSize=18, pFontColor=[157,119,80], fontSize=18, maxLength=18, align="Left", fontColor=[157,119,80],layout="Right", size=[232,45], step=[1,0], relative="txNameMyI", offset=[10,0], visible=0>
+				<Text="txNameVMyI", text="v126465565", layout="Right", fontSize=18, step=[1,0], relative="txNameMyI", offset=[10,0], color=[95,58,8]>
+
+				<Button="btnNameMyI", image="anniu10.png", layout="Right", step=[-1,0], onClick="node:Parent(4):onNameClick()"
+					<Image="imgNameMyI", image="xiugai.png", layout="Center">
+				>
+			>
+			<Layer="lynick", size=[145,44], fill=[1,0], relative="lyname", layout="DownLeft", offset=[0,0], step=[0,1.5]
+				<Text="txNickMyI", text="昵称 : ", layout="Left", offset=[16,0], fontSize=18, color="fc_7_">
+				<Editor="edNickMyI", bgImage="gerenxinxixiugaikuang.png", text="", pFontSize=18, fontSize=18, maxLength=18, align="Left", fontColor=[157,119,80], layout="Right", size=[180,32], step=[1,0], relative="txNickMyI", offset=[10,0], visible=0>
+				<Text="txNickVMyI",text="", layout="Right", fontSize=18, step=[1,0], relative="txNickMyI", offset=[10,0], color=[95,58,8]>
+
+				<Button="btnNickMyI", image="anniu10.png", layout="Right", step=[-1,0], onClick="node:Parent(4):onNickClick()"
+					<Image="imgNickResMyI", image="icon_zuanshi_S.png", layout="Left", offset=[0,0], visible=0
+						<Text="txNickResMyI", layout="Down", fontSize=22>
+					>
+					<Image="imgNickMyI", image="xiugai.png", layout="Center">
+				>
+			>
+			<Layer="lysex", size=[145,44], fill=[1,0], relative="lynick", layout="DownLeft", offset=[0,0], step=[0,1.5]
+				<Text="txSexMyI", text="性别 : ", layout="Left", offset=[16,0], fontSize=18, color="fc_7_">
+				<Layer="lyrCheckSex", layout="Right", size=[200,40], step=[1,0], relative="txSexMyI", offset=[20,0], visible=0
+					<CheckBox="cbxSexMMyI", image="genrenziliaoxuanzedi.png", layout="Left", onClick="node:Parent(5):ChooseSex("imgSexMMyI", "imgSexWMyI")"
+						<Image="imgSexMMyI", image="gerenziliaoxuanzhong.png", layout="Center", visible=0>
+					>
+					<Text="txSexMMyI", text="男", layout="Right", fontSize=18, step=[1,0], relative="cbxSexMMyI", offset=[10,0], color=[95,58,8]>
+					<CheckBox="cbxSexWMyI", image="genrenziliaoxuanzedi.png", layout="Right", step=[1,0], offset=[20,0], relative="txSexMMyI", onClick="node:Parent(5):ChooseSex("imgSexWMyI", "imgSexMMyI")"
+						<Image="imgSexWMyI", image="gerenziliaoxuanzhong.png", layout="Center", visible=1>
+					>
+					<Text="txSexWMyI", text="女", layout="Right", fontSize=18, step=[1,0], relative="cbxSexWMyI", offset=[10,0], color=[95,58,8]>
+				>
+				<Text="txSexVMyI", text="agasgwewgasdgsd", layout="Right", fontSize=18, step=[1,0], relative="txSexMyI", offset=[10,0], color=[95,58,8]>
+
+				<Button="btnSexMyI", image="anniu10.png", layout="Right", step=[-1,0], onClick="node:Parent(4):onSexClick()"
+					<Image="imgSexMyI", image="xiugai.png", layout="Center">
+				>
+			>
+			<Layer="lynick", size=[145,44], fill=[1,0], relative="lysex", layout="DownLeft", offset=[0,0], step=[0,1.5]
+				<Text="txSafeMyI", text="安全状态 : ", layout="Left", offset=[16,0], fontSize=18, color="fc_7_">
+				<Text="txSafeVMyI", text="危险", layout="Right", relative="txSafeMyI", fontSize=18, step=[1,0], offset=[10,0], color="fc_7_">
+
+				<Button="btnSafeMyI", image="anniu10.png", layout="Right", step=[-1,0], onClick="node:Parent(4):onSafeClick()"
+					<Image="imgSafeMyI", image="tishenganquan.png", layout="Center">
+				>
+			>
+		>
+	>
+	<Image="imgShowOtherMyI", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34], visible=0
+		<Layer="layHeadOther", layout="UpLeft", fill=[0.4,0.6]
+			<Image="imgHeadDOMyI", image="xiangkuangdi1.png", layout="DownRight", offset=[10,20], visible=0>
+			<HeadImage="imgHeadOMyI", size=[144,144], relative="imgHeadDOMyI", layout="Center", defaultImage="morentouxiang.png">
+		>
+		
+		<Layer="layOtherInfo", layout="Right", fill=[0.6,1], offset=[36,0]
+			<Layer="lyOtherId", size=[145,44], fill=[1,0], layout="Left", step=[0,-2]
+				<Text="txIDOMyI", text="ID：1242341234", layout="Left", fontSize=22, color="fc_7_">
+			>
+
+			<Layer="lyOtherName", size=[145,44], fill=[1,0], relative="lyOtherId", layout="DownLeft", offset=[0,0], step=[0,2]
+				<Layer="layOtherNick", size=[145,44], fill=[0.55,1], layout="Left"
+					<Text="txNickOMyI", text="昵称：", layout="Left", fontSize=22, color="fc_7_">
+					<Text="txNickVOMyI", text="", layout="Right", fontSize=22, step=[1,0], relative="txNickOMyI", offset=[-2,0], color=[95,58,8]>
+				>
+
+				<Layer="lyOtherSex", size=[145,44], fill=[0.45,1], layout="Right"
+					<Text="txSexOMyI", text="性别：", layout="Left", fontSize=22, color="fc_7_", offset=[4,0]>
+					<Text="txSexVOMyI", text="agasgwewgasdgsd", layout="RightOut", fontSize=22, relative="txSexOMyI", offset=[-4,0], color=[95,58,8]>
+				>
+			>
+		>
+
+		<Layer="layOtherInfo", layout="Down", fill=[1,0.3], offset=[0,0]
+			<Button="btnAddFriendOMyI", image="anniu7.png", layout="Up", onClick="node:Parent(3):AddFriendClick()", offset=[0,-8]
+				<Image="imgAddFriendOMyI", image="jiaweihaoyou.png", layout="Center">
+			>
+		>
+	>
+
+
+	<Image="imgTitleMyI", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="imgTitleTMyI", layout="Center", image="chakanziliao.png", offset=[5,-10]>
+	>
+	<Button="backBtn", layout="RightUp", image="fanhui.png", relative="imgShowMyI", step=[0.3,-0.5], offset=[0,0], onClick="node:Parent():doPop()">
+>

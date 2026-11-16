@@ -1,0 +1,33 @@
+﻿<ExtraGiftSecDlg="extraGiftSecDlg"
+	<Layer="ly", fill=[1,1], touch=1>
+	<Image="bgImg", image="tankuang6.png", layout="Center", offset=[0,-8], touch=1, level=60
+
+		<Image="titleBgImg", image="tankuangbiaoti.png", layout="Up", offset=[0,-30]
+			<Text="txTitle", text="获得卡牌", layout="Center", offset=[0,-5], color="fc_3_", fontSize="fs_32">
+		>
+
+		<Image="cardImg", image="carddiban1.png", layout="Up" , offsetP=[0,0.093]>
+
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", relative="cardImg", offset=[5,3], visible=0
+					<Text="txlevel", layout="RightOut", fontSize="fs_22", color="fc_2_", font="cardNumber.fnt", offset=[0,8]>
+				>
+
+		<Layer="lyitem", size=[100,150], layout="Up", offset=[0,-6]
+			<Image="imgItemPlantC",image="baoxiang.png",layout="Down", fit=[-0.8,-0.8]>
+		>
+
+		<Text="txname", layout="DownOut", text="僵尸", fontSize="fs_22", color="fc_8_", relative="cardImg", offset=[0,8], fontSize="fs_26">
+
+		<Button="btBack", image="yincangguanbi.png", layout="UpRight", step=[0,-1], offset=[-15,-5], onClick="node:Parent(2):onClose()"
+		>
+
+		<Button="cancelBtn", image="tankuanganniu3.png", layout="Down", offsetP=[0,0.21], onClick="node:Parent(2):onOK()"
+			<Text="cancelTip", text="确定", layout="Center", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], fontSize="fs_26">
+		>
+
+		<Layer="lydescribed",fill=[0.5,0.1], layout="DownOut", relative="cancelBtn",offset=[0,20]
+			<Text="txdescribed",text="描述", layout="Center", fontSize=11, opacity=60>
+		>
+	>
+	<Image="lightImg", image="guang.png", layout="Center", offset=[0,-90], relative="bgImg", level=50>
+>

@@ -1,0 +1,13 @@
+<PrepaidRecordDlg="prepaidRecordDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center"
+		<Layer="tbvLayer", size=[645,295], layout="Center"
+			<TableView="pr_recordTbv", layout="Center", size=[645,295], cell="vPrepaidRecordDlgCell.vui">
+		>
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="chongzhijilu.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+>

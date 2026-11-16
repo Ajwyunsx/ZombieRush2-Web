@@ -1,0 +1,30 @@
+﻿<PvpFriendCell="pvpFriendCell",size=[600,70]
+	
+	<Image9="imgBackGroundBagC1",image="lueduotiao.png",layout="Left"
+		<HeadImage="imgFriendFriendl",image="mourentouxiangM.png", size = [56,56], offsetP = [0.0174, 0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(1)"
+		
+		>
+		<Text="txNickFriendl",text="",layout="RightOut", relative="imgFriendFriendl", fontSize="fs_14", offset=[10,-15], color="fc_8_">
+		<Text="txLevelFriendl", layout="RightOut", fontSize="fs_14", offset=[10,0], relative="txNickFriendl", color="fc_4_">
+		<Text="txTimeFriendl",text="",layout="RightOut",fontSize="fs_14", offset=[10,10], relative="imgFriendFriendl", color="fc_6_">
+		
+		<Image="imgMassege", layout="Right", image="lueduoanniu1.png", offset=[-15,0], touch=1,onClick="node:Parent(2):OpenTeamBattleDlg(1)"
+			<Image="imgPvpStart", image="lueduoanniu1.png", layout="Center">
+			>
+			<Text="txPvpStart",text="战斗中", layout="Right", offset=[-15,0],fontSize="fs_22", color=[225,0,0]>
+	>
+
+	<Image9="imgBackGroundBagC2",image="lueduotiao.png",layout="Right"
+		<HeadImage="imgFriendFriendl",image="mourentouxiangM.png", size = [56,56], offsetP = [0.0174, 0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(2)"
+		
+		>
+		<Text="txNickFriendl",text="",layout="RightOut", relative="imgFriendFriendl", fontSize="fs_14", offset=[10,-15], color="fc_8_">
+		<Text="txLevelFriendl", layout="RightOut", fontSize="fs_14", offset=[10,0], relative="txNickFriendl", color="fc_4_">
+		<Text="txTimeFriendl",text="",layout="RightOut",fontSize="fs_14", offset=[10,10], relative="imgFriendFriendl", color="fc_6_">
+		
+		<Image="imgMassege", layout="Right", image="lueduoanniu1.png", offset=[-15,0], touch=1,onClick="node:Parent(2):OpenTeamBattleDlg(2)"
+			<Image="imgPvpStart", image="lueduoanniu1.png", layout="Center">
+			>
+			<Text="txPvpStart",text="战斗中", layout="Right", offset=[-15,0],fontSize="fs_22", color=[225,0,0]>
+	>
+>

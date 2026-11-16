@@ -1,0 +1,3 @@
+<CardDlg="cardDlg", touch=1
+	<File="commonUi", fileName="vCommonDlg.vui">
+>

@@ -1,0 +1,6 @@
+<ReturnTip="returntip", level=999
+	<Image9="showtipBg", image="tongyongtisidi.png", layout="Center", size=[300, 200], fill=[-1,-1]
+		<Text="texMsg", layout="Up", offset=[0,10], text="获得">
+		<TableView="tabItemList", layout="Center", offset=[0,30], size=[300, 300], cell="vitemcell.vui">
+	>
+>

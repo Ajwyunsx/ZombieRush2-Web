@@ -1,0 +1,107 @@
+<PlantlotteryDlg="plantlotteryDlg"
+	<File="layerBg", fileName="vCommonDlg.vui">
+	
+	<Image="imgMubandi", layout="Down", image="choukamuban.png">
+		
+	<Image9="b_spBgImage", image="henlandi.png", layout="RightUp", offset=[-137,10]
+			<Image="sunImage", image="icon_zuanshi.png", layout="Left", offset=[-6,0]>
+			<Text="sunText", text="123456", layout="Right", offset=[-12,0], color=[255,255,0], fontSize="fs_18">
+		>
+	
+<Image9="imgptbplotteryDlg", layout="Center", image="zhiwuchoukadi1.png", step=[-1,0],offset=[-61, 35], touch=1,onClick="node:Parent():Lottery('pt')"
+		<Text="txDesc1ptbplotteryDlg", text="随机出一张卡牌", layout="UpOut", fontSize="fs_22", offset=[0, -17], color={0,255,255}>
+		<Text="txDesc2ptbplotteryDlg", text="普通包", layout="Center", visible=0>
+		
+		
+		<Image9="btnptbBuy", layout="DownOut", image="choukadi.png", offset=[-11,-8]
+		<Text="txDesc3ptbplotteryDlg", text="随机抽取植物卡", layout="Up", fontSize="fs_22", color=[255,255,0], offset=[0, -6]>
+			<Button="btnhhbBuy",image="choukaanniu.png",layout="Down",offset=[0,-6], onClick="node:Parent(3):Lottery('pt')"
+				<Image="imgptbCurrenyIcon", layout="Left", offset=[36, -4], image="icon_zuanshi.png", scale=0.8>
+				<Text="txptbCurrenyValue", layout="RightOut", relative="imgptbCurrenyIcon", offset=[5,2], text="0", fontSize="fs_22">
+				<Image="imgptbCurrenyValue", layout="RightOut", relative="txptbCurrenyValue", offset=[5,-3], image="coukagoumai.png", visible=0>
+				<Image="imgptbFreeIcon", layout="Center", image="mianfeigoumai.png", scale=0.8, visible=0>
+			>
+		>
+	>
+	<Image9="imghhbplotteryDlg", layout="Center", image="zhiwuchoukadi2.png",offset=[11, 35], touch=1,onClick="node:Parent():Lottery('hh')"
+		<Text="txDesc1hhbplotteryDlg", text="必出蓝色或蓝以上卡牌", fontSize="fs_22", layout="UpOut", offset=[0, -17], color={0,255,255}>
+		<Text="txDesc2hhbplotteryDlg", text="豪华包", layout="Center", visible=0>
+		
+		
+		<Image9="imghhbCurreny", layout="DownOut", image="choukadi.png", offset=[-16,-6]
+		<Text="txDesc3hhbplotteryDlg", text="豪华包必出紫卡", layout="Up", fontSize="fs_22", color=[255,255,0], offset=[0, -6]>
+			<Button="btnhhbBuy",image="choukaanniu.png",layout="Down",offset=[0,-6], onClick="node:Parent(3):Lottery('hh')"
+				<Image="imghhbCurrenyIcon", layout="Left", offset=[31, -4], image="icon_zuanshi.png", scale=0.8>
+				<Text="txhhbCurrenyValue", layout="RightOut", relative="imghhbCurrenyIcon", offset=[5,2], text="0", fontSize="fs_22">
+				<Image="imghhbCurrenyValue", layout="RightOut", relative="txhhbCurrenyValue", offset=[5,-3], image="coukagoumai.png", visible=0>
+				<Image="imghhbFreeIcon", layout="Center", image="mianfeigoumai.png", scale=0.8, visible=0>
+			>
+		>
+	>
+	<Image9="imgthbplotteryDlg", layout="Center", image="zhiwuchoukadi3.png", step=[1,0],offset=[59, 35], touch=1, onClick="node:Parent():Lottery('th')"
+		<Text="txDesc1thbplotteryDlg", text="必出紫色或金色卡牌", fontSize="fs_22", layout="UpOut", offset=[0, -17], color={0,255,255}>
+		<Text="txDesc2thbplotteryDlg", text="土豪包", layout="Center", visible=0>
+		
+		<Image9="imgthbCurreny", layout="DownOut", image="choukadi.png", offset=[-1,-8]
+			<Text="txDesc3thbplotteryDlg", text="VIP4开放此功能", layout="Up", fontSize="fs_22", color=[255,255,0], offset=[0, -6], visible=0>
+			<Button="btnthbBuy",image="choukaanniu.png",layout="Down",offset=[0,-6], onClick="node:Parent(3):Lottery('th')"
+				<Image="imgthbCurrenyIcon", layout="Left", offset=[22, -4], image="icon_zuanshi.png", scale=0.8>
+				<Text="txthbCurrenyValue", layout="RightOut", relative="imgthbCurrenyIcon", offset=[5,2], text="0", fontSize="fs_22">
+				<Image="imgthbCurrenyValue", layout="RightOut", relative="txthbCurrenyValue", offset=[5,-3], image="coukagoumai.png", visible=0>
+			>
+		>
+		<Image="imgsuo", image = "choukasuo.png", layout="Center", offset=[-16,16]>
+	>
+	
+	
+	
+	<Layer="lybglotteryDlg", fill="Full", color=[0,0,0,200], touch = 1, onClick="node:Parent():GetLotteryCard()", visible=0>
+	
+	<Image9="imgptbpClotteryDlg", layout="Center", image="zhiwuchoukadi1.png", step=[-1,0],offset=[-50, 50], visible=0>
+	<Image9="imghhbpClotteryDlg", layout="Center", image="zhiwuchoukadi2.png",offset=[0, 50], visible=0>
+	<Image9="imgthbpClotteryDlg", layout="Center", image="zhiwuchoukadi3.png", step=[1,0],offset=[75, 50], visible=0>
+	
+	<Image="imglight1", layout="Center", image="guang.png", step=[0,0], quality = 1, visible=0>
+	<Image="imglight2", layout="Center", image="guang.png", step=[0,0], offset = [140,0], quality = 1, visible=0>
+	<Image="imglight3", layout="Center", image="guang.png", step=[0,0], offset = [280,0], quality = 1, visible=0>
+	<Image="imglight4", layout="Center", image="guang.png", step=[0,0], offset = [-140,0], quality = 1, visible=0>
+	<Image="imglight5", layout="Center", image="guang.png", step=[0,0], offset = [-280,0], quality = 1, visible=0>
+	
+	
+	<Image="imgNewCard1", layout="Center", image="carddiban1.png", step=[0,-1], quality = 1, visible=0
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+		<Image="imgItemPlantC",image="baoxiang.png",layout="Down", offsetP=[0,-0.1], fit=[-0.8,-0.8]>
+		<Text="txCardName", text="僵尸1星", layout="DownOut", offset=[0,10], fontSize="fs_18">
+	>
+	
+	<Image="imgNewCard2", layout="Center", image="carddiban1.png", step=[1,-1], offset = [20,0], quality = 2, visible=0
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+		<Image="imgItemPlantC",image="baoxiang.png",layout="Down", offsetP=[0,-0.1], fit=[-0.8,-0.8]>
+		<Text="txCardName", text="僵尸1星", layout="DownOut", offset=[0,10], fontSize="fs_18">
+	>
+	<Image="imgNewCard3", layout="Center", image="carddiban1.png", step=[2,-1], offset = [40,0], quality = 4, visible=0
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+		<Image="imgItemPlantC",image="baoxiang.png",layout="Down", offsetP=[0,-0.1], fit=[-0.8,-0.8]>
+		<Text="txCardName", text="僵尸1星", layout="DownOut", offset=[0,10], fontSize="fs_18">
+	>
+	<Image="imgNewCard4", layout="Center", image="carddiban1.png", step=[-1,-1], offset = [-20,0], quality = 3, visible=0
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+		<Image="imgItemPlantC",image="baoxiang.png",layout="Down", offsetP=[0,-0.1], fit=[-0.8,-0.8]>
+		<Text="txCardName", text="僵尸1星", layout="DownOut", offset=[0,10], fontSize="fs_18">
+	>
+	<Image="imgNewCard5", layout="Center", image="carddiban5.png", step=[-2,-1], offset = [-40,0], quality = 5, visible=0
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_22", color="fc_2_">
+				>
+		<Image="imgItemPlantC",image="baoxiang.png",layout="Down", offsetP=[0,-0.1], fit=[-0.8,-0.8]>
+		<Text="txCardName", text="僵尸1星", layout="DownOut", offset=[0,10], fontSize="fs_18">
+	>
+>

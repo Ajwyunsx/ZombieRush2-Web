@@ -1,0 +1,42 @@
+﻿<ComposeLvUpDlg="composeLvUpDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch = 1>
+	
+	<Image9="b_spBgImage", image="henlandi.png", layout="RightUp", offset=[-94,7]
+			<Image="sunImage", image="icon_jinbi.png", layout="Left", offset=[-13,-2]>
+			<Text="sunText", text="123456", layout="Right", offset=[-20,0], color=[255,255,0], fontSize="fs_22">
+		>
+	<Layer="lytip", size=[130,26] , layout="RightUp", offset=[-210,7]
+		<Text="txCards", text="全部卡牌:", layout="Left", fontSize="fs_22">
+	>
+	<Image="imgComposeLv", layout="Center", image="kapaijiemiandi.png", offset=[0,10]
+		<Image="imgComposeLvTitle", layout="LeftUp", image="tongyongbiaotidi.png", offset=[74,-38]
+			<Image="imgComposeLvTitleT", layout="Center", image="xuanzejiangshi.png", offset=[5,-8]>
+		>
+		
+		
+		<Image="option1", image="cardxuanze6.png", layout="Center", offset=[-330,-140], onClick="node:Parent(2):changeQualityOption(1)", touch=1
+			<Image="optionText", image="kaxuanzi6.png", layout="Left", offset=[30,0] >
+		>
+		<Image="option2", image="cardweixuanze5.png", layout="Center", offset=[-327,-85], onClick="node:Parent(2):changeQualityOption(2)", touch=1
+			<Image="optionText", image="kaweixuanzi5.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option3", image="cardweixuanze4.png", layout="Center", offset=[-324,-30], onClick="node:Parent(2):changeQualityOption(3)", touch=1
+			<Image="optionText", image="kaweixuanzi4.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option4", image="cardweixuanze3.png", layout="Center", offset=[-321,25], onClick="node:Parent(2):changeQualityOption(4)", touch=1
+			<Image="optionText", image="kaweixuanzi3.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option5", image="cardweixuanze2.png", layout="Center", offset=[-318,80], touch=1, onClick="node:Parent(2):changeQualityOption(5)"
+			<Image="optionText", image="kaweixuanzi2.png", layout="Left", offset=[25,0] >
+		>
+		<Image="option6", image="cardweixuanze1.png", layout="Center", offset=[-315,135], touch=1, onClick="node:Parent(2):changeQualityOption(6)"
+			<Image="optionText", image="kaweixuanzi1.png", layout="Left", offset=[25,0] >
+		>
+		
+			<TableView="cardTbv", layout="Center", offset=[34,-5], size=[585,315], direction="Hor", cell="vComposeLvUpCell.vui">
+			<Text="txTip", fontSize="fs_26", color="fc_8_", offset=[50,0], layout="Center">
+		
+	>
+	
+	<Button="backBtn", layout="RightUp", image="fanhui.png", relative="imgComposeLv",offset=[16,-35], onClick="node:Parent():doPop()">
+>

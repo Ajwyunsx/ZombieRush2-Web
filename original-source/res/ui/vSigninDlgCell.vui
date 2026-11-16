@@ -1,0 +1,87 @@
+<TableViewCell="signinDlgCell", size=[525,130]
+	<Layer="sdc_layer1", size=[100,120], layout="UpLeft", offset=[0,5]
+		<Image="itemImg", image="qiandaoxiangdi.png", layout="Up"
+			<Image="centerItemImage", image="icon_jinbi.png", layout="Center", fit=[-0.6,-0.6]>
+			<Image="jbBgImage", image="qiandaocaidai.png", layout="UpLeft", offset=[0,0]
+				<Text="jbText", text="v",  layout="Center", font="checkVip.fnt", rotate=-45, offset=[-3,-2], scale=0.9>
+			>
+			
+			<Image="itemNumBg", image="qdshubeijing.png", layout="Down", offset=[0,-8]
+				<Text="itemNumText", text="x99", font="checkNumer.fnt", layout="Center", offset=[0,10] >
+			>
+			<Image="maskImg", layout="Center", image="qiandaozhezao.png">
+			<Image="checkImg", image="yiqiandaogou.png", layout="Center">
+		>
+		
+		<Text="signNumText", text="1", font="checkDay.fnt", layout="Down", offset=[0,5]>
+	>
+	
+
+	<Layer="sdc_layer2", size=[100,120], layout="RightOut", relative="sdc_layer1", offset=[5,0]
+		<Image="itemImg", image="qiandaoxiangdi.png", layout="Up"
+			<Image="centerItemImage", image="icon_jinbi.png", layout="Center", fit=[-0.6,-0.6]>
+			<Image="jbBgImage", image="qiandaocaidai.png", layout="UpLeft"
+				<Text="jbText", text="v",  layout="Center", font="checkVip.fnt", rotate=-45, offset=[-3,-2], scale=0.9>
+			>
+			
+			<Image="itemNumBg", image="qdshubeijing.png", layout="Down", offset=[0,-8]
+				<Text="itemNumText", text="x99", font="checkNumer.fnt", layout="Center", offset=[0,10] >
+			>
+			<Image="maskImg", layout="Center", image="qiandaozhezao.png">
+			<Image="checkImg", image="yiqiandaogou.png", layout="Center">
+		>
+		
+		<Text="signNumText", text="1", font="checkDay.fnt", layout="Down", offset=[0,5]>
+	>
+
+	<Layer="sdc_layer3", size=[100,120], layout="RightOut", relative="sdc_layer2", offset=[5,0]
+		<Image="itemImg", image="qiandaoxiangdi.png", layout="Up"
+			<Image="centerItemImage", image="icon_jinbi.png", layout="Center", fit=[-0.6,-0.6]>
+			<Image="jbBgImage", image="qiandaocaidai.png", layout="UpLeft"
+				<Text="jbText", text="v",  layout="Center", font="checkVip.fnt", rotate=-45, offset=[-3,-2], scale=0.9>
+			>
+			
+			<Image="itemNumBg", image="qdshubeijing.png", layout="Down", offset=[0,-8]
+				<Text="itemNumText", text="x99", font="checkNumer.fnt", layout="Center", offset=[0,10] >
+			>
+			<Image="maskImg", layout="Center", image="qiandaozhezao.png">
+			<Image="checkImg", image="yiqiandaogou.png", layout="Center">
+		>
+		
+		<Text="signNumText", text="1", font="checkDay.fnt", layout="Down", offset=[0,5]>
+	>
+
+	<Layer="sdc_layer4", size=[100,120], layout="RightOut", relative="sdc_layer3", offset=[5,0]
+		<Image="itemImg", image="qiandaoxiangdi.png", layout="Up"
+			<Image="centerItemImage", image="icon_jinbi.png", layout="Center", fit=[-0.6,-0.6]>
+			<Image="jbBgImage", image="qiandaocaidai.png", layout="UpLeft"
+				<Text="jbText", text="v",  layout="Center", font="checkVip.fnt", rotate=-45, offset=[-3,-2], scale=0.9>
+			>
+			
+			<Image="itemNumBg", image="qdshubeijing.png", layout="Down", offset=[0,-8]
+				<Text="itemNumText", text="x99", font="checkNumer.fnt", layout="Center", offset=[0,10] >
+			>
+			<Image="maskImg", layout="Center", image="qiandaozhezao.png">
+			<Image="checkImg", image="yiqiandaogou.png", layout="Center">
+		>
+		
+		<Text="signNumText", text="1", font="checkDay.fnt", layout="Down", offset=[0,5]>
+	>
+
+	<Layer="sdc_layer5", size=[100,120], layout="RightOut", relative="sdc_layer4", offset=[5,0]
+		<Image="itemImg", image="qiandaoxiangdi.png", layout="Up"
+			<Image="centerItemImage", image="icon_jinbi.png", layout="Center", fit=[-0.6,-0.6]>
+			<Image="jbBgImage", image="qiandaocaidai.png", layout="UpLeft"
+				<Text="jbText", text="v",  layout="Center", font="checkVip.fnt", rotate=-45, offset=[-3,-2], scale=0.9>
+			>
+			
+			<Image="itemNumBg", image="qdshubeijing.png", layout="Down", offset=[0,-8]
+				<Text="itemNumText", text="x99", font="checkNumer.fnt", layout="Center", offset=[0,10] >
+			>
+			<Image="maskImg", layout="Center", image="qiandaozhezao.png">
+			<Image="checkImg", image="yiqiandaogou.png", layout="Center">
+		>
+		
+		<Text="signNumText", text="1", font="checkDay.fnt", layout="Down", offset=[0,5]>
+	>
+>

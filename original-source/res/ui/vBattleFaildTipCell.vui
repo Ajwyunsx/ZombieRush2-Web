@@ -1,0 +1,9 @@
+<TableViewCell="battleFaildTipCell", size=[230,52]
+	<Image="itemBg", image="ftditiao.png", layout="Center"
+		<Layer="iconLayer", size=[44,44], layout="Left", offset=[8,0], touch=1
+			<Image="itemIcon", image="DancingZombieL.png", layout="Center", fit=[-0.9,-0.9]>
+		>
+		<Text="firstTip", text="赠送传说中的希尔瓦纳斯", fontSize=16, relative="iconLayer", layout="Right", step=[1,-0.5], offset=[12,0], color=[238,62,44]>
+		<Text="secondTip", text="赠送传说中的希尔瓦纳斯", fontSize=18, relative="iconLayer", layout="Right", step=[1,0.5], offset=[12,0], color=[250,238,159]>
+	>
+>

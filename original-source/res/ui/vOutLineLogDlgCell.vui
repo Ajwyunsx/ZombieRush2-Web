@@ -1,0 +1,22 @@
+<OutLineLogDlgCell="outLineLogDlgCell", size=[480,100]
+	<Image9="itemImg", image="tankuangdikuang1.png", size=[480,100], layout="Center"
+		<Image="resultImg", image="shenglijiaobiao.png", layout="Left", offset=[8,0]>
+		<HeadImage="headImg", image="morentouxiang.png", layout="RightOut", relative="resultImg", offset=[6,0], size=[64,64], level=50, touch=1> 
+		<Image="fenyeImg", image="tuanzhanfenye.png", relative="headImg", layout="Right", step=[1,0], offset=[4,0], relative="headImg", level=40
+			<Text="attackerName", text="我的名字七个字字", fontSize=16, color=[70,30,0], layout="UpLeft", offset=[2,10]> 
+			<Text="attackerLevel", text="Lv99", layout="DownLeft", offset=[2,-10], fontSize=16, color=[70,30,0]>
+		>
+		<Image9="loseBg", image="zhanchangbantouming.png", layout="Right", relative="fenyeImg", step=[1,0], offset=[56,6], size=[110,50]
+			<Text="loseTip", text="损失资源", fontSize=18, color=[70,30,0], layout="UpOut">
+			<Image="sunIcon", image="icon_jinbi_S.png", layout="UpLeft", offset=[5,0]>
+			<Text="sunText", text="999999", fontSize=16, color=[90,40,0], layout="RightOut", relative="sunIcon", format=1, offset=[2,0]>
+			<Image="coinIcon", image="icon_yibi_S.png", layout="DownLeft", offset=[5,0]>
+			<Text="coinText", text="999999", fontSize=16, color=[90,40,0], layout="RightOut", relative="coinIcon", format=1, offset=[2,0]>
+		>
+		<Image9="rewardBg", image="zhanchangbantouming.png", layout="RightOut", offset=[6,0], size=[110,50], relative="loseBg"
+			<Text="rewardTip", text="收获材料", fontSize=18, color=[70,30,0], layout="UpOut">
+			<Image="suitIcon", image="suipian.png", layout="Left", offset=[5,0]>
+			<Text="suitText", text="999999", fontSize=16, color=[90,40,0], layout="RightOut", relative="suitIcon", format=1, offset=[2,0]>
+		>
+	>
+>

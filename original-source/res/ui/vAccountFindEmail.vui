@@ -1,0 +1,37 @@
+<AccountFindEmail="AccountFindEmail"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+
+	<Image="lyrShowBindStatus", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34]
+		<Layer="layStep1BindStatus", layout="Up", fill=[0.74,0.27]
+			<Text="txStep1BindStatus", text="步骤一 : 输入绑定的安全邮箱, 点击【获取验证码】将收到验证码邮件", fontSize=18, layout="DownLeft", offset=[0,0], color=[100,65,17]>
+		>
+
+		<Layer="layStep1Mail", layout="Down", relative="layStep1BindStatus", step=[0,1], fill=[1,0.16]
+			<Editor="edtEmailAddress", bgImage="shurukuang.png", text="", placeHolder="请输入邮箱地址", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0], pFontColor=[150,120,80], align="Left">
+			<Text="txStatusNumBindStatus", text="安全邮箱 : ", layout="LeftOut", fontSize=24, relative="edtEmailAddress", offset=[-10,0], color=[85,17,0]>
+			<Button="btnGetCodeEmailFind", image="anniu14.png", topImage="huoquyanzhengma.png", layout="Right", step=[1,0], offset=[12,0], relative="edtEmailAddress", onClick="node:Parent(3):onGetCodeClick()"
+				<Text="txtimeEmailFind", text="10", fontSize=24, layout="Center", visible=0>
+			>
+		>
+
+		<Layer="layStep2BindStatus", layout="Down", relative="layStep1Mail", step=[0,1], fill=[0.74,0.1]
+			<Text="txStep2BindStatus", text="步骤二 : 输入短信中的验证码, 点击【确定】", fontSize=18, layout="Left", offset=[0,0], color=[100,65,17]>
+		>
+	
+		<Layer="layStep2Mail", layout="Down", relative="layStep2BindStatus", step=[0,1], fill=[1,0.16]
+			<Editor="edtCodeEmailFind", bgImage="shurukuang.png", text="", placeHolder="请输入收到的验证码", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0],  pFontColor=[150,120,80], align="Left">
+			<Text="txCodeBindStatus", text="验证码 : ", layout="LeftOut", fontSize=30, relative="edtCodeEmailFind", offset=[-10,0], color=[85,17,0]>
+		>
+
+		<Editor="edtPswEmailFind", bgImage="shurukuang.png", text="", placeHolder="请输入新密码", fontSize=16, maxLegth=16, layout="DownOut", size=[225,43], offset=[0,20], relative="edtCodeEmailFind", pFontColor=[220,220,220], visible=0>
+		<Text="txPswEmailFind", text="新密码 : ", layout="LeftOut", fontSize=24, relative="edtPswEmailFind", offset=[-10,0], effectColor=[0,0,0], outline=1, visible=0>
+
+		<Button="btnOKBindStatus", image="anniu6.png", topImage="queren.png", layout="Down", relative="layStep2Mail", step=[0,1.5], offset=[0,-10], onClick="node:Parent(2):onOKClick()">
+	>
+
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+>

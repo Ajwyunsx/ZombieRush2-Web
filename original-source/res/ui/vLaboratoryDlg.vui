@@ -1,0 +1,130 @@
+<LaboratoryDlg="laboratoryDlg"
+	<File="layerBg", fileName="vCommonDlg.vui">
+	<Image="imgCountLaboratoryD",image="henlandi.png",layout="UpRight",offset=[-97,8]
+		<Image="imgLaboratoryD",image="icon_zuanshi.png",layout="Left", scale=1, offset=[-20,-2]>
+		<Text="txLaboratoryD",text="0/0", relative="imgLaboratoryD", layout="RightOut", fontSize="fs_22", offset=[10,1], color=[255,255,0]>
+	>
+	
+	<Image="imgjiangeboratoryD",image="jiange.png", layout="Center", offset=[0,-3]>
+
+	<Image9="imgLvUpbg1", image="weijiesuoshengjixiang.png", layout="Center", step=[-1.98,0], offset=[0,22],onClick="node:Parent():OpenlvUpDlg(1)"
+		<Layer="lyc", size=[115, 160], layout="Center", offset=[0,-30]>
+		<Armature="artUp", jsonName="guanzi", layout="Center", visible=0, touch=1,onClick="node:Parent(2):onbtnLvUpCancel(1)">
+		<Layer="lyStar", size=[70,20], layout="Up", offset=[0,37], visible=0
+			<Image="imgStar", image="xing.png", layout="Up">
+			<Text="txlevel", text="1", relative="imgStar", layout="DownOut", offet=[0,2], fontSize="fs_14">
+		>
+		<Image="imgComposebg", layout="Center">
+		<Image="imgCompose", layout="Center">
+		
+		
+		<TimeText="txtime", text="00:00:00", layout="Down", offset=[0,-90], format=2, fontSize=12, layout="Down", visible=0>
+		<Button="cancleBtn", image="guanbicha.png", relative="txtime",layout="RightOut", offset=[10,0], onClick="node:Parent(2):onbtnLvUpCancel(1)", visible=0
+		>
+
+		<Layer="lyCountLaboratoryD",layout="Down", size=[45,20],offset=[5,-42], visible=0
+			<Image="imgLaboratoryD",image="icon_zuanshi_S.png",layout="Left", scale=0.6>
+			<Text="txLaboratoryD",text="20000",layout="RightOut",relative="imgLaboratoryD", fontSize=15,offset=[2,0]>
+		>
+		<Text="txLockLaboratoryD", text="研究所X级解锁", fontSize=12, layout="Down",offset=[3,-18],color=[254,244,183],visible=1>
+		<Button="speBtn", image="anniu11.png",layout="Down", offset=[3,-8] , onClick="node:Parent(2):onbtnAccelerateClick(1)", visible=0
+			<Image="imgSpe",image="tianjiajiangshi.png",layout="Center", offset={0,-2}>
+		>
+	>
+	<Image9="imgLvUpbg2", image="weijiesuoshengjixiang.png", layout="Center", step=[-0.98,0], offset=[0,22],onClick="node:Parent():OpenlvUpDlg(2)"
+		<Layer="lyc", size=[115, 160], layout="Center", offset=[0,-30]>
+		<Armature="artUp", jsonName="guanzi", layout="Center", visible=0, touch=1,onClick="node:Parent(2):onbtnLvUpCancel(2)">
+		<Layer="lyStar", size=[70,20], layout="Up", offset=[0,37], visible=0
+			<Image="imgStar", image="xing.png", layout="Up">
+			<Text="txlevel", text="1", relative="imgStar", layout="DownOut", offet=[0,2], fontSize="fs_14">
+		>
+		<Image="imgComposebg", layout="Center">
+		<Image="imgCompose", layout="Center">
+		
+		
+		<TimeText="txtime", text="00:00:00", layout="Down", offset=[0,-90], format=2, fontSize=12, layout="Down", visible=0>
+		<Button="cancleBtn", image="guanbicha.png", relative="txtime",layout="RightOut", offset=[10,0], onClick="node:Parent(2):onbtnLvUpCancel(2)", visible=0
+		>
+
+		<Layer="lyCountLaboratoryD",layout="Down", size=[45,20],offset=[5,-42], visible=0
+			<Image="imgLaboratoryD",image="icon_zuanshi_S.png",layout="Left", scale=0.6>
+			<Text="txLaboratoryD",text="20000",layout="RightOut",relative="imgLaboratoryD", fontSize=15,offset=[2,0]>
+		>
+		<Text="txLockLaboratoryD", text="研究所X级解锁", fontSize=12, layout="Down",offset=[3,-18],color=[254,244,183],visible=1>
+		<Button="speBtn", image="anniu11.png",layout="Down", offset=[3,-8] , onClick="node:Parent(2):onbtnAccelerateClick(2)", visible=0
+			<Image="imgSpe",image="tianjiajiangshi.png",layout="Center", offset={0,-2}>
+		>
+	>
+	<Image9="imgLvUpbg3", image="weijiesuoshengjixiang.png", layout="Center", offset=[0,22],onClick="node:Parent():OpenlvUpDlg(3)"
+		<Layer="lyc", size=[115, 160], layout="Center", offset=[0,-30]>
+		<Armature="artUp", jsonName="guanzi", layout="Center", visible=0, touch=1,onClick="node:Parent(2):onbtnLvUpCancel(3)">
+		<Layer="lyStar", size=[70,20], layout="Up", offset=[0,37], visible=0
+			<Image="imgStar", image="xing.png", layout="Up">
+			<Text="txlevel", text="1", relative="imgStar", layout="DownOut", offet=[0,2], fontSize="fs_14">
+		>
+		<Image="imgComposebg", layout="Center">
+		<Image="imgCompose", layout="Center">
+		
+		
+		<TimeText="txtime", text="00:00:00", layout="Down", offset=[0,-90], format=2, fontSize=12, layout="Down", visible=0>
+		<Button="cancleBtn", image="guanbicha.png", relative="txtime",layout="RightOut", offset=[10,0], onClick="node:Parent(2):onbtnLvUpCancel(3)", visible=0
+		>
+
+		<Layer="lyCountLaboratoryD",layout="Down", size=[45,20],offset=[5,-42], visible=0
+			<Image="imgLaboratoryD",image="icon_zuanshi_S.png",layout="Left", scale=0.6>
+			<Text="txLaboratoryD",text="20000",layout="RightOut",relative="imgLaboratoryD", fontSize=15,offset=[2,0]>
+		>
+		<Text="txLockLaboratoryD", text="研究所X级解锁", fontSize=12, layout="Down",offset=[3,-18],color=[254,244,183],visible=1>
+		<Button="speBtn", image="anniu11.png",layout="Down", offset=[3,-8] , onClick="node:Parent(2):onbtnAccelerateClick(3)", visible=0
+			<Image="imgSpe",image="tianjiajiangshi.png",layout="Center", offset={0,-2}>
+		>
+	>
+	<Image9="imgLvUpbg4", image="weijiesuoshengjixiang.png", layout="Center", step=[0.98,0], offset=[0,22],onClick="node:Parent():OpenlvUpDlg(4)"
+		<Layer="lyc", size=[115, 160], layout="Center", offset=[0,-30]>
+		<Armature="artUp", jsonName="guanzi", layout="Center", visible=0, touch=1,onClick="node:Parent(2):onbtnLvUpCancel(4)">
+		<Layer="lyStar", size=[70,20], layout="Up", offset=[0,37], visible=0
+			<Image="imgStar", image="xing.png", layout="Up">
+			<Text="txlevel", text="1", relative="imgStar", layout="DownOut", offet=[0,2], fontSize="fs_14">
+		>
+		<Image="imgComposebg", layout="Center">
+		<Image="imgCompose", layout="Center">
+		
+		
+		<TimeText="txtime", text="00:00:00", layout="Down", offset=[0,-90], format=2, fontSize=12, layout="Down", visible=0>
+		<Button="cancleBtn", image="guanbicha.png", relative="txtime",layout="RightOut", offset=[10,0], onClick="node:Parent(2):onbtnLvUpCancel(4)", visible=0
+		>
+
+		<Layer="lyCountLaboratoryD",layout="Down", size=[45,20],offset=[5,-42], visible=0
+			<Image="imgLaboratoryD",image="icon_zuanshi_S.png",layout="Left", scale=0.6>
+			<Text="txLaboratoryD",text="20000",layout="RightOut",relative="imgLaboratoryD", fontSize=15,offset=[2,0]>
+		>
+		<Text="txLockLaboratoryD", text="研究所X级解锁", fontSize=12, layout="Down",offset=[3,-18],color=[254,244,183],visible=1>
+		<Button="speBtn", image="anniu11.png",layout="Down", offset=[3,-8] , onClick="node:Parent(2):onbtnAccelerateClick(4)", visible=0
+			<Image="imgSpe",image="tianjiajiangshi.png",layout="Center", offset={0,-2}>
+		>
+	>
+	<Image9="imgLvUpbg5", image="weijiesuoshengjixiang.png", layout="Center", step=[1.98,0], offset=[0,22],onClick="node:Parent():OpenlvUpDlg(5)"
+		<Layer="lyc", size=[115, 160], layout="Center", offset=[0,-30]>
+		<Armature="artUp", jsonName="guanzi", layout="Center", visible=0, touch=1,onClick="node:Parent(2):onbtnLvUpCancel(5)">
+		<Layer="lyStar", size=[70,20], layout="Up", offset=[0,37], visible=0
+			<Image="imgStar", image="xing.png", layout="Up">
+			<Text="txlevel", text="1", relative="imgStar", layout="DownOut", offet=[0,2], fontSize="fs_14">
+		>
+		<Image="imgComposebg", layout="Center">
+		<Image="imgCompose", layout="Center">
+		
+		
+		<TimeText="txtime", text="00:00:00", layout="Down", offset=[0,-90], format=2, fontSize=12, layout="Down", visible=0>
+		<Button="cancleBtn", image="guanbicha.png", relative="txtime",layout="RightOut", offset=[10,0], onClick="node:Parent(2):onbtnLvUpCancel(5)", visible=0
+		>
+
+		<Layer="lyCountLaboratoryD",layout="Down", size=[45,20],offset=[5,-42], visible=0
+			<Image="imgLaboratoryD",image="icon_zuanshi_S.png",layout="Left", scale=0.6>
+			<Text="txLaboratoryD",text="20000",layout="RightOut",relative="imgLaboratoryD", fontSize=15,offset=[2,0]>
+		>
+		<Text="txLockLaboratoryD", text="研究所X级解锁", fontSize=12, layout="Down",offset=[3,-18],color=[254,244,183],visible=1>
+		<Button="speBtn", image="anniu11.png",layout="Down", offset=[3,-8] , onClick="node:Parent(2):onbtnAccelerateClick(5)", visible=0
+			<Image="imgSpe",image="tianjiajiangshi.png",layout="Center", offset={0,-2}>
+		>
+	>
+>

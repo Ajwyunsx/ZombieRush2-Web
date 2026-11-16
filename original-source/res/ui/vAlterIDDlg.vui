@@ -1,0 +1,32 @@
+<AlterIDDlg="alterIDDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundAlterID", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image="imgBackGroundAlterID", image="tankuang5.png", layout="Center", touch=1, offset=[-10,-14]
+		<Layer="lyTitle", fill=[0.5,0.25], layout="UpLeft"
+			<Text="txTitle", text="修改账号/密码", layout="Down", color=[255,255,0], fontSize=26>
+		>
+		<Layer="lyTitle2", fill=[1,0.25], layout="UpLeft", visible=0>
+		<Image9="imgShowAlterID", image="tankuangdikuang1.png", relative="lyTitle2", layout="Down", size=[100,100], fill=[0.78,0.43], step=[0,1], offset=[20,8]
+			<Layer="lyrFirstAlter", fill=[1,1], visible=0
+				<Layer="lydid", size=[136,30], fill=[1,0.33], layout="Up"
+					<Text="txIDFAlter", text="当前账号：", layout="Left", fontSize=20, color="fc_7_", offsetP=[0.2,0]>
+					<Text="txIDFAlterID", text="V1242341234", relative="txIDFAlter", layout="Left", step=[1,0], offset=[6,0], fontSize=20, color="fc_7_">
+				>
+				<Layer="lyid", size=[136,30], fill=[1,0.33], layout="DownOut", relative="lydid", offset=[0,0]
+					<Text="txNewIDFAlterID", text="新的账号：", layout="Left", fontSize=20, color="fc_7_", offsetP=[0.2,0]>
+					<Editor="edtNewIDFAlterID", bgImage="gerenxinxishurukuang.png", text="", align="Left", fontColor=[157,119,80], fontSize=20, maxLength=18, layout="Right", size=[180,34], relative="txNewIDFAlterID", step=[1,0], offset=[0,0], visible=0>
+				>
+				<Layer="lypass", size=[136,30], fill=[1,0.33], layout="DownOut", relative="lyid", offset=[0,0]
+					<Text="txPassWordFAlterID", text="新的密码：", layout="Left", fontSize=20, color="fc_7_", offsetP=[0.2,0]>
+					<Editor="edtPassWordFAlterID", bgImage="gerenxinxishurukuang.png", text="", inputFlag=0, align="Left", fontColor=[157,119,80], fontSize=20, maxLength=18, layout="Right", relative="txPassWordFAlterID", size=[180,34], step=[1,0], offset=[0,0], visible=0>
+				>
+			>
+		>
+		<Button="btnSellAlterID", image="tankuanganniu3.png", relative="imgShowAlterID", layout="Down", step=[0.7,1], offset=[0,8], onClick="node:Parent(2):onSaveClick()"
+			<Text="txOKAlterID", text="保存", layout="Center", offset=[0,-2], fontSize="fs_26", shadow=[2,-2], effectColor=[0,0,0,127], color="fc_2_">
+		>
+		<Button="btnBackAlterID", image="tankuanganniu3.png", relative="imgShowAlterID", layout="Down", step=[-0.7,1], offset=[0,8], onClick="node:Parent(2):onCloseClick()", audioEffect="sys_msgbox_close.ogg"
+			<Text="txCancelAlterID", text="取消", layout="Center", offset=[0,-2], fontSize="fs_26", shadow=[2,-2], effectColor=[0,0,0,127], color="fc_2_">
+			<Image="imgCancelAlterID", image="guanbicha.png", layout="Center", visible=0>
+		>
+	>
+>

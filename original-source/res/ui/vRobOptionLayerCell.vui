@@ -1,0 +1,34 @@
+<TableViewCell="robOptionCell", size=[600,70]
+	<Image="itemBgImg1", image="lueduotiao.png", layout="Left"
+		<HeadImage="headImage", image="morentouxiang.png", size=[50,50], layout="Left", offset=[8,0]>
+		<Text="nameText", text="路人甲异丙丁卯", fontSize=15, color=[62,24,0], layout="LeftUp", offset=[65,8] >
+		<Text="lvText", text="LV99", fontSize=13, color=[157,86,0], layout="RightOut", relative="nameText", offset=[5,0]>
+
+		<Image="sunIcon", image="icon_jinbi_S.png", layout="Left", offset=[65,10], scale=0.8>
+		<Text="sunText", text="99999", color=[86,35,0], fontSize=15, offset=[0,0], layout="RightOut", relative="sunIcon", format=1>
+
+
+		<Image="coinIcon", image="icon_yibi_S.png", layout="Left", offset=[130,10], scale=0.8>
+		<Text="coinText", text="99999", color=[86,35,0], fontSize=15, layout="RightOut", offset=[0,0], relative="coinIcon", format=1>
+
+		<Text="cellRobTip", text="已掠夺", fontSize=18, layout="Right", offset=[-20,0] >
+		<TimeText="coolDownTimer", text="99:99:99", fontSize=15, layout="DownOut", offset=[0,0], color=[132,88,50], auto=1, max=1, relative="cellRobTip">
+		<Button="cellRobBtn", image="anniu8.png", topImage="lueduo2.png", layout="Right", offset=[-10,0]>
+	>
+	<Image="itemBgImg2", image="lueduotiao.png", layout="Right"
+		<HeadImage="headImage", image="morentouxiang.png", size=[50,50], layout="Left", offset=[8,0]>
+		<Text="nameText", text="路人甲异丙丁卯", fontSize=15, color=[62,24,0], layout="LeftUp", offset=[65,8] >
+		<Text="lvText", text="LV99", fontSize=13, color=[157,86,0], layout="RightOut", relative="nameText", offset=[5,0]>
+
+		<Image="sunIcon", image="icon_jinbi_S.png", layout="Left", offset=[65,10], scale=0.8>
+		<Text="sunText", text="99999", color=[86,35,0], fontSize=15, offset=[0,0], layout="RightOut", relative="sunIcon", format=1>
+
+
+		<Image="coinIcon", image="icon_yibi_S.png", layout="Left", offset=[130,10], scale=0.8>
+		<Text="coinText", text="99999", color=[86,35,0], fontSize=15, layout="RightOut", offset=[0,0], relative="coinIcon", format=1>
+
+		<Text="cellRobTip", text="已掠夺", fontSize=18, layout="Right", offset=[-20,0] >
+		<TimeText="coolDownTimer", text="99:99:99", fontSize=15, layout="DownOut", offset=[0,0], color=[132,88,50], auto=1, max=1, relative="cellRobTip">
+		<Button="cellRobBtn", image="anniu8.png", topImage="lueduo2.png", layout="Right", offset=[-10,0]>
+	>
+>

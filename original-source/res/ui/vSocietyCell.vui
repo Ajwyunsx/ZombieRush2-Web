@@ -1,0 +1,21 @@
+﻿<SocietyCell="societyCell",size=[590,63]
+	<Image9="imgBackGroundBagC1",image="liebiaokuangdi.png",layout="UpLeft",touch=1,offsetP=[0.05,0.05], onClick="node:Parent():onOpenChatDlg(1)"
+		<HeadImage="imgFriendSocietyC",image="touxiangkuang.png", size = [50,50], offset = [3,0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(1)">
+		<Image="imgRedBtnSocietyC", layout="UpRight", image="xiaoxitishi.png", step=[0.35,-0.1], visible=0
+			<Text="txtUnreadBtnSocietyC", layout="Center", offset = [-1,-1], fontSize="fs_18",color="fc_6_">
+		>
+		<Text="txNickSocietyC",text="", relative="imgFriendSocietyC", layout="RightOut", fontSize="fs_22", offset=[15,0], step=[0,-0.55],color="fc_8_">
+		<Text="txSaySocietyC",text="", relative="imgFriendSocietyC", layout="RightOut", fontSize="fs_18", offset=[15,0],step=[0,0.55],size=[200,20], color="fc_6_">
+		<Text="txTimeSocietyC",text="",layout="Right",fontSize="fs_14", offset=[-20,-15], color="fc_6_">
+	>
+
+	<Image9="imgBackGroundBagC2",image="liebiaokuangdi.png",layout="UpRight",touch=1,offsetP=[0.04,0.05], onClick="node:Parent():onOpenChatDlg(2)"
+		<HeadImage="imgFriendSocietyC",image="touxiangkuang.png", size = [50,50], offset = [3,0],layout="Left",touch=1,onClick="node:Parent(2):onOpenPlayerOperateDlg(2)">
+		<Image="imgRedBtnSocietyC", layout="UpRight", image="xiaoxitishi.png", step=[0.35,-0.1], visible=0
+			<Text="txtUnreadBtnSocietyC", layout="Center",offset = [-1,-1], fontSize="fs_18",color="fc_6_">
+		>
+		<Text="txNickSocietyC",text="", relative="imgFriendSocietyC", layout="RightOut", fontSize="fs_22", offset=[15,0], step=[0,-0.55],color="fc_8_">
+		<Text="txSaySocietyC",text="", relative="imgFriendSocietyC", layout="RightOut", fontSize="fs_18", offset=[15,0],step=[0,0.55],size=[200,20], color="fc_6_">
+		<Text="txTimeSocietyC",text="",layout="Right",fontSize="fs_14", offset=[-20,-15], color="fc_6_">
+	>
+>

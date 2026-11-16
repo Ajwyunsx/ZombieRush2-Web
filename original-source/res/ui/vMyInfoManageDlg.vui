@@ -1,0 +1,76 @@
+<MyInfoManageDlg="myInfoManageDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+
+	<Image="imgShowMyInfoM", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34]
+		<Layer="lyrStatus", fill=[1,0.15]
+			<Text="txStatusTMyInfoM",text="账户安全状态 : ", fontSize=20, layout="Down", offset=[-10,0], color="fc_7_">
+			<Text="txStatusMyInfoM",text="低", layout="Right", fontSize=20, step=[1,0], offset=[10,0], relative="txStatusTMyInfoM", color="fc_12_">
+		>
+		<Layer="lyrlist", size=[800,220], fill=[0.82,0.42], layout="DownOut", relative="lyrStatus", offset=[0,12]
+			<Image="imgPassWordMyInfoM", image="gerenziliaoliebaodi.png", layout="UpLeft"
+				<Image="imgDMyInfoM", layout="Center", image="genrenziliaoxuanzedida.png", layout="Left", offset=[4,0]
+					<Image="imgPassWordDMyInfoM", image="gerenziliaoweixiugai.png", layout="Center">
+				>
+
+				<Text="txPassWordD1MyInfoM", text="已修改初始密码", relative="imgDMyInfoM", layout="Right", step=[1,-1], offset=[4,4], color=[0,255,0], fontSize="fs_18">
+				<Text="txPassWordD2MyInfoM", text="可用于输入账号时登录", relative="imgDMyInfoM", layout="Right", step=[1,0.5], offset=[4,0], alignV="Top", size=[140,30], fontSize=12, color="fc_6_">
+
+				<Button="btnAltPassWordMyInfoM", image="anniu8.png", layout="Right", offset=[-13,0], onClick="node:Parent(4):onAltPassWordClick()"
+					<Image="imgPassWordD3MyInfoM", image="xiugai1.png", layout="Center">
+				>
+			>
+			<Image="imgBindEmailDMyInfoM", image="gerenziliaoliebaodi.png", layout="UpRight"
+				<Image="imgDMyInfoM", layout="Center", image="genrenziliaoxuanzedida.png", layout="Left", offset=[4,0]
+					<Image="imgEmailBindDMyInfoM", image="gerenziliaoweixiugai.png", layout="Center">
+				>
+		
+				<Text="txEmailBindD1MyInfoM", text="未绑定邮箱", relative="imgDMyInfoM", layout="Right", step=[1,-1], offset=[4,4], color=[0,255,0], fontSize="fs_18">
+				<Text="txEmailBindD2MyInfoM", text="可用于登录界面找回账号", relative="imgDMyInfoM", layout="Right", step=[1,0.5], offset=[4,0], alignV="Top", size=[140,30], fontSize=12, color="fc_6_">
+
+				<Button="btnBindEmailMyInfoM", image="anniu8.png" , layout="Right", offset=[-13,0], onClick="node:Parent(4):onBindEmailClick()"
+					<Image="imgEmailBindD3MyInfoM", image="xiugai1.png", layout="Center">
+				>
+			>
+			<Image="imgPhoneMyInfoM", image="gerenziliaoliebaodi.png", layout="DownLeft"
+				<Image="imgDMyInfoM", layout="Center", image="genrenziliaoxuanzedida.png", layout="Left", offset=[4,0]
+					<Image="imgPhoneDMyInfoM", image="gerenziliaoweixiugai.png", layout="Center">
+				>
+
+				<Text="txPhoneD1MyInfoM", text="未绑定手机", relative="imgDMyInfoM", layout="Right", step=[1,-1], offset=[4,4], color=[0,255,0], fontSize="fs_18">
+				<Text="txPhoneD2MyInfoM", text="可用于找回账号，重置绑定的邮箱或者手机", relative="imgDMyInfoM", layout="Right", step=[1,0.4], offset=[4,0], alignV="Top", size=[140,30], fontSize=12, color="fc_6_">
+
+				<Button="btnBindPhoneMyInfoM", image="anniu8.png", layout="Right", offset=[-13,0], onClick="node:Parent(4):onBindPhoneClick()"
+					<Image="imgPhoneD3MyInfoM", image="xiugai1.png", layout="Center">
+				>
+			>
+			<Image="imgStatusMyInfoM",image="gerenziliaoliebaodi.png",layout="DownRight"
+				<Image="imgDMyInfoM", layout="Center", image="genrenziliaoxuanzedida.png", layout="Left", offset=[4,0]
+					<Image="imgStatusDMyInfoM",image="gerenziliaoweixiugai.png",layout="Center">
+				>
+
+				<Text="txStatusD1MyInfoM", text="未实名认证", relative="imgDMyInfoM", layout="Right", step=[1,-1], offset=[4,4], color=[0,255,0], fontSize="fs_18">
+				<Text="txStatusD2MyInfoM", text="可用于官网账号申诉，重置绑定的邮箱或者手机", relative="imgDMyInfoM", layout="Right", step=[1,0.4], offset=[4,0], alignV="Top", size=[140,30], fontSize=12, color="fc_6_">
+
+				<Button="btnBindStatusMyInfoM", image="anniu8.png" , layout="Right", offset=[-13,0], onClick="node:Parent(4):onBindStatusClick()"
+					<Image="imgStatusD3MyInfoM", image="xiugai1.png", layout="Center">
+				>
+			>
+		>
+		
+		<Layer="lyd1", size=[40,30], layout="DownLeft", relative="lyrlist", step=[0,1], offset=[6,26]
+			<Text="txD1MyInfoM",text="账号安全绑定说明 : ", layout="Left", fontSize=18, color="fc_7_">
+		>
+		<Layer="lyd2", size=[40,30], layout="DownLeft", relative="lyd1", step=[0,1], offset=[0,-4]
+			<Text="txD2MyInfoM",text="*绑定成功后 , 可用于找回本服账号", layout="Left", fontSize=18, color="fc_7_">
+		>
+		<Layer="lyd3", size=[40,30], layout="DownLeft", relative="lyd2", step=[0,1], offset=[0,-4]
+			<Text="txD3MyInfoM",text="*如果未绑定或者遗失了绑定信息时，请拨打客服电话0755-26615524", layout="Left", fontSize=18, color="fc_7_">
+		>
+	>
+
+	<Image="imgTitleMyInfoM", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="imgTitleTMyInfoM", layout="Center", image="guanlizhanghu.png", offset=[5,-10]>
+	>
+	<Button="backBtn", layout="RightUp", image="fanhui.png", relative="imgShowMyInfoM", step=[0.3,-0.5], offset=[0,0], onClick="node:Parent():doPop()">
+>

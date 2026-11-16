@@ -1,0 +1,8 @@
+﻿活动ID,type(0首充，1单笔充，2七日基金，3成长基金),时间方案ID(prop_time),图标,排序,url,客户端显示时间方案ID(prop_time),活动名称图标,"购买价格（type 2,3需要）",活动说明,最低购买vip等级
+1001,0,12,banner_shouchong.png,1,http://www.farm.vk51.com/farmActivity/web/as,12,title_shouchong.png,0,第一次总是最珍贵的，活动期间内第一笔充值10元或10元以上就可以领取价值xx钻石的礼包奖励！没有第一次的人生是不完整的~,0
+1003,2,12,banner_qiri.png,3,http://www.farm.vk51.com/farmActivity/web/as,12,title_qiri.png,200,vip1以上的玩家，投资200钻石，可获取400%的回报。投资后的第1天-第6天，每天领取100钻石，第7天可领取200钻石！每个玩家只能购买一次！,1
+1007,1,12,banner_danbi.png,2,http://www.farm.vk51.com/farmActivity/web/as,12,title_danbi.png,0,一次性充值50元可额外获得150钻石<br/>一次性充值100元可额外获得150+400钻石<br/>一次性充值200元可额外获得150+400+1000钻石<br/>一次性充值500元可额外获得150+400+1000+3000钻石<br/>一次性充值1000元可额外获得150+400+1000+3000+7000钻石<br/>活动期间内可无限次获得！,0
+1008,4,11,banner_jihuoma.png,5,http://www.farm.vk51.com/farmActivity/web/as,11,title_jihuoma.png,0,,0
+1011,3,11,banner_chengzhang.png,4,http://www.farm.vk51.com/farmActivity/web/as,11,title_chengzhang.png,1000,投资1000钻石，每次返还500钻石，共返还4000钻石。,5
+1012,3,11,banner_chengzhang.png,4,http://www.farm.vk51.com/farmActivity/web/as,11,title_chengzhang.png,5000,投资5000钻石，每次返还2500钻石，共返还20000钻石。,7
+1013,3,11,banner_chengzhang.png,4,http://www.farm.vk51.com/farmActivity/web/as,11,title_chengzhang.png,20000,投资20000钻石，每次返还10000钻石，共返还80000钻石。,9

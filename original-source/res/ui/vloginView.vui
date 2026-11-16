@@ -1,0 +1,64 @@
+<LoginView="loginView"
+	<Image="imageBg", image="loginBg.jpg", fit="Max", layout="Center"
+		<Armature="loginArmature",  jsonName="loginArmature", animation="idle", offsetP=[0.12,0.075] >
+
+		<Image="loginButton", image="jinruyouxianniu.png", layout="Down", offsetP=[0.011,-0.065], touch=1, onClick="view:startGameAction()">
+
+		<Image="loginSlot", image="loginSlot.png", layout="Down", offsetP=[0,-0.2], visible=0
+			<Layer="loginSlotLayer", layout="Left", fill=[0.01,1], clip=1, visible=0
+				<Image="loginSlotGreen", image="loginSlotGreen.png", layout="Left", visible=0>
+			>
+			<Layer="loginSlotPointLayer", layout="Left", fill=[0.01,1], visible=0
+				<Image="loginGreenPoint", image="loginGreenPoint.png", layout="Right", step=[0.5, 0], offset=[2,-2], visible=1>
+			>
+		>
+		<Text="textLoad", relative="loginButton", layout="Up", step=[0,-1], align="Center", offset=[16,0], size=[400, 30], text="", font=24, color=[255,255,255], effectColor=[0,0,0], outline=2>
+
+		<Image="loginTitle", image="denglubiaoti.png", layout="Up", offset=[15,30], scale=1, visible=1>
+	>
+	
+	<Button="btnChangeRole", layout="DownLeft", image="loginZhanghao.png", offset=[15,-20], onClick="view:ChangeRole()", visible=1>
+	<Button="btnsetting", relative="btnChangeRole", layout="RightOut", image="loginShezhi.png", offset=[14,0], onClick="view:openSettingView()", visible=1>
+	<Button="btnSever", relative="btnsetting", layout="RightOut", image="loginKefu.png", offset=[14,0], onClick="view:openClientServerPhone()", visible=1>
+	<Button="btnWeb", relative="btnSever", layout="RightOut", image="loginGuanwang.png", offset=[14,0], onClick="view:openWebPage()", visible=0>
+	
+	<Button="btnZoneInfo", layout="UpLeft", image="loginServer.png", offset=[60,0], onClick="view:ZoneInfoAction()", visible=0
+		<Layer="zoneInfoBg", layout="Center", size=[250,25]
+			<Text="texZoneName", layout="Center", offset=[0, 0], text="", fontSize=20, color=[73,241,255]>
+			<Text="texZoneNumber", layout="DownLeft", relative="texZoneName", step=[-1,0], offset=[-6, 0], text="", fontSize=16, color=[73,241,255]>
+			<Text="texZoneState", layout="Right", relative="texZoneName", step=[1,0], offset=[6, 0], text="流畅", fontSize=20, color=[0,255,0]>
+		>
+	>
+	<Layer="layBgGray", layout="Center", fill=[1,1], color=[0,0,0,127], visible=0, touch=1, onClick="view:CloseZoneInfo()"
+		<Image9="layBgBlock", layout="Up", touch=1, image="fuwuqiliebiaodi.png", offset=[0,26], fill=[0.8,0.87]
+			<Image="blockHeadImg", image="zonelisthead.png", layout="Up", offset=[0,0]
+				<Text="lastText", text="上次登录", fontSize="fs_22", color=[219,182,156], layout="Left", offset=[70,-4]>
+				<Text="lastZoneNumber", layout="Center", offset=[0,0], text="1区", fontSize=22, effectColor=[0,0,0], outline=1>
+				<Text="lastZoneName", layout="DownRight", relative="lastZoneNumber", step=[1,0], text="奥尼克西亚", fontSize=26, offset=[12,0], effectColor=[0,0,0], outline=1>
+				<Text="lastZoneState", layout="Left", relative="lastZoneNumber", step=[-1,0], offset=[-12,0], text="流畅", fontSize=22, color=[0,255,0]>
+			>
+			<TableView="tabZoneList", layout="Down", relative="blockHeadImg", step=[0,1], size=[624, 338], fill=[1, 0.84], cell="vZoneCell.vui", visible=0>
+		>
+	>
+	
+	<Layer="layChangeLogin", layout="Center", color=[0,0,0,127], visible=0, touch=1, onClick="view:closeChangeView()", fill=[1,1]
+		<Image="imgShowLoginV", image="xiaotankuang1.png", layout="Center", touch=1
+			<Layer="layLoginV", layout="Up", size=[1,1], fill=[1,0.65]
+				
+				<Editor="edtRoleLoginV", bgImage="shurukuang.png", text="", fontSize=22, layout="Up", step=[0,0.7], size=[225,43], offset=[30,0], visible=0, align="Left", fontColor=[98,50,14]>
+				<Text="txRoleLoginV", text="账号 : ", layout="LeftOut", offset=[-8,0], color=[98,50,14], relative="edtRoleLoginV">
+			
+				
+				<Editor="edtPassWordLoginV", relative="edtRoleLoginV", bgImage="shurukuang.png", align="Left", text="", layout="DownOut", size=[225,43], offset=[0,10], visible=0, inputFlag=0, fontColor=[98,50,14]>
+				<Text="txPassWordLoginV", text="密码 : ", layout="LeftOut", relative="edtPassWordLoginV", color=[98,50,14], offset=[-8,0]>
+			>
+			
+			<Button="btnLoginLoginV", image="tankuanganniu3.png", relative="layLoginV", layout="Down", step=[-0.6,1], offset=[0,0], onClick="view:startAccountNameAction()"
+				<Text="loginTip", text="登录", layout="Center", offset=[0,-3], color=[255,244,186], shadow=[2,-2], effectColor=[0,0,0,127], fontSize=22>
+			>
+			<Button="btnForgetPsw", image="tankuanganniu3.png", relative="layLoginV", layout="Down", step=[0.6,1], offset=[0,0], onClick="view:forgetPswAction()"
+				<Text="pswTip", text="忘记密码", layout="Center", offset=[0,-3], color=[255,244,186], shadow=[2,-2], effectColor=[0,0,0,127], fontSize=22>
+			>
+		>
+	>
+>

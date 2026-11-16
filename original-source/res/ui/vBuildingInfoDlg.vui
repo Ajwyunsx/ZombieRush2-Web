@@ -1,0 +1,13 @@
+<BuildingInfoDlg="buidingInfoDlg"
+	<File="commonUi", fileName="vCommonMsgBox_B.vui">
+
+	<Image="buildBgImg", image="tankuangneikuang1.png", layout="Left", step=[1.2,0], scale=0.8, relative="bgImg"
+		<Image="buildImg", image="mv_shendian.png", layout="Center", fit=[-0.96,-0.96]>
+	>
+	<Text="nameText", text="庄园", color=[90,40,0], fontSize=15, layout="DownOut", relative="buildBgImg", offset=[-20,0]>
+	<Text="levelText", text="99级", color=[90,40,0], fontSize=15, layout="RightOut", offset=[5,0], relative="nameText">
+	<Image9="tipBgImg", image="tankuangdikuang1.png", size=[420,150], layout="UpRightOut", offset=[20,0], relative="buildBgImg"
+		<Text="exploinText", text="", size=[310,50], layout="Up", fontSize=14, color=[90,40,0], alignV="Up", offset=[0,10]>
+	>
+	<Text="descripeText", text="点击任意位置关闭", fontSize=14, layout="Down", relative="bgImg", offset=[20,-35], color=[147,113,67]>
+>

@@ -1,0 +1,58 @@
+<PvpEnemyCell="pvpEnemyCell",size=[600,70]
+	
+	<Image9="imgBackGroundBagC1",image="lueduotiao.png",layout="Left",touch=1,touch=1
+		<Layer="lyEnemy", fill=[1,1], layout="Center"
+			<HeadImage="imgEnemyEnemyl",image="mourentouxiangM.png", size = [56,56], offsetP = [0.0174, 0],layout="Left",touch=1,onClick="node:Parent(3):onOpenPlayerOperateDlg(1)"
+			>
+			
+			<Text="txNickEnemyl",text="",layout="RightOut", relative="imgEnemyEnemyl", fontSize="fs_14", offset=[10,-15], color="fc_8_">
+			<Text="txLevelEnemyl",text="Lv10", layout="RightOut", fontSize="fs_14", offset=[10,0], relative="txNickEnemyl", color="fc_4_">
+			<Text="txTimeEnemyl",text="",layout="RightOut",fontSize="fs_14", color="fc_6_", offset=[10,10], relative="imgEnemyEnemyl">
+			<Layer="lyResEnemy", fill=[0.33, 0.37],layout="DownLeft", step=[0,1], relative="txNickEnemyl", offset=[-5,7]
+				<Image="imgCoinEnemyl", image="icon_yibi_S.png",layout="Right">
+					<Text="txCoinEnemyl",text="", relative="imgCoinEnemyl",layout="RightOut",fontSize="fs_14", offset=[2,0], color="fc_8_">
+				<Image="imgSunEnemyl", image="icon_jinbi_S.png",layout="Left">
+					<Text="txSunEnemyl",text="", relative="imgSunEnemyl",layout="RightOut",fontSize="fs_14", offset=[2,0], color="fc_8_">
+			>
+			
+			<Image="imgMassege", layout="Right", image="anniu8.png", offsetP=[-0.024,0], touch=1,onClick="node:Parent(3):OpenTeamBattleDlg(1)"
+				<Image="imgPvpStart", image="lueduoanniu1.png", layout="Center">
+			>
+			<Text="txPvpStart",text="战斗中", layout="Right", offset=[-15,0],fontSize="fs_22", color=[225,0,0], visible=0>
+		>
+		<Layer="lyAddEnemy", size=[374,90], fill=[1,1], layout="Center"
+			<Image="imgAddEnemy", layout="Right", image="anniu8.png", offsetP=[-0.024,0]
+				<Image="imgAddJEnemy", image="tianjiachourenjia.png", layout="Center">
+			>
+			<Text="txAddEnemy",text="点击添加仇人",layout="Center", offset=[-65,0],fontSize="fs_22", color="fc_8_">
+		>
+	>
+
+	<Image9="imgBackGroundBagC2",image="lueduotiao.png",layout="Right",touch=1,touch=1
+		<Layer="lyEnemy", fill=[1,1], layout="Center"
+			<HeadImage="imgEnemyEnemyl",image="mourentouxiangM.png", size = [56,56], offsetP = [0.0174, 0],layout="Left",touch=1,onClick="node:Parent(3):onOpenPlayerOperateDlg(2)"
+			>
+			
+			<Text="txNickEnemyl",text="",layout="RightOut", relative="imgEnemyEnemyl", fontSize="fs_14", offset=[10,-15], color="fc_8_">
+			<Text="txLevelEnemyl",text="Lv10", layout="RightOut", fontSize="fs_14", offset=[10,0], relative="txNickEnemyl", color="fc_4_">
+			<Text="txTimeEnemyl",text="",layout="RightOut",fontSize="fs_14", color="fc_6_", offset=[10,10], relative="imgEnemyEnemyl">
+			<Layer="lyResEnemy", fill=[0.33, 0.37],layout="DownLeft", step=[0,1], relative="txNickEnemyl", offset=[-5,7]
+				<Image="imgCoinEnemyl", image="icon_yibi_S.png",layout="Right">
+					<Text="txCoinEnemyl",text="", relative="imgCoinEnemyl",layout="RightOut",fontSize="fs_14", offset=[2,0], color="fc_8_">
+				<Image="imgSunEnemyl", image="icon_jinbi_S.png",layout="Left">
+					<Text="txSunEnemyl",text="", relative="imgSunEnemyl",layout="RightOut",fontSize="fs_14", offset=[2,0], color="fc_8_">
+			>
+			
+			<Image="imgMassege", layout="Right", image="anniu8.png", offsetP=[-0.024,0], touch=1,onClick="node:Parent(3):OpenTeamBattleDlg(2)"
+				<Image="imgPvpStart", image="lueduoanniu1.png", layout="Center">
+			>
+			<Text="txPvpStart",text="战斗中", layout="Right", offset=[-15,0],fontSize="fs_22", color=[225,0,0], visible=0>
+		>
+		<Layer="lyAddEnemy", size=[374,90], fill=[1,1], layout="Center"
+			<Image="imgAddEnemy", layout="Right", image="anniu8.png", offsetP=[-0.024,0]
+				<Image="imgAddJEnemy", image="tianjiachourenjia.png", layout="Center">
+			>
+			<Text="txAddEnemy",text="点击添加仇人",layout="Center", offset=[-65,0],fontSize="fs_22", color="fc_8_">
+		>
+	>
+>

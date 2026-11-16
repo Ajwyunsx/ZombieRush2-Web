@@ -1,0 +1,27 @@
+<CostLackDlg="costLackDlg"
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+		<Text="titleText", text="资源不足", color=[102,47,6], fontSize=22, layout="Up", offset=[0,17]>
+		<Image9="centerImg", image="tankuangdikuang1.png", layout="Center", offset=[1,-15], size=[360,100]
+
+			<Text="cl_sText1", text="完成本次操作还需要以下资源：", fontSize=18, layout="Up", offset=[0,10], color=[133,90,47] >
+			<Layer="cl_thingLayer1", size=[110,35], layout="Center", offset=[-100,0]
+				<Image="cl_thingImage1", image="icon_jinbi.png", layout="Left", fit=[0,-1] >
+				<Text="cl_numText1", text="9999", fontSize="fs_22", layout="RightOut", relative="cl_thingImage1", offset=[10,0], color=[79,40,0] >
+			>
+			<Layer="cl_thingLayer2", size=[110,35], layout="Center", offset=[100,0]
+				<Image="cl_thingImage2", image="icon_jinbi.png", layout="Left", fit=[0,-1] >
+				<Text="cl_numText2", text="9999", fontSize="fs_22", layout="RightOut", relative="cl_thingImage2", offset=[10,0], color=[79,40,0] >
+			>
+			<Text="cl_sText2", text="消耗钻石补齐资源, 并完成操作", fontSize=18, layout="Down", offset=[0,-8], color=[133,90,47] >
+		>
+		
+
+		<Button="LeftBtn", image="tankuanganniu3.png", layout="LeftDown", offset=[70,-25], onClick="node:Parent(2):doPop()"
+			<Text="cancelTip", text="取消", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+		<Button="RightBtn", image="tankuanganniu3.png", layout="RightDown", offset=[-70,-25], onClick="node:Parent(2):onExchangeBtnClick()"
+			<Text="cl_costText", text="999999", color=[255,244,186], layout="Center", offset=[20,-3], shadow=[2,-2], effectColor=[0,0,0,127]>
+			<Image="cl_costImage", image="icon_zuanshi.png", layout="LeftOut", scale=0.8, relative="cl_costText", offset=[-5,0]>
+		>
+	>
+>

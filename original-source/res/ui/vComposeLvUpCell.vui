@@ -1,0 +1,36 @@
+﻿<ComposeLvUpCell="composeLvUpCell", size=[137,315]
+	<Image9="imgCardItem", image="kapiandi.png", layout="Center", size=[133,311]
+		<Image="cardImg", image="carddiban1.png", layout="Up" , offset=[0,11]>
+
+		<Image="imgStarC", image="kapaixingxing.png", layout="LeftUp", relative="cardImg", offset=[5,3]
+					<Text="txlevel", layout="RightOut", fontSize="fs_22", color="fc_2_", font="cardNumber.fnt", offset=[0,8]>
+				>
+
+		<Layer="lyitem", size=[100,150], layout="Up", offset=[0,-6]
+			<Image="imgItemPlantC",image="baoxiang.png",layout="Down", fit=[-1,-1]>
+		>
+		
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Up", offset=[0,136]>
+		<Layer="lyname", relative="imgNamePlantC", layout="Center", offset=[0,-3], size=[82,25]
+			<Text="txNamePlantC",text="商城物品", fontSize="fs_14", layout="Center", color=[248,248,219]>
+		>
+		
+		<Layer="lyres",size=[105,63], layout="Down", offset=[0,-69]
+			<Image9="sunBgImage", image="shuzibeijing.png", layout="Up"
+				<Layer="lyres1", size=[27,27], layout="Left", offset=[10,0]
+				<Image="sunImage", image="icon_basecamp.png", layout="Center", fit=[-0.9,-0.9] >
+				>
+				<Text="sunText", text="123456", color=[75,29,8], layout="Right", fontSize=14, offset=[-10,0]>
+			>
+			<Image9="suitBgImage", image="shuzibeijing.png", layout="Down"
+				<Layer="lyres1", size=[27,27], layout="Left", offset=[10,0]
+				<Image="suitImage", image="icon_basecamp.png", layout="Center", fit=[-0.9,-0.9] >
+				>
+				
+				<Text="suitUseText", text="10", layout="Right", color=[75,29,8], offset=[-10,0], fontSize=14>
+				<Text="suitHasText", text="10", relative="suitUseText", layout="LeftOut", offset=[0,0], fontSize=14>	
+			>
+		>
+		<Button="composeBtn", image="lvsetongyonganniu.png", text="升星", layout="DownOut", fontSize="fs_22", relative="suitBgImage", offset=[0,6], onClick="node:Parent(2):onOpenComposeOperateDlg()">
+	>
+>

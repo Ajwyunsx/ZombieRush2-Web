@@ -1,0 +1,6 @@
+<SystemNoticeLayer="systemNoticeLayer", size=[380,28], offset=[0,40]
+	<Image9="imgSystemNotice", image="gonggaolan.png", layout="Center", size=[380,28]>
+	<Layer="laySystemNoticeLayer", layout="Center", size=[340, 28], clip=1
+		<Text="texSystemNotice", layout="RightOut", fontSize=15, text="", effectColor=[0,0,0], outline=1>
+	>
+>

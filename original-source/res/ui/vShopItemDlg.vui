@@ -1,0 +1,58 @@
+<ShopItemDlg="shopItemDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgBackGroundShopItemD", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image9="imgBackGroundShopItemD",image="tankuang4.png",layout="Center",touch=1,offsetP = [-0.02,0]
+		<Layer="lyTitle",fill=[0.3,0.1], layout="LeftUp",offsetP=[0.11,0.11]
+			<Text="txTitleShopItemD", text="购买物品", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+
+		<Image="imgDexDCrystalO",image="tankuangneikuang1.png",layout="Left",offsetP=[0.15,-0.1], scale=0.84
+			<Image="imgDexShopItemD",image="RW_Box.png",layout="Center">
+		>
+
+		<Image9="imgShowShopItemD",image="tankuangneikuang3.png", relative="imgDexDCrystalO",layout="RightOut", offset=[16,-2]
+			<Layer="lynamed", fill=[0.18,0.3], layout="Left",step=[0,-1], offset=[0,0]
+				<Text="txnamedCrystalO",text="名称 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+			<Layer="lyname",fill=[0.6,0.3], layout="RightOut", relative="lynamed", offset=[5,0]
+				<Text="txnameCrystalO",text="材料",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycountd", fill=[0.18,0.3], layout="Left",step=[0,0], offset=[0,0]
+				<Text="txDexdCrystalO",text="数量 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycount",fill=[0.6,0.3], layout="RightOut", relative="lycountd", offset=[5,0]
+				<Text="txDexCrystalO",text="99",layout="Left", fontSize="fs_22",color="fc_8_">
+			>
+
+			<Layer="lycost", fill=[0.18,0.3], layout="Left",step=[0,1], offset=[0,0]
+				<Text="txCostDShopItemD",text="价格 : ",layout="Right", fontSize="fs_22",color="fc_8_">
+				<Image="imgCostShopItemD",image="icon_zuanshi.png",relative="txCostDShopItemD",layout="RightOut", offset=[5,0], scale=0.5>
+				<Text="txCostShopItemD",text="",layout="RightOut",relative="imgCostShopItemD" , fontSize="fs_22",color="fc_8_", offset= [2,2]>
+			>
+		>
+		
+		
+		<Layer="lydescribed",fill=[0.5,0.1], layout="Center", step=[0,0.5],offsetP=[0.05,0.02]
+			<Text="txdescribedCrystalO",text="描述", layout="Center", fontSize="fs_22",color="fc_8_">
+		>
+
+
+		<Layer="lyd", fill=[0.8,0.2], relative="lydescribed", layout="DownOut", offset=[0, 0]
+			<Text="txdescribeCrystalO",text="描述",layout="UpLeft", alignV="Top",fontSize="fs_22", size=[455,68],color="fc_6_">
+		>
+
+		<Layer="lyBt", fill=[0.6,0.15],layout="Down",offsetP=[0.05,-0.07]
+			<Button="btnBuyShopItemD",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):onBuyClick()"
+				<Text="txCostDCrystalO",text="购买",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+			>
+			
+			<Button="btnCloseShopItemD",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):onCloseClick()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txBackCrystalO",text="取消",layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+				<Image="imgCancelCrystalO",image="guanbicha.png",layout="Center", visible = 0>
+			>
+		>
+			
+		>
+	
+>

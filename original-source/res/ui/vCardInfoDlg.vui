@@ -1,0 +1,47 @@
+<CardInfoDlg="cardInfoDlg", color=[0,0,0,175]
+	<Image="bgImg", image="tankuang8.png", layout="Center"
+		<Layer="titleLayer", size=[160,40], offset=[60,72], layout="LeftUp"
+			<Text="titleText", text="标题标题", color=[255,255,0], fontSize=26, layout="Center", offset=[10,-15]>
+		>
+
+		<Image="mi_amtBgImg", image="tankuangneikuang1.png", layout="Left", offset=[75,-30], scale=1.06
+			<Layer="mi_amtBgLayer", size=[80,80], layout="Center">
+		>
+		<Image9="centerImg", image="tankuangdikuang1.png", layout="RightOut", relative="mi_amtBgImg", size=[335,115], offset=[15,0]
+			<Text="mi_nameText", text="名称：西服舞者六字", fontSize=15, layout="UpLeft", offset=[10,5], color=[70,30,0]>
+			<Text="mi_levelText", text="星级：",  fontSize=15, layout="LeftDownOut", relative="mi_nameText", color=[70,30,0]>
+			<Text="mi_hpText", text="生命：99999",  fontSize=15, layout="LeftDownOut", color=[70,30,0], relative="mi_levelText">
+			<Text="mi_atkText", text="攻击：99999",  fontSize=15, layout="LeftDownOut", relative="mi_hpText", color=[83,42,0]>
+			<Text="mi_spaceText1", text="召唤：",  fontSize=15, layout="LeftDownOut", relative="mi_atkText", color=[83,42,0]>
+			<Image="mi_spaceIcon", image="icon_yueguang_S.png", layout="RightOut", relative="mi_spaceText1">
+			<Text="mi_spaceText", text="99999",  fontSize=15, layout="RightOut", relative="mi_spaceIcon", color=[83,42,0]>
+
+
+			<Text="mi_qualityText", text="品质：绿色",  fontSize=15, layout="LeftUp", offset=[180,5] , color=[83,42,0]>
+			<Text="mi_class", text="系列：舞者", fontSize=15, layout="LeftDownOut", color=[70,30,0], relative="mi_qualityText">
+			<Text="mi_aspd", text="攻速：99999", fontSize=15, layout="LeftDownOut", color=[70,30,0], relative="mi_class">
+
+			<Text="mi_exText1", text="备用：", fontSize=15, layout="LeftDownOut", color=[70,30,0], relative="mi_class", visible=0>
+			<Image="mi_exIcon1", image="icon_jinbi_S.png", layout="RightOut", relative="mi_exText1", visible=0>
+			<Text = "mi_exValue1", text="99999", fontSize=15, color=[70,30,0], layout="RightOut", relative="mi_exIcon1", visible=0> 
+
+			<Text="mi_speedText", text="移速：99999",  fontSize=15, layout="LeftDownOut", relative="mi_aspd", color=[83,42,0]>
+
+			<Text="mi_exText2", text="备用：", fontSize=15, layout="LeftDownOut", color=[70,30,0], relative="mi_aspd", visible=0>
+			<Image="mi_exIcon2", image="icon_jinbi_S.png", relative="mi_exText2", layout="RightOut", visible=0>
+			<Text = "mi_exValue2", text="99999", fontSize=15, layout="RightOut", color=[70,30,0], relative="mi_exIcon2", visible=0> 
+
+			<Text="mi_timeText", text="复活：200秒",  fontSize=15, layout="LeftDownOut", relative="mi_speedText", color=[83,42,0]>
+
+			<Image="starBg1", image="xing.png", layout="RightOut", relative="mi_levelText", offset=[3,0]>
+			<Text="starLevel", text="99", fontSize=15, color=[80,42,0], layout="RightOut", relative="starBg1" >
+		> 
+		<Text="skillHead", text="技能特征", fontSize="fs_22", color=[83,42,0], layout="Center", offset=[20,45]>
+		<Text="mi_describeText", text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测", size=[460,120], layout="DownOut", relative="skillHead", fontSize=15, color=[100,60,30], alignV="LeftUp", offset=[0,5]>
+
+		<Text="descripeText", text="点击任意位置关闭", fontSize=15, layout="Down", offset=[20,-20], color=[161,124,72]>
+	>
+	
+	
+
+>

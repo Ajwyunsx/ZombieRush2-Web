@@ -1,0 +1,32 @@
+<BannerRaceDlg="bannerRaceDlg"
+	<File="commonUi", fileName="vCommonMsgBox_A.vui"		
+		<Image="imageIconBg", image="creature_icon_bg.png", layout="Up", offsetP=[0, 0.3]
+			<Image="imageIcon", image="jin.png", layout="Center", scale=0.48>
+		>
+
+		<Image="imageIcon", image="arrow_ts.png", layout="DownOut", relative="imageIconBg", offsetP=[0, 0.01]>
+
+		<Image9="centerImg", image="tankuangdikuang1.png", size=[400, 90], layout="DownOut", relative="imageIconBg", offsetP=[0.02, 0.11]
+			<Text="textBannerRaceName1", fontSize="fs_14", color="fc_6_", layout="DownLeft", relative="centerImg", offsetP=[0.038, -0.1]>
+			<Image="imageBannerRaceIcon1", layout="UpOut",  relative="textBannerRaceName1", scale=0.45>
+
+			<Text="textBannerRaceName2", fontSize="fs_14", color="fc_6_", layout="RightOut", relative="textBannerRaceName1", offsetP=[0.03, 0]>
+			<Image="imageBannerRaceIcon2", layout="UpOut",  relative="textBannerRaceName2", scale=0.48>
+
+
+			<Text="textBannerRaceName3", fontSize="fs_14", color="fc_6_", layout="RightOut", relative="textBannerRaceName2", offsetP=[0.03, 0]>
+			<Image="imageBannerRaceIcon3", layout="UpOut",  relative="textBannerRaceName3", scale=0.48>
+
+			<Text="textBannerRaceName4", fontSize="fs_14", color="fc_6_", layout="RightOut", relative="textBannerRaceName3", offsetP=[0.03, 0]>
+			<Image="imageBannerRaceIcon4", layout="UpOut",  relative="textBannerRaceName4", scale=0.48>
+
+			<Text="textBannerRaceName5", fontSize="fs_14", color="fc_6_", layout="RightOut", relative="textBannerRaceName4", offsetP=[0.03, 0]>
+			<Image="imageBannerRaceIcon5", layout="UpOut",  relative="textBannerRaceName5", scale=0.48>
+
+			<Text="textBannerRaceName6", fontSize="fs_14", color="fc_6_", layout="RightOut", relative="textBannerRaceName5", offsetP=[0.03, 0]>
+			<Image="imageBannerRaceIcon6", layout="UpOut",  relative="textBannerRaceName6", scale=0.48>
+		>
+
+		<Text="descripeText", text="点击任意位置关闭", relative="bgImg", fontSize="fs_14", layout="Down", color="fc_6_", step=[0, -1.5]>
+	>
+>

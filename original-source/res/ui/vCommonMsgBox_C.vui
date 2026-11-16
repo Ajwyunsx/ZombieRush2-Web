@@ -1,0 +1,7 @@
+<MsgBox="commonTipC", color=[0,0,0,175]
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+		<Image="titleBg", image="tankuangbiaoti.png", layout="Up", offset=[0,-20]
+			<Image="title", image="hechengchenggong.png", layout="Center", offset=[0,-5]>
+		>
+	>
+>

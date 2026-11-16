@@ -1,0 +1,60 @@
+<TableViewCell="cardAltasCell", size=[630,150]
+	<Layer="item_5", size=[130,150], layout="Center", step=[-2,0], touch=1
+		<Image="item_img", image="carddiban2.png", layout="Down", scale=0.9
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="20", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="cardName", text="僵尸", layout="Center", fontSize=14, offset=[0,-2]>
+			>
+		>
+	>
+	<Layer="item_4", size=[130,190], layout="Center", step=[-1,0], touch=1
+		<Image="item_img", image="carddiban2.png", layout="Down", scale=0.9, offset=[0,-20]
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="20", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="cardName", text="僵尸", layout="Center", fontSize=15, outline=1, effectColor=[0,0,0], offset=[0,-2]>
+			>
+		>
+	>
+	
+	<Layer="item_3", size=[130,190], layout="Center", touch=1
+		<Image="item_img", image="carddiban2.png", layout="Down", scale=0.9, offset=[0,-20]
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="20", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="cardName", text="僵尸", layout="Center", fontSize=15, outline=1, effectColor=[0,0,0], offset=[0,-2]>
+			>
+		>
+	>
+	
+	<Layer="item_2", size=[130,190], layout="Center", step=[1,0], touch=1
+		<Image="item_img", image="carddiban2.png", layout="Down", scale=0.9, offset=[0,-20]
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="20", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="cardName", text="僵尸", layout="Center", fontSize=15, outline=1, effectColor=[0,0,0], offset=[0,-2]>
+			>
+		>
+	>
+	
+	<Layer="item_1", size=[130,190], layout="Center", step=[2,0], touch=1
+		<Image="item_img", image="carddiban2.png", layout="Down", scale=0.9, offset=[0,-20]
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="20", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="cardName", text="僵尸", layout="Center", fontSize=15, outline=1, effectColor=[0,0,0], offset=[0,-2]>
+			>
+		>
+	>
+>

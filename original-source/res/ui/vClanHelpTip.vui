@@ -1,0 +1,18 @@
+<ClanHelpTip="clanHelpTip"
+	<Image="centerImg", image="tankuang1.png", layout="Center", fit=[0.7,0.7]
+		<Text="title1", text="阵亡条件", layout="UpLeft", offset=[50,25], fontSize=22, color=[80,40,0]>
+		<Text="sssss1", text="攻方：攻击守方失败为阵亡(突破任意1路算胜利);", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="title1", offset=[0,-3]>
+		<Text="sssss2", text="守方：所有道路被突破为阵亡;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="sssss1", offset=[0,-3]>
+
+		<Text="title2", text="胜负条件", layout="LeftDownOut", offset=[0,8], fontSize=22, color=[80,40,0], relative="sssss2">
+		<Text="sssss3", text="守方胜利：团战结束时，守方有玩家存活;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="title2", offset=[0,-3]>
+		<Text="sssss4", text="攻方胜利：团战结束时，守方玩家全部阵亡;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="sssss3", offset=[0,-3]>
+
+		<Text="title3", text="奖励分配", layout="LeftDownOut", offset=[0,8], fontSize=22, color=[80,40,0], relative="sssss4">
+		<Text="sssss5", text="资源：只有主守玩家的资源会被掠夺;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="title3", offset=[0,-3]>
+		<Text="sssss6", text="碎片：击杀植物或者僵尸有概率获得碎片;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="sssss5", offset=[0,-3]>
+		<Text="sssss7", text="战功：植物、僵尸死亡会产生战功，团战获胜方才可领取;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="sssss6", offset=[0,-3]>
+		<Text="sssss8", text="战勋：团战结束后，攻方和守方都可获得战勋;", layout="LeftDownOut", fontSize=14, color=[160,90,0], relative="sssss7", offset=[0,-3]>
+		<Text="descripeText", text="点击任意位置关闭", fontSize=14, layout="Down", offset=[0,-30], color=[147,113,67]>
+	>
+>

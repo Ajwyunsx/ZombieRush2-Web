@@ -1,0 +1,85 @@
+﻿<PlantViewCell="plantViewCell",size=[445,97]
+	
+	<Layer="lyrPlantCell1",fill=[0.2,1], touch=1,onClick="node:Parent():onStoreCellClick(1)"
+		<Image="imgbgPlantC",image="carddiban1.png", scale=0.6, layout="Up", offset=[0,-2]
+			
+			<Image="imgItemPlantC", image="BoomZombieL.png", layout="Down", offset=[0,-20], fit=[-0.8,-0.8]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_26", color="fc_2_", shadow=[2,-2], effectColor=[0,0,0,127]>
+				>
+			<Text="textItemCount",text="16", fontSize=18, layout="DownRightOut", relative="imgItemPlantC", offset=[0,-3], color=[255,255,0]>
+		>
+		
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Down", scale=0.6, offset=[0,-6]>
+		<Text="txNamePlantC",text="商城物品", relative="imgNamePlantC", color=[75,29,8], fontSize=12, layout="Center", offset=[0,-2]>
+		<Image="imgTipPlantC",image="zhujiemiantishipaopao.png", offset=[-10,0], layout="UpRight"
+				<Text="txTipPlantC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrPlantCell2",lock=true,fill=[0.2,1],step=[1,0], touch=1,onClick="node:Parent():onStoreCellClick(2)"
+		<Image="imgbgPlantC",image="carddiban1.png", scale=0.6, layout="Up", offset=[0,-2]
+			
+			<Image="imgItemPlantC", image="BoomZombieL.png", layout="Down", offset=[0,-20], fit=[-0.8,-0.8]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_26", color="fc_2_", shadow=[2,-2], effectColor=[0,0,0,127]>
+				>
+			<Text="textItemCount",text="16", fontSize=18, layout="DownRightOut", relative="imgItemPlantC", offset=[0,-3], color=[255,255,0]>
+		>
+
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Down", scale=0.6, offset=[0,-6]>
+		
+		<Text="txNamePlantC",text="商城物品", relative="imgNamePlantC", color=[75,29,8],fontSize=12, layout="Center", offset=[0,-2]>
+		
+		<Image="imgTipPlantC",image="zhujiemiantishipaopao.png", offset=[-10,0], layout="UpRight"
+				<Text="txTipPlantC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrPlantCell3",lock=true,fill=[0.2,1],step=[2,0], touch=1,onClick="node:Parent():onStoreCellClick(3)"
+		<Image="imgbgPlantC",image="carddiban1.png", scale=0.6, layout="Up", offset=[0,-2]
+			
+			<Image="imgItemPlantC", image="BoomZombieL.png", layout="Down", offset=[0,-20], fit=[-0.8,-0.8]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_26", color="fc_2_", shadow=[2,-2], effectColor=[0,0,0,127]>
+				>
+			<Text="textItemCount",text="16", fontSize=18, layout="DownRightOut", relative="imgItemPlantC", offset=[0,-3], color=[255,255,0]>
+		>
+		
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Down", scale=0.6, offset=[0,-6]>
+		<Text="txNamePlantC",text="商城物品", relative="imgNamePlantC", color=[75,29,8], fontSize=12, layout="Center", offset=[0,-2]>
+		<Image="imgTipPlantC",image="zhujiemiantishipaopao.png", offset=[-10,0], layout="UpRight"
+				<Text="txTipPlantC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrPlantCell4",lock=true,fill=[0.2,1],step=[3,0], touch=1,onClick="node:Parent():onStoreCellClick(4)"
+		<Image="imgbgPlantC",image="carddiban1.png", scale=0.6, layout="Up", offset=[0,-2]
+			
+			<Image="imgItemPlantC", image="BoomZombieL.png", layout="Down", offset=[0,-20], fit=[-0.8,-0.8]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_26", color="fc_2_", shadow=[2,-2], effectColor=[0,0,0,127]>
+				>
+			<Text="textItemCount",text="16", fontSize=18, layout="DownRightOut", relative="imgItemPlantC", offset=[0,-3], color=[255,255,0]>
+		>
+		
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Down", scale=0.6, offset=[0,-6]>
+		<Text="txNamePlantC",text="商城物品", relative="imgNamePlantC", color=[75,29,8], fontSize=12, layout="Center", offset=[0,-2]>
+		<Image="imgTipPlantC",image="zhujiemiantishipaopao.png", offset=[-10,0], layout="UpRight"
+				<Text="txTipPlantC",text="",layout="Center", fontSize=15>
+		>
+	>
+	<Layer="lyrPlantCell5",lock=true,fill=[0.2,1],step=[4,0], touch=1,onClick="node:Parent():onStoreCellClick(5)"
+		<Image="imgbgPlantC",image="carddiban1.png", scale=0.6, layout="Up", offset=[0,-2]
+			
+			<Image="imgItemPlantC", image="BoomZombieL.png", layout="Down", offset=[0,-20], fit=[-0.8,-0.8]>
+				<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]
+					<Text="txlevel", layout="RightOut", font="cardNumber.fnt", offset=[0,8], fontSize="fs_26", color="fc_2_", shadow=[2,-2], effectColor=[0,0,0,127]>
+				>
+			<Text="textItemCount",text="16", fontSize=18, layout="DownRightOut", relative="imgItemPlantC", offset=[0,-3], color=[255,255,0]>
+		>
+		
+		<Image="imgNamePlantC",image="kabeilou.png",layout="Down", scale=0.6, offset=[0,-6]>
+		<Text="txNamePlantC",text="商城物品", relative="imgNamePlantC", color=[75,29,8], fontSize=12, layout="Center", offset=[0,-2]>
+		<Image="imgTipPlantC",image="zhujiemiantishipaopao.png", offset=[-10,0], layout="UpRight"
+				<Text="txTipPlantC",text="",layout="Center", fontSize=15>
+		>
+	>
+>

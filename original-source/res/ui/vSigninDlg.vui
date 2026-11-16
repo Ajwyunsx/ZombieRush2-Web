@@ -1,0 +1,36 @@
+<SigninDlg="signinDlg", touch=1, color=[0,0,0,175]
+	<Image="sd_bgImage", layout="Center", image="qiandaodiban.png", offset=[0,10]
+
+		<Image="sd_titleImg", image="qiandaobiaoti.png", layout="LeftUp", offset=[60,-40] 
+			<Image="textImg", image="qiandaojianglizi.png", layout="Center", offset=[0,-10]>
+		>
+
+		<Button="sd_exploinBtn", image="qdshuoming.png", topImage="qiandaoshuoming.png", layout="Up", offset=[90,5] , onClick="gView('signinDlg'):onExploinBtnClick()">
+
+		<Text="signCountPreText", text="本月累计签到", fontSize="fs_14", layout="RightUp", offset=[-100,10], color=[163,127,105]>
+		<Text="sd_signCountText", text="99", fontSize="fs_14", layout="RightOut", relative="signCountPreText", color=[255,255,0]>
+		<Text="signCountSufText", text="次", fontSize="fs_14", layout="RightOut", relative="sd_signCountText", color=[144,108,89]>
+
+		<Button="sd_backBtn", image="qiandaotuichu.png", layout="UpRight", offset=[20,-20], onClick="node:Parent(2):doPop()"
+		>
+
+		<TableView="a_tbv", cell="vSigninDlgCell.vui", size=[525,265], layout="Center", offset=[0,-15]>
+
+		<Button="signBtn", image="anniu7.png", topImage="qiandao.png", layout="Down", step=[0.7,-0.5]>
+		<Button="patchBtn", image="anniu7.png", layout="Down", step=[-0.7,-0.5]
+			<Image="costImg", image="icon_zuanshi.png", layout="Left", offset=[15,-2], scale=0.7>
+			<Text="costNumber", text="999", fontSize="fs_22", layout="RightOut", offset=[0,2], relative="costImg">
+			<Image="topImage", layout="Right", offset=[-25,0], image="buqian.png">
+		>
+	>
+	<Layer="sd_exploinLayer", size=[800,450], fit="Full", color=[0,0,0,187], visible=0
+		<Image="sd_exploinImg", image="xiaotankuang1.png", layout="Center", offset=[0,-10]
+			<Text="sd_staicText1", text="每月累计签到天数，领取相应的签到奖励", color=[14,106,18], fontSize=18, layout="Up", offset=[0,40]>
+			<Text="sd_staicText2", text="VIP可在指定的签到天数时，领取双倍奖励!未达到VIP等级时，第二份奖励可以在当日内达到指定VI P等级后补领。", size=[350,60], fontSize=14, layout="DownOut", alignV="Up", offset=[0,05], color=[79,29,0], relative="sd_staicText1">
+
+			<Text="sd_staicText5", text="签到每天更新时间：每天", fontSize=14, layout="LeftDownOut", offset=[0,0], relative="sd_staicText2", color=[79,29,0]>
+			<Text="sssText6", text="5:00", fontSize=14, color=[255,0,0], layout="RightOut", relative="sd_staicText5">
+			<Text="sd_staicText6", text="点击任意位置关闭", fontSize=12, layout="Down", color=[147,113,67], offset=[0,-30] >
+		>
+	>
+>

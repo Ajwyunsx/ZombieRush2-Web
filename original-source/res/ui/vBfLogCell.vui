@@ -1,0 +1,37 @@
+<TableViewCell="bfLogCell", size=[610,100]
+	<Image="itemBgLayer", image="tuanzhanrizhitiao.png", layout="Center"
+		<Image="atkUserImg", image="tuanzhanfenye.png", flipX=1, layout="Left", offset=[65,0]
+			<Text="atkNameText", text="我的名字七个字", layout="UpRight", fontSize=14, offset=[-15,7], color=[91,35,0]>
+			<Text="atkLvText", text="Lv99", layout="DownRight", fontSize=14, offset=[-18,-7], color=[91,35,0]>
+		>
+		<HeadImage="atkHeadImg", image="morentouxiang.png", layout="Left", offset=[130,0], size=[55,55]
+			<Image="atkIcon", image="gong.png", layout="DownLeft">
+		>
+
+		<Image="defUserImg", image="tuanzhanfenye.png", layout="Left", offset=[235,0]
+			<Text="defNameText", text="我的名字七个字", layout="UpLeft", fontSize=14, offset=[18,7], color=[91,35,0]>
+			<Text="defLvText", text="Lv99", layout="DownLeft", fontSize=14, offset=[20,-7], color=[91,35,0]>
+		>
+		
+
+		<HeadImage="defHeadImg", image="morentouxiang.png", layout="RightOut", size=[55,55], relative="atkHeadImg", offset=[10,0]
+			<Image="defIcon", image="fang.png", layout="DownRight">
+		>
+		<Image="vsImg", image="vs.png", layout="Left", offset=[160,0]>
+		<Image="resultImg", image="shenglijiaobiao.png", layout="UpLeft", offset=[-5,-5]> 
+		<Image="factionImg", image="jinggongtiao.png", layout="Left", offset=[-3,20]
+		>
+
+		<Image="rewardLayer", image="zhanchangbantouming.png", layout="Center", offset=[150,10]
+			<Image="casualtyText", image="zhandousiwang.png", layout="UpOut", offset=[0,0]>
+			<Image="plantIcon", image="zhanchangzhiwu.png", layout="Left", offset=[10,-10]
+				<Text="plantCasualtyNum", text="999", fontSize=15, layout="RightOut", offset=[10,2], color=[93,38,0]>
+			>
+			<Image="monsterIcon", image="zhanchangguaiwu.png", layout="DownOut", offset=[0,0], relative="plantIcon"
+				<Text="monsterCasualtyNum", text="999", fontSize=15, layout="RightOut", offset=[10,2], color=[93,38,0]>
+			>
+		>
+		<Button="replayBtn", image="anniu8.png", topImage="huifang.png", layout="Right", offset=[-10,0]>
+		<Text="intervalText", text="1个小时前", fontSize=12, layout="DownOut", offset=[0,0], relative="replayBtn", color=[91,35,0]>
+	>
+>

@@ -1,0 +1,18 @@
+<LvUpChangeDlg="lvUpChangeDlg"
+	<Image="imgbg", image="tankuang6.png", layout="Center", offset=[0,17], level=2
+		<Image="imgtitile", image="tankuangbiaoti.png", layout="Up", offsetP=[0,-0.1287]
+			<Image="imgz", image="shengxingchenggong.png", layout="Center", offsetP=[0,-0.1]>
+		>
+		<Layer="lyc", fill=[0.4327,0.1116], layout="Center", offset=[0,-21]
+			<Text="txc", layout="Center", fontSize="fs_14", color="fc_8_">
+		>
+
+		<Button="sureBtn", image="tankuanganniu3.png", offset=[0,-22], layout="Down", onClick="node:Parent(2):doPop()"
+			<Text="cancelTip", text="关闭", fontSize="fs_26", color=[255,244,186], offset=[0,-1], shadow=[2,-2], layout="Center", effectColor=[0,0,0,127]>
+		>
+	>
+
+	<Image="imgl", image="guang.png", relative="imgbg", layout="Center", offset=[0,-90], level=1>
+
+	
+>

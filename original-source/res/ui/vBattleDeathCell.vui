@@ -1,0 +1,4 @@
+<TableViewCell="battleDeathCell", size=[120, 120]
+	<Image="creatureIcon", image="BasicZombieS.png", layout="Center", scale=1>
+	<Text="creatureCount", relative="creatureIcon", layout="DownRight", text="0", fontSize=28, offset=[4,4]>
+>

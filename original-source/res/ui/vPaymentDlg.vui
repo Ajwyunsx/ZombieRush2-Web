@@ -1,0 +1,57 @@
+<PaymentDlg="paymentDlg", touch=1
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg">
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center", offset=[0,8]
+		<Image="rateTipImg", image="rate10.png", layout="RightUpOut", offset=[-100,-5], scale=0.8>
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):close()">
+
+	<Layer="rechargeLayer", layout="Center", size=[750,420], relative="centerImage"
+		<Layer="webBg", size=[602,207], layout="Center", visible=0>
+		<Text="vipLevel", text="222", layout="LeftUp", relative="webBg", offset=[30,-30], font="vipNumber.fnt" >
+		<Image="p_vipPgcBgImage", image="vipjindutiaodi.png", layout="RightOut", relative="vipLevel", offset=[5,-8]
+			<ProgcessTimer="p_vipPct", image="vipjindutiao.png", layout="Center", percentage=50, direction=0, type=1 >
+			<Text="p_vipPctText", text="99/999",  fontSize=15, layout="Center">
+		>
+
+		<Button="p_vipBtn", image="anniu12.png", layout="RightUpOut", relative="webBg", topImage="chakanvip.png", onClick="node:Parent(2):onClickVipBtn()", offset=[-30,-5]>
+
+		<Text="vipTip", text="再充值XX元可成为", fontSize=18, layout="LeftOut", relative="p_vipBtn", offset=[-60,0], color=[85,46,17] >
+
+		<Text="vipNextLevel", text="222", layout="RightOut", relative="vipTip", offset=[5,8], font="vipNumber.fnt" >
+		
+		<Button="p_rechargeSelfBtn", image="anniu17.png", layout="DownOut", relative="webBg", offset=[-110,5], topImage="geizijichong.png", onClick="node:Parent(2):onRechareSelfClick()">
+
+		<Button="p_rechargeOtherBtn", image="anniu7.png", layout="DownOut", relative="webBg", offset=[160,5], topImage="geitachongzhi.png", onClick="node:Parent(2):onOtherRechargeClick()">
+	>
+	<Layer="vipLayer", layout="Center", visible=0, size=[750,420], relative="centerImage"
+
+		<Image="vpl_vipExploin1", image="VIPditu.png", layout="Center"
+			
+			<Text="vpl_vipExploinTitleText", text="v10", font="vipNumber2.fnt", layout="Up", offset=[-65,10]>
+			
+
+			<Text="vpl_vipPrivilegeText1", text="特权1：圣经病圣经病圣经病圣经病",  outline=2, effectColor=[0,0,0], fontSize=15, size=[320,200], layout="Center", alignV="Center", offset=[10,15] >
+
+
+			<Button="p_vipLeftToward", image="zuoanniu.png", layout="LeftOut", offset=[-10,0], onClick="node:Parent(3):onVipTowardClick('last')" >
+			<Text="lastVipText", text="v1", font="vipNumber.fnt", layout="Up", offset=[0,-25], relative="p_vipLeftToward">
+			<Text="lookLText", text="查看", fontSize=18, color=[58,16,0], layout="UpOut", relative="lastVipText", offset=[0,-5]>
+
+			<Button="p_vipRightToward", image="zuoanniu.png", flipX=1, layout="RightOut", onClick="node:Parent(3):onVipTowardClick('next')", offset=[10,0]>
+			<Text="nextVipText", text="v1", font="vipNumber.fnt", layout="Up", offset=[0,-25], relative="p_vipRightToward">
+			<Text="lookNText", text="查看", fontSize=18, color=[58,16,0], layout="UpOut", relative="nextVipText", offset=[0,-5]>
+
+		>
+		<Text="vipLevel", text="222", layout="LeftUp", relative="vpl_vipExploin1", offset=[30,-30], font="vipNumber.fnt" >
+		<Image="p_vipPgcBgImage", image="vipjindutiaodi.png", layout="RightOut", relative="vipLevel", offset=[11,-8]
+			<ProgcessTimer="p_vipPct", image="vipjindutiao.png", layout="Center", percentage=50, direction=0, type=1 >
+			<Text="p_vipPctText", text="99/999",  fontSize=15, layout="Center">
+		>
+		<Text="vipTip", text="再充值XX元可成为", fontSize=18, layout="UpOut", relative="vpl_vipExploin1", offset=[120,-10], color=[85,46,17] >
+		<Text="vipNextLevel", text="222", layout="RightOut", relative="vipTip", offset=[5,8], font="vipNumber.fnt" >
+		<Button="p_rechargeBtn", image="anniu7.png", layout="DownOut", relative="vpl_vipExploin1", offset=[0,10], topImage="congzhi1.png", onClick="node:Parent(2):onClickRechargeBtn()">
+	>
+>

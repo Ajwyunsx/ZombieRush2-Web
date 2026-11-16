@@ -1,0 +1,64 @@
+<BannerLevelUpSuccess="bannerLevelUpSuccess"
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+		<Image="titleBg", image="tankuangbiaoti.png", layout="Up", offset=[0,-25]
+			<Image="title", image="hechengchenggong.png", layout="Center", offset=[0,-8]>
+		>
+		<Image9="centerImg", image="tankuangdikuang1.png", size=[360,120], layout="Center"
+			<Image="imageIconBg", image="tankuangneikuang1.png", layout="Left", step=[0.18,0], scale=0.8
+				<Image="imageIcon", image="jin.png", layout="Center", scale=0.6>
+			>
+			<Text="textAttrLevel", text="防御级别:", fontSize=18, color=[83,42,0], layout="RightOut", relative="imageIconBg", offset=[8, -25]>
+
+			<Image="iamgeAttrBeforeBg5", relative="textAttrLevel", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrBefore5", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrBeforeBg4", relative="iamgeAttrBeforeBg5", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrBefore4", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrBeforeBg3", relative="iamgeAttrBeforeBg4", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrBefore3", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrBeforeBg2", relative="iamgeAttrBeforeBg3", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrBefore2", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrBeforeBg1", relative="iamgeAttrBeforeBg2", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrBefore1", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="imageArrow1", layout="RightOut", relative="iamgeAttrBeforeBg1", image="minijiantou.png", offset=[-1, 0]>
+
+			<Image="iamgeAttrAfterBg1", relative="imageArrow1", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrAfter1", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrAfterBg2", relative="iamgeAttrAfterBg1", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrAfter2", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrAfterBg3", relative="iamgeAttrAfterBg2", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrAfter3", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrAfterBg4", relative="iamgeAttrAfterBg3", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrAfter4", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Image="iamgeAttrAfterBg5", relative="iamgeAttrAfterBg4", layout="RightOut", image="banner_attr_bg1.png", offset=[-1, 0], scale=0.85
+				<Image="imageAttrAfter5", layout="Center", image="banner_attr1.png", visible=0, scale=0.85>
+			>
+
+			<Text="textAttrName", text="防御力:", fontSize=18, color=[83,42,0], layout="RightOut", relative="imageIconBg", offset=[8, 15]>
+
+			<Image="imageArrow2", layout="DownOut", relative="imageArrow1", image="minijiantou.png", step=[0,1]>
+
+			<Text="textAttrValueBefore", fontSize=18, color=[83,42,0], layout="LeftOut", relative="imageArrow2", offset=[-15, 0]>
+			<Text="textAttrValueAfter", fontSize=18, color=[83,42,0], layout="RightOut", relative="imageArrow2", offset=[15, 0]>
+		>
+
+		<Text="textClose", text="点击任意位置关闭", fontSize=15, color=[124,83,46], layout="DownOut", relative="centerImg", offset=[0,10]>
+	>
+>

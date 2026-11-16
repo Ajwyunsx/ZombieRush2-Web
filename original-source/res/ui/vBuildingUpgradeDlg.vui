@@ -1,0 +1,34 @@
+<BuildingUpgradeDlg="buildingUpgradeDlg", touch=1
+	<File="commonUi", fileName="vCommonMsgBox_A.vui">
+	<Image="buildBgImg", image="tankuangneikuang1.png", layout="Left", step=[1.1,-0.5], scale=0.8, relative="bgImg"
+		<Image="buildImg", image="mv_shendian.png", layout="Center", fit=[-1,-1]>
+	>
+	<Text="nameText", text="庄园", color=[90,40,0], fontSize=15, layout="DownOut", relative="buildBgImg", offset=[-20,0]>
+	<Text="levelText", text="99级", color=[90,40,0], fontSize=15, layout="RightOut", offset=[5,0], relative="nameText">
+	<Image9="tipBgImg", image="tankuangdikuang1.png", size=[420,150], layout="UpRightOut", offset=[30,0], relative="buildBgImg"
+		<Text="exploinText", text="", size=[310,50], layout="Up", fontSize=14, color=[90,40,0], alignV="Up", offset=[0,10]>
+	>
+	<Text="condition", text="升级条件", fontSize=18, layout="Center", step=[0,2], offset=[20,0], color=[90,40,0], relative="bgImg">
+	<Layer="conditionLayer1", size=[130,30], layout="Left", step=[0.65,2.5], relative="bgImg"
+		<Image="icon", image="icon_jinbi.png", layout="Left", fit=[-0.9,-0.9]>
+		<Text="tip", text="升级条件说明", fontSize=15, color=[140,96,58], layout="Left", offset=[30,0] >
+	>
+	<Layer="conditionLayer2", size=[130,30], layout="RightOut", relative="conditionLayer1"
+		<Image="icon", image="icon_jinbi.png", layout="Left", fit=[-0.9,-0.9]>
+		<Text="tip", text="升级条件说明", fontSize=15, color=[140,96,58], layout="Left", offset=[30,0], format=1>
+	>
+	<Layer="conditionLayer3", size=[90,30], layout="RightOut", relative="conditionLayer2"
+		<Image="icon", image="icon_jinbi.png", layout="Left", fit=[-0.9,-0.9]>
+		<Text="tip", text="9999万", fontSize=15, color=[140,96,58], layout="Left", offset=[30,0], format=1 >
+	>
+	<Layer="conditionLayer4", size=[90,30], layout="RightOut", relative="conditionLayer3"
+		<Image="icon", image="icon_jinbi.png", layout="Left", fit=[-0.9,-0.9]>
+		<Text="tip", text="9999万", fontSize=15, color=[140,96,58], layout="Left", offset=[30,0], format=1>
+	>
+	<Button="cancelBtn", image="huangsetongyonganniu.png", layout="Down", step=[-0.8,-0.8], relative="bgImg", onClick="node:Parent(1):doPop()"
+		<Text="cancelText", text="取消", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+	<Button="sureBtn", image="huangsetongyonganniu.png", layout="Down", step=[1.2,-0.8], relative="bgImg"
+		<Text="sureText", text="升级", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+>

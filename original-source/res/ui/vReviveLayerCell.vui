@@ -1,0 +1,21 @@
+<ReviveCell="reviveLayerCell", size=[135,315]
+	<Image9="CardItem", image="kapiandi.png", layout="Center", size=[135,315]
+		<Image="cardBtn", image="carddiban5.png", layout="Down", offset=[0,-150], touch=1
+			<Image="iconImg", image="BoomZombieL.png", layout="Down", offset=[0,-40], fit=[-0.7,-0.7]>
+			<Image="starImg", image="kapaixingxing.png", layout="LeftUp", offset=[5,3]>
+			<Text="starLevel", text="99", font="cardNumber.fnt", color=[255,236,108], layout="RightOut", relative="starImg", offset=[0,8]>
+			
+			<Image="kalouImg", image="kabeilou.png", layout="Down"
+				<Text="nameText", text="僵尸", layout="Center", fontSize=14, offset=[0,-2]>
+			>
+		>
+		<TimeText="timeText", text="0秒后复活", fontSize=15, layout="DownOut", offset=[0,30], suffix="后复活", auto=1, max=1, color=[72,29,0], relative="cardBtn", format=2> 
+		<Image="tipText", image="kechuzheng.png", layout="Down", offset=[0,-50], visible=0> 
+		<Button="reviveBtn", image="huangsetongyonganniu.png", layout="Down", offset=[0,-40] 
+			
+			<Image="sIcon", image="yaoshui.png", layout="Center", offset=[-10,0]>
+			<Text="rText", text="复活", fontSize=15, layout="RightOut", offset=[0,0], relative="sIcon">
+			<Text="costText", text="999", fontSize=15, layout="LeftOut", relative="sIcon">
+		>
+	>
+>

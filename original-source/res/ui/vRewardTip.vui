@@ -1,0 +1,17 @@
+<RewardTip="rewardTip"
+
+	<Image="bgImg", image="tankuang6.png", layout="Center", offset=[0,-8], touch=1, level=60
+
+		<Image="titleBgImg", image="tankuangbiaoti.png", layout="Up", offset=[0,-30]
+			<Image="title", image="huodejiangli.png", layout="Center", offset=[0,-5]>
+		>
+
+		<TableView="tbv", size=[360,125], offset=[0,-6], layout="Center", cell="vRewardTipCell.vui">
+		<Text="tipText", text="您获得了以下奖励", fontSize=18, color=[90,40,0], layout="UpOut", offset=[0,45]>
+
+		<Button="cancelBtn", image="tankuanganniu3.png", layout="Down", offset=[0,-16], onClick="node:Parent(2):doPop()"
+			<Text="cancelTip", text="关闭", layout="Center", color=[255,244,186], offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+		>
+	>
+	<Image="lightImg", image="guang.png", layout="Center", offset=[0,-90], relative="bgImg", level=50>
+>

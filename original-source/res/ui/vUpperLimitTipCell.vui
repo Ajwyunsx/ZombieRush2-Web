@@ -1,0 +1,16 @@
+<TableViewCell="vUpperLimitTipCell", size=[520,90]
+	<Layer="itemly1", size=[260,90], layout="Left"
+		<Layer="itemFitLayer", size=[70,70], layout="Left", offset=[10,0]
+			<Image="itemImg", image="shard_AdultLady.png", layout="Center", fit=[-1,-1]>
+			<Text="itemName", text="物品名称六字", fontSize=18, layout="UpRightOut", offset=[10,10], color=[90,40,0]>
+			<Text="itemCount", text="x9999999", fontSize=18, layout="DownRightOut", offset=[10,-10], color=[90,40,0]>
+		>
+	>
+	<Layer="itemly2", size=[260,90], layout="Right"
+		<Layer="itemFitLayer", size=[70,70], layout="Left", offset=[10,0]
+			<Image="itemImg", image="shard_AdultLady.png", layout="Center", fit=[-1,-1]>
+			<Text="itemName", text="物品名称六字", fontSize=18, layout="UpRightOut", offset=[10,10], color=[90,40,0]>
+			<Text="itemCount", text="x9999999", fontSize=18, layout="DownRightOut", offset=[10,-10], color=[90,40,0]>
+		>
+	>
+>

@@ -1,0 +1,4 @@
+<PvpEnemyLayer="pvpEnemyLayer", layout="Center",size=[600,255], offset=[0,20]
+	<Text="txTipEnemyDlg",text="没有好友",layout="Center",fontSize=32,visible=1>
+	<TableView="tbEnemyDlg",layout="Center",size=[778,331], fill=[1,1],cell="vPvpEnemyCell.vui", refreshNum=5, upText="上拉刷新",touch=1,visible=0>
+>

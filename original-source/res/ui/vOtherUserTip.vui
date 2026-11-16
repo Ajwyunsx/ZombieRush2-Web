@@ -1,0 +1,15 @@
+<OtherUserTip="rc_otherUserLayer", layout="Center", color=[0,0,0,175]
+	<File="commonUi", fileName="vCommonMsgBox_B.vui">
+
+	<Layer="centerLayer", size=[667,367], layout="Center", touch=1, offset=[30,-40], relative="bgImg"
+		<Text="rc_otherTipText", text="请输入对方ID", color=[79,31,0], fontSize=22, layout="Center" >
+		<Editor="rc_otherIdEditor", bgImage="chongzhishurukuang.png", size=[262,32], inputMode=2, layout="Center", offset=[0,40], fontColor=[98,50,14]>
+		<Text="tipText", text="请仔细核对对方的游戏ID，确保充值对象无误。", color=[140,97,54], fontSize=18, layout="DownOut", relative="rc_otherIdEditor">
+		<Button="rc_sureBtn", image="tankuanganniu3.png", layout="Down", offset=[115,-40], onClick="node:Parent(2):transformOtherUsertoRecharge()" 
+			<Text="sureText", text="确定", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]> 
+		>
+		<Button="rc_cancelBtn", image="tankuanganniu3.png", layout="Down", offset=[-115,-40], onClick="node:Parent(2):close()" 
+			<Text="sureText", text="取消", color=[255,244,186], layout="Center", offset=[0,-3], shadow=[2,-2], effectColor=[0,0,0,127]>  
+		>
+	>
+>

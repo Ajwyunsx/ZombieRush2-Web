@@ -1,0 +1,5 @@
+<NoticeInfoCell="noticeInfoCell", size=[50, 50]
+	<Image="noticeImage", layout="Center", onClick="node:Parent():onDoEvent()", touch="1"
+		<Text="noticeCount", layout="Left", text="", fontSize=14, effectColor=[0,0,0], outline=1>
+	>
+>

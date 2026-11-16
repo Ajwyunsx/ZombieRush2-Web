@@ -1,0 +1,20 @@
+<ChatLayer="chatLayer"
+	<Image9="imgChatBg", layout="Center", image="tongyongbeijing.jpg", touch=1, fit="Full">
+	<Image="imgChat", layout="Center", image="tongyongbeijingkuang.png", offset=[0,10]
+		<Image="imgChatTitle", layout="LeftUp", image="tongyongbiaotidi.png", offset=[90,-40]
+			<Image="imgChatTitleT", layout="Center", image="tuanzhan.png", offset=[0,-15]>
+		>
+		<Layer="tbvBgLayer", size=[650,260], layout="Center", offset=[0,-20]
+			<TableView="tbMessage", size=[650,260], layout="Center", refreshNum=4, isDown=1, touch=1, cell="vChatLayerCell.vui", isDown=1>
+		>
+	>
+	<Image="imgDOpen", layout="RightUp", image="fanhui.png", relative="imgChat", offset=[23,-40], touch=1, onClick="node:Parent(1):setVisible(false)"
+	>
+	<Layer="bottomBar", layout="Down", offset=[0,-40], size=[650,56], relative="imgChat"
+		<Image="imageInput", image="liaotianshurukuang.png", layout="Left">
+		<Editor="editInput", bgImage="", text="", layout="Left", size=[600,56], fontSize=20, align="Left">
+		<Button="btnSend", layout="Right", offset=[0,0], image="anniu10.png", onClick="node:Parent(2):onSendMsgBtnClick()"
+			<Image="imageInput", image="fasong.png", layout="Center", offset=[0,0]>
+		>
+	>
+>

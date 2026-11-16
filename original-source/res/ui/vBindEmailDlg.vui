@@ -1,0 +1,47 @@
+<BindEmailDlg="bindEmailDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+
+	<Image="imgBackGroundBindEmail", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34]
+		<Layer="lyrStep", size=[100,100], fill=[1,1], layout="Up"
+			<Layer="layStep1BindStatus", layout="Up", fill=[0.8,0.27]
+				<Text="txStep1BindEmail", text="步骤一：输入您的电子邮箱地址点击【获取验证码】，您的手机将会收到验证码", fontSize=18, layout="DownLeft", offset=[0,-8], color=[87,27,6]>
+			>
+			<Layer="layStep1Email", layout="Down", relative="layStep1BindStatus", step=[0,1], fill=[1,0.16]
+				<Editor="edtEmailNumBindEmail", bgImage="shurukuang.png", text="", placeHolder="请输入邮箱地址", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0], pFontColor=[150,120,80], align="Left", pFont="Arial", pFontSize=26>
+				<Text="txEmailNumBindEmail", text="电子邮箱：", layout="LeftOut", fontSize=24, relative="edtEmailNumBindEmail", offset=[-10,0], color=[85,17,0]>
+				<Button="btnGetCodeBindEmail", image="genrenziliaoanniuchang.png", layout="Right", step=[1,0], offset=[12,0], relative="edtEmailNumBindEmail", onClick="node:Parent(4):onGetCodeClick()"
+					<Image="imgGetCodeBindEmail", image="huoquyanzhengma.png", layout="Center">
+					<Text="txtimeEmail", text="10", fontSize=24, layout="Center", visible=0>
+				>
+			>
+			<Layer="layStep2BindEmail", layout="Down", relative="layStep1Email", step=[0,1], fill=[0.8,0.1]
+				<Text="txStep2BindEmail", text="步骤二：输入短信中的验证码，点击【确认绑定】", fontSize=18, layout="Left", offset=[0,0], color=[100,65,17]>
+			>
+			<Layer="layStep2EMail", layout="Down", relative="layStep2BindEmail", step=[0,1], fill=[1,0.16]
+				<Editor="edtCodeBindEmail", bgImage="shurukuang.png", text="", placeHolder="请输入收到的验证码", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0], pFontColor=[150,120,80], align="Left">
+				<Text="txCodeBindEmail", text="验证码：", layout="LeftOut", fontSize=24, relative="edtCodeBindEmail", offset=[-10,0], color=[85,17,0]>
+			>
+			<Button="btnOKBindEmail", image="anniu7.png", layout="Down", step=[0,1], offset=[0,0], relative="layStep2EMail", onClick="node:Parent(3):onOKClick()", visible=1
+				<Image="imgOKBindEmail", image="querenbangding.png", layout="Center">
+			>
+		>
+		<Layer="lyrFirstBind", size=[100,100], fill=[1,1], layout="Up"
+			<Layer="layStep1BindStatusFirst", layout="Up", fill=[0.8,0.35]
+				<Text="txStepFBindEmail", text="请输入您要绑定的电子邮箱地址，并点击下方【确认绑定】按钮", color=[87,27,6], fontSize=18, layout="Down", offset=[0,0]>
+			>
+			<Layer="layStep1EmailFirst", layout="Down", relative="layStep1BindStatusFirst", step=[0,1], fill=[1,0.25]
+				<Editor="edtEmailBindEmail", bgImage="shurukuang.png", text="", placeHolder="请输入邮箱地址", pFontSize=26, pFontColor=[157,119,80], fontSize=22, maxLegth=16, align="Left", fontColor=[157,119,80], layout="Center", size=[300,40], offset=[30,0]>
+				<Text="txEmailBindEmail", text="邮箱地址 : ", layout="LeftOut", fontSize=24, relative="edtEmailBindEmail", offset=[-10,0], color=[87,27,6]>
+			>
+			<Button="btnOKBindEmailFirst", image="anniu7.png", layout="Down", step=[0,1], offset=[0,24], relative="layStep1EmailFirst", onClick="node:Parent(3):onOKClick()", visible=1
+				<Image="imgOKBindEmail", image="querenbangding.png", layout="Center">
+			>
+		>
+	>
+	
+	<Image="imgzhubiaotouBindEmail", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="imgTitleTBindEmail", layout="Center", image="bangdingyouxiang.png", offset=[5,-10]>
+	>
+	<Button="btnCloseBindEmail", layout="RightUp", image="fanhui.png", relative="imgBackGroundBindEmail", step=[0.3,-0.5], offset=[0,0], onClick="node:Parent():onCloseClick()">
+>

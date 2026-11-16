@@ -1,0 +1,12 @@
+<EventEntryDlg="eventEntryDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg">
+	<Image="centerImage", image="tongyongbeijingkuang.png", layout="Center", offset=[0,8]>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="jingcaihuodong.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+
+	<Layer="layer1", color=[211, 181, 145], size=[640, 290], layout="Center"
+		<TableView="tbEventEntry", layout="Center", size=[630,280], cell="vEventEntryCell.vui", visible=1>
+	>
+>

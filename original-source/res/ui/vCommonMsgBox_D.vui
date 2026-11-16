@@ -1,0 +1,5 @@
+<MsgBox="commonTipC", color=[0,0,0,175]
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+
+	>
+>

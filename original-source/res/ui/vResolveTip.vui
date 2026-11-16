@@ -1,0 +1,19 @@
+<ResolveTip=resolveTip, color=[0,0,0,175]
+	<File="commonUi", fileName="vCommonMsgBox_B.vui">
+	<Image9="itemBgImg", layout="Center", relative="bgImg", offset=[25,5], image="tankuangneikuang1.png", size=[363,93]
+		<Text="tipText", text="是否确认分解紫色舞王僵尸，分解之后可获得以下材料：", layout="UpOut", fontSize=15, color=[90,40,0]>
+		<Text="woringText", text="(分解后卡片会消失)", color=[255,0,0], fontSize=15, layout="DownOut">
+		<Layer="itemFitLayer", size=[70,70], layout="Center", offset=[-100,0]
+			<Image="itemImg", image="shard_AdultLady.png", layout="Center", fit=[-1,-1]>
+			<Text="itemName", text="物品名称六字", fontSize=18, layout="UpRightOut", offset=[10,5], color=[90,40,0]>
+			<Text="itemCount", text="x9999999", fontSize=18, layout="DownRightOut", offset=[10,-5], color=[90,40,0]>
+		>
+	>
+	<Button="sureBtn", image="tankuanganniu3.png", layout="RightDown", offset=[-90,-35], onClick="node:Parent(1):onSureBtnClick()", relative="bgImg"
+		<Text="okTip", text="分解", color=[255,244,186], layout="Center", offset=[0,-2], effectColor=[0,0,0,127], shadow=[2,-2]>
+	>
+	<Button="cancelBtn", image="tankuanganniu3.png", layout="LeftDown", offset=[130,-35], onClick="node:Parent(1):doPop()", relative="bgImg"
+		<Text="cancelTip", text="取消", color=[255,244,186], layout="Center", offset=[0,-2], effectColor=[0,0,0,127], shadow=[2,-2]>
+	>
+
+>

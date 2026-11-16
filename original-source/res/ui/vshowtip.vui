@@ -1,0 +1,5 @@
+<ShowTip="showtip", level=1000, layout="Center"
+	<Image9="showtipBg", image="xitongtisi.png", layout="Center", fill=[-1,-1], space=[100, 10]
+		<Text="texShowTip", layout="Center", text=" ", align="Center", fontSize="fs_18">
+	>
+>

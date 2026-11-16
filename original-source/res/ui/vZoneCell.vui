@@ -1,0 +1,24 @@
+<ZoneCell="zoneCell", size=[630, 70]
+	<Image="zoneBg1", layout="Left", image="loginlistitem.png", onClick="node:Parent(5):zoneChoosed(node.zoneId)", touch=1, offset=[6,0]
+		<Image="zoneLine", layout="Center", image="zoneHightLine.png">
+		<Layer="layZone1", layout="Left", fill=[0.22,1]
+			<Text="zoneState", layout="Center", offset=[4,0], text="流畅", fontSize=18, color=[0,255,0]>
+		>
+		<Layer="layZone2", layout="Right", fill=[0.78,1]
+			<Text="zoneNumber", layout="Left", offset=[4,0], text="", fontSize=18, effectColor=[0,0,0], outline=1>
+			<Text="zoneNumberFrame", layout="Left", offset=[4,0], text="9999区", fontSize=18, effectColor=[0,0,0], outline=1, visible=0>
+			<Text="zoneName", layout="Right", relative="zoneNumberFrame", step=[1,0], offset=[4,0], text="", fontSize=22, offset=[0,0], effectColor=[0,0,0], outline=1>
+		>
+	>
+	<Image="zoneBg2", layout="Right", image="loginlistitem.png", onClick="node:Parent(5):zoneChoosed(node.zoneId)", touch=1, offset=[-6,0]
+		<Image="zoneLine", layout="Center", image="zoneHightLine.png">
+		<Layer="layZone1", layout="Left", fill=[0.22,1]
+			<Text="zoneState", layout="Center", offset=[4,0], text="流畅", fontSize=18, color=[0,255,0]>
+		>
+		<Layer="layZone2", layout="Right", fill=[0.78,1]
+			<Text="zoneNumber", layout="Left", offset=[4,0], text="", fontSize=18, effectColor=[0,0,0], outline=1>
+			<Text="zoneNumberFrame", layout="Left", offset=[4,0], text="9999区", fontSize=18, effectColor=[0,0,0], outline=1, visible=0>
+			<Text="zoneName", layout="Right", relative="zoneNumberFrame", step=[1,0], offset=[4,0], text="", fontSize=22, offset=[0,0], effectColor=[0,0,0], outline=1>
+		>
+	>
+>

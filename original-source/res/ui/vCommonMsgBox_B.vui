@@ -1,0 +1,8 @@
+<Layer="bgLayer", size=[800,450]
+	<Armature="artUp", jsonName="boxArmature", animation="idle", relative="bgImg", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image="bgImg", image="tankuang5.png", layout="Center"
+		<Layer="titleLayer", size=[160,40], offset=[60,45], layout="LeftUp"
+			<Text="titleText", text="标题标题", color=[255,255,0], fontSize=26, layout="Center", offset=[15,-12]>
+		>
+	>
+>

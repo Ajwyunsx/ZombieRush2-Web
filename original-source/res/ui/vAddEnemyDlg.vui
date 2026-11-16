@@ -1,0 +1,20 @@
+<AddEnemyDlg="AddEnemyDlg"
+	<Armature="artUp", jsonName="boxArmature", relative="imgbg", layout="UpRight", offset=[0,-20], scale=0.9>
+	<Image="imgbg", image="tankuang5.png", layout="Center", touch=1, offset=[-10,-14]
+		<Layer="lyTitle", fill=[0.5,0.25], layout="UpLeft"
+			<Text="txTitle", text="添加仇人", layout="Down", color=[255,255,0], fontSize=26>
+		>
+		<Layer="lyTitle2", fill=[1,0.25], layout="UpLeft", visible=0>
+
+		<Layer="lyid", size=[45,30], fill=[1,0.3], layout="Down", relative="lyTitle2", step=[0,1], offset=[20,0]
+			<Text="txIDAddEnemyD", text="请输入玩家ID:", layout="Center", fontSize="fs_22", color="fc_7_">
+			<Editor="edtIDAddEnemyD", image="gerenxinxishurukuang.png", placeHolder="", fontSize=22, offset=[0,14], relative="txIDAddEnemyD", size=[336,40], layout="DownOut", align="Left", fontColor=[84,43,13]>
+		>
+		<Button="btnAddEnemy", image="tankuanganniu3.png", relative="lyid", layout="Down", step=[0.7,2], onClick="node:Parent(2):AddEnemy()"
+			<Text="txCostDCrystalO", text="添加", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>				
+		>
+		<Button="btnCloseShopItemD", image="tankuanganniu3.png", relative="lyid", layout="Down", step=[-0.7,2], onClick="node:Parent(2):doPop()", audioEffect="sys_msgbox_close.ogg"
+			<Text="txBackCrystalO", text="取消", layout="Center", fontSize="fs_26", color="fc_2_", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>	
+		>
+	>
+>

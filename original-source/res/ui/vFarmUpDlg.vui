@@ -1,0 +1,72 @@
+<FarmUpDlg="farmUpDlg"
+	<Image9="imgBackGroundUp",image="tankuang4.png",layout="Center", offset=[-15,-5],touch=1, level=2
+		<Layer="lyTitle",size=[100,30], layout="LeftUp", offset=[100,40]
+			<Text="txTitleUp", text="农田扩建", layout="Center", color=[255,255,0],fontSize="fs_26">
+		>
+
+		<Image="imgDexDLvUp",image="tankuangneikuang1.png",layout="Left", scale=0.8, offset=[100,-20]
+			<Image="imgDexLvUp", layout="Center", relative="imgDexDLvUp", fit=[-0.7,-0.7]
+					
+				>
+		>
+				
+			
+
+				<Text="txlv", text="农田", layout="DownOut", relative="imgDexDLvUp", offset=[-10,0], fontSize="fs_22", color="fc_8_">
+				<Text="txlvn", layout="RightOut", relative="txlv", offset=[2,0], fontSize="fs_14", color="fc_8_">
+
+		<Image9="imgShowUp",image="tankuangneikuang2.png", size=[320,98],layout="RightOut", relative="imgDexDLvUp", offset=[25,8]
+			
+				
+			<Layer="lydecs", fill=[0.95,0.41], layout="Up", offset=[3,10]
+				<Text="txNameFiledTitle", text="农田是庄园的防线,种植尽可能多的植物提升你的防御吧", layout="left", alignV="Top", size=[300,50], fontSize="fs_14", color="fc_8_">
+			>
+			
+			<Layer="lytFiledTitle1", size=[130,20], layout="LeftDown", step=[0,1], offset=[0,6], relative="lydecs" 
+				<Text="txtFiledCount", text="", layout="Left", fontSize="fs_14", color="fc_8_">
+				<Image="imgtLifeArrow", image="minijiantou.png", layout="Right">
+				
+			>
+			
+			<Layer="lytFiledTitle2", size=[133,20], layout="RightOut", offset=[10,0], relative="lytFiledTitle1" 
+				<Text="txfieldcountVUp", text="", layout="Left", fontSize="fs_14", color="fc_8_">
+			>
+
+		>
+		
+		<Layer="lyd", layout="DownOut", relative="imgShowUp", offset=[-65,11], size=[70,22]
+			<Text="txdecs", text="升级条件", fontSize="fs_14", layout="Center", color="fc_8_">
+		>
+		
+		
+		<Layer="lybt", fill=[0.57,0.1], layout="Down", offsetP=[0.047,-0.1]
+			<Button="btnExtendUp",image="tankuanganniu3.png",layout="Right",onClick="node:Parent(3):onbtnExtendClick()"
+				<Text="bu_upgradeTime", text="扩建",layout="Center", fontSize="fs_26", shadow=[2,-2], effectColor=[0,0,0,127], color="fc_2_">
+			>
+			<Button="btnBackLvUp",image="tankuanganniu3.png",layout="Left",onClick="node:Parent(3):onbtnCloseClick()", audioEffect="sys_msgbox_close.ogg"
+				<Text="txCancel", text="取消",layout="Center", fontSize="fs_26", shadow=[2,-2], effectColor=[0,0,0,127], color="fc_2_">
+				<Image="imgCancelPlantResO",image="quxiao.png",layout="Center", visible=0>
+			>
+		>
+		
+		<Layer="lyres1", size=[190,28], layout="UpOut", relative="lybt", offset=[-67,-5]
+			<Image="imgLvLimit", image="icon_zuanshi_S.png", layout="Left">
+			<Text="txLvLimit", text="", layout="RightOut", relative="imgLvLimit", fontSize="fs_22", offset=[5,0], color=[140,95,58]>
+		>
+		
+		
+		<Layer="lyres2", size=[190,28], layout="UpOut", relative="lybt", offset=[109,-10], visible=0
+		
+			<Image="imgResCostI1", image="yangguang.png", layout="Left", scale=0.6>
+			<Text="txResCost1", text="", fontSize="fs_22", layout="RightOut", relative="imgResCostI1", offset=[5,0], color=[140,95,58]>
+		
+
+		
+			<Image="imgResCostI2", image="qianbi.png", layout="Right", scale=0.4>
+			<Text="txResCost2", text="", layout="RightOut", relative="imgResCostI2", fontSize="fs_22", offset=[5,0], color=[140,95,58]>
+		>
+		
+	>
+
+	<Armature="artUp", jsonName="boxArmature", layout="Center", relative="imgBackGroundUp", offsetP = [0.18,-0.3], scale=0.75, level=1>
+>

@@ -1,0 +1,6 @@
+<NormalTip="normalTip", level=1000, color=[0,0,0,175]
+	<Image="bgImg", image="xiaotankuang1.png", layout="Center"
+
+		<Text="descripeText", text="点击任意位置关闭", fontSize=18, layout="Down", offset=[0,-35], color=[93,47,0]>
+	>
+>

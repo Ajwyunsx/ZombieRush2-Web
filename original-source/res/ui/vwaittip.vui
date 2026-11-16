@@ -1,0 +1,4 @@
+<WaitTip="waittip", level=1000, color=[0,0,0,1]
+	<Image="imgLoading", image="netLoading.png", layout="Center", scale=0.5>
+	<Text="texLoading", relative="imgLoading", layout="Center", step=[0,1], offset=[0,10], text="", fontSize=30>
+>

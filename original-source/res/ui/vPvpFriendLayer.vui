@@ -1,0 +1,4 @@
+<PvpFriendLayer="pvpFriendLayer", layout="Center",size=[600,255], offset=[0,20]
+	<Text="bfTip", text="你可以在农场界面【+】号按钮中进入【好友】界面添加好友。", fontSize="fs_22", layout="Center", color="fc_8_", visible=0>
+	<TableView="tbFriendDlg",layout="Center",size=[600,255], fill=[1,1],cell="vPvpFriendCell.vui", refreshNum=5, upText="上拉刷新",touch=1, visible=0>
+>

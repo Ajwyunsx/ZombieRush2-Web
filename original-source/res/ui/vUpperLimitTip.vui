@@ -1,0 +1,13 @@
+<UpperLimitTip="vUpperLimitTip"
+	<File="commonUi", fileName="vCommonMsgBox_B.vui">
+	<Image="itemBgImg", layout="Center", relative="bgImg", offset=[25,20], image="tankuangneikuang2.png"
+		<Text="tipText", text="部分资源将超出上限，强行领取将损失超出部分。超出如下：", layout="UpOut", fontSize=18, color=[136,90,54]>
+		<TableView="tbv", size=[520,110], layout="Center", cell="vUpperLimitTipCell.vui">
+	>
+	<Button="btnOK", image="tankuanganniu3.png", layout="RightDown", offset=[-90,-40], onClick="node:Parent(1):onOKAction()", relative="bgImg"
+		<Text="okTip", text="强行领取", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+	<Button="btnCancel", image="tankuanganniu3.png", layout="LeftDown", offset=[130,-40], onClick="node:Parent(1):doPop()", relative="bgImg"
+		<Text="cancelTip", text="稍后领取", color=[255,244,186], layout="Center", offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127]>
+	>
+>

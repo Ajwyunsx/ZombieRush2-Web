@@ -1,0 +1,4 @@
+<BattlefiledLayer="battlefiledLayer", size=[665,264], layout="Center", offset=[0,15]
+	<TableView="battlefiledTbv", size=[620,264], layout="Center", cell="vBattlefiledLayerCell.vui">
+	<Text="bfTip", text="当前没有参与任何战斗，你可以切换到肥羊页面掠夺其他玩家", fontSize=22, layout="Center", color=[90,40,0], visible=0>
+>

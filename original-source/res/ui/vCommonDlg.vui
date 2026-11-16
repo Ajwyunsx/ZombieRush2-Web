@@ -1,0 +1,8 @@
+<CommonDlg="CommonDlg", fill="Full", touch=1
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg">
+
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[93,0]
+		<Image="titliText", layout="Center", offset=[5,-8]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(2):doPop()">
+>

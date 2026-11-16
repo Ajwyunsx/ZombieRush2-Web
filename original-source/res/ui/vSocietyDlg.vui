@@ -1,0 +1,15 @@
+﻿<SocietyDlg="societyDlg"
+	<Image9="imgChatBg", layout="Center", fill=[1,1], image="tongyongbeijing.jpg", touch=1>
+	<Image="imgChat", layout="Center", image="tongyongbeijingkuang.png", offsetP=[0,0.02]
+		<Image="imgChatTitle", layout="LeftUp", image="tongyongbiaotidi.png",step=[0.4,-0.55],offset=[0,0]
+			<Image="imgChatTitleT", layout="Center", image="xiaoxi.png", offset=[0,-10]>
+		>
+		<Button="btnDel",layout="LeftUp", step = [0.9,0.6], image="shanchuanniu.png", onClick="node:Parent(2):DelAllSocietyMsg()"
+			<Image="imageInput", image="shanchuxiaoxi.png", layout="Center", offset=[3,-2], visible=0>
+		>
+		<Layer="tbSocietyLayer", layout="Center", fill=[0.85,0.72],offset=[0, -10]
+			<TableView="tbSociety",layout="Center",fill=[1,1],cell="vSocietyCell.vui",visible=1,offset=[0,0]>
+		>
+		<Button="imgDOpen", layout="RightUp", image="fanhui.png", step=[0.25,-0.5], onClick="node:Parent(2):closeMessageView()">
+	>	
+>

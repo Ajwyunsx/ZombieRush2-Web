@@ -1,0 +1,20 @@
+<TableViewCell="notePayDlgCell", size=[633,50]
+	<Layer="noteLayer1", size=[210,50], layout="Left", offset=[10,0]
+		<CheckBox="chooseMoney",image="chongzhiweixuan.png", layout="Left", touch=1
+			<Image="checkImg",image="chongzhixuanzhong.png",layout="Center">
+		>
+		<Text="moneyText", text="10元充值", layout="Left", color=[90,40,0], fontSize="fs_18", offset=[60,0]>
+	>
+	<Layer="noteLayer2", size=[210,50], layout="Center"
+		<CheckBox="chooseMoney",image="chongzhiweixuan.png", layout="Left", touch=1
+			<Image="checkImg",image="chongzhixuanzhong.png",layout="Center">
+		>
+		<Text="moneyText", text="10元充值", layout="Left", color=[90,40,0], fontSize="fs_18", offset=[60,0]>
+	>
+	<Layer="noteLayer3", size=[210,50], layout="Right"
+		<CheckBox="chooseMoney",image="chongzhiweixuan.png", layout="Left", touch=1
+			<Image="checkImg",image="chongzhixuanzhong.png",layout="Center">
+		>
+		<Text="moneyText", text="10元充值", layout="Left", color=[90,40,0], fontSize="fs_18", offset=[60,0]>
+	>
+>

@@ -1,0 +1,36 @@
+<BindPhoneDlg="bindPhoneDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+
+	<Image="imgBackGroundBindPhone", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34]
+		<Layer="lyrStep1", layout="Up", fill=[0.74,0.27]
+			<Text="txStep1BindPhone", text="步骤一：输入绑定的手机号码, 点击【获取验证码】将收到验证码短信", fontSize=18, layout="DownLeft", offset=[0,-8], color=[100,65,17]>
+		>
+		<Layer="lyrStep2", layout="Down", relative="lyrStep1", step=[0,1], fill=[1,0.16]
+			<Editor="edtPhoneNumBindPhone", bgImage="shurukuang.png", text="", placeHolder="请输入手机号码", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0], pFontColor=[157,119,80], align="Left", pFont="Arial", pFontSize=26>
+			<Text="txPhoneNumBindPhone", text="手机号码：", layout="LeftOut", fontSize=24, relative="edtPhoneNumBindPhone", offset=[-10,0], color=[85,17,0]>
+			<Button="btnGetCodeBindPhone", image="anniu14.png", topImage="huoquyanzhengma.png", layout="Right", step=[1,0], offset=[12,0], relative="edtPhoneNumBindPhone", onClick="node:Parent(3):onGetCodeClick()"
+				<Image="imgGetCodeBindPhone", image="huoquyanzhengma.png", layout="Center">
+				<Text="txtimePhone", text="10", fontSize=24, layout="Center", visible=0>
+			>
+		>
+
+		<Layer="lyrStep3", layout="Down", relative="lyrStep2", step=[0,1], fill=[0.74,0.1]
+			<Text="txStep2BindPhone", text="步骤二：输入短信中的验证码, 点击【确认绑定】", fontSize=18, layout="Left", offset=[0,0], color=[100,65,17]>
+		>
+	
+		<Layer="lyrStep4", layout="Down", relative="lyrStep3", step=[0,1], fill=[1,0.16]
+			<Editor="edtCodeBindPhone", bgImage="shurukuang.png", text="", placeHolder="请输入收到的验证码", fontSize=22, maxLegth=16, layout="Center", size=[180,40], offset=[0,0], pFontColor=[157,119,80], align="Left">
+			<Text="txCodeBindPhone", text="验证码：", layout="LeftOut", fontSize=24, relative="edtCodeBindPhone", offset=[-10,0], color=[85,17,0]>
+		>
+
+		<Button="btnOKBindPhone", image="anniu7.png", layout="Down", relative="lyrStep4", step=[0,1.5], offset=[0,-10], onClick="node:Parent(2):onOKClick()"
+			<Image="imgOKBindPhone", image="querenbangding.png", layout="Center">
+		>
+	>
+
+	<Image="imgzhubiaotouBindPhone", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="imgTitleTBindPhone", layout="Center", image="bangdingshouji.png", offset=[5,-10]>
+	>
+	<Button="btnCloseBindPhone", layout="RightUp", image="fanhui.png", relative="imgBackGroundBindPhone", step=[0.3,-0.5], offset=[0,0], onClick="node:Parent():onCloseClick()">
+>

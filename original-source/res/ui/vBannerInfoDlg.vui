@@ -1,0 +1,188 @@
+<BannerInfoDlg="bannerInfoDlg"
+	<Image="bgImage", image="tuanzhanbeijing.jpg", fit="Full", layout="Center"
+		<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+			<Image="titliText", layout="Center", offset=[5,-12], image="zhanqiguanli.png", offset=[-5,0]>
+		>
+
+		<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(2):doPop()">
+
+   		<Text="textBannerCount", text="12/35", fontSize="fs_22", color="fc_8_", relative="backBtn", layout="LeftOut", offset=[-18, 22]>
+   		<Image="imageBannerIcon", image="banner_common_icon.png", layout="LeftOut", relative="textBannerCount", offset=[-2, -4]>
+
+		<Image9="imageBannersInfo", image="zhanqi_beijing.png", layout="RightUp", capInset=[30,30,30,30], offsetP=[-0.041, 0.17], size=[500, 338]
+			<Text="textTs", text="战旗统率", fontSize="fs_22", color="fc_13_", layout="LeftUp", offsetP=[0.06, 0.022]>
+			<Text="textTsDesc", text="战旗效果影响的生物种类", fontSize="fs_18", color="fc_6_", layout="RightUp", offsetP=[-0.06, 0.038]>
+			<Image="imageBannerRaceBg", image="banner_race_bg.png", layout="DownOut", relative="textTs", step=[0.378, 0.02]
+
+				<Image="iamgeBannerRaceBg1", image="creature_icon_bg.png", layout="Left", offset=[25, -10]
+					<Image="imageBannerRaceIcon1", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName1", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg1">
+
+				<Image="iamgeBannerRaceBg2", image="creature_icon_bg.png", layout="RightOut", relative="iamgeBannerRaceBg1", offset=[7, 0]
+					<Image="imageBannerRaceIcon2", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName2", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg2">
+
+				<Image="iamgeBannerRaceBg3", image="creature_icon_bg.png", layout="RightOut", relative="iamgeBannerRaceBg2", offset=[7, 0]
+					<Image="imageBannerRaceIcon3", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName3", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg3">
+
+				<Image="iamgeBannerRaceBg4", image="creature_icon_bg.png", layout="RightOut", relative="iamgeBannerRaceBg3", offset=[7, 0]
+					<Image="imageBannerRaceIcon4", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName4", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg4">
+
+				<Image="iamgeBannerRaceBg5", image="creature_icon_bg.png", layout="RightOut", relative="iamgeBannerRaceBg4", offset=[7, 0]
+					<Image="imageBannerRaceIcon5", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName5", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg5">
+
+				<Image="iamgeBannerRaceBg6", image="creature_icon_bg.png", layout="RightOut", relative="iamgeBannerRaceBg5", offset=[7, 0]
+					<Image="imageBannerRaceIcon6", layout="Center", scale=0.48>
+				>
+				<Text="textBannerRaceName6", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="iamgeBannerRaceBg6">
+			>
+
+			<Text="textXg", text="战旗效果", fontSize="fs_22", color="fc_13_", layout="DownOut", relative="imageBannerRaceBg", offsetP=[-0.362, 0]>
+
+			<Text="textXgDesc", text="战旗给生物附加的攻防属性", fontSize="fs_18", color="fc_6_", relative="textXg", layout="RightOut", step=[0.95,0]>	
+
+			<Image="imageAttakBg", image="banner_effect_bg.png", layout="DownOut", relative="textXg", step=[0.255, 0.01]
+				<Image="imageAtkNameBg", image="banner_effect_name_bg.png", layout="LeftUp", offset=[5, 0]
+					<Image="imageAtkName", image="zhanqigongjishuxing.png", layout="Center">
+				>
+
+				<Text="textAtkDesc", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="imageAtkNameBg", offset=[1, -11]>
+
+				<Image="iamgeBgAtk1", relative="imageAtkNameBg", layout="RightOut", image="banner_attr_bg1.png", offset=[1, 11]
+					<Image="imageAtk1", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgAtk2", relative="iamgeBgAtk1", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageAtk2", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgAtk3", relative="iamgeBgAtk2", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageAtk3", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgAtk4", relative="iamgeBgAtk3", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageAtk4", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgAtk5", relative="iamgeBgAtk4", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageAtk5", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Button="btnAtkLevelUp", relative="iamgeBgAtk5", layout="RightOut", image="banner_levelup_bg.png", onClick="node:Parent(4):openLevelUpDlg(1)", touch=1, offset=[-2, -12]
+    				<Image="imgAtkLevelUp", layout="Center", image="zhanqishengji.png">
+   				>
+
+   				<Text="textAtkTitle", text="攻击力：", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="imageAtkNameBg", offset=[9, 5]>
+   				<Text="textAtkValue",  fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textAtkTitle">
+   				<Text="textAtk1", text="克制", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textAtkTitle", offset=[-18,5]>
+   				<Text="textAtkAtr1", text="无属性", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textAtk1">
+   				<Text="textAtkExt1", text="防御：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textAtkAtr1">
+   				<Image="imageAtkAtr1Star1", image="banner_attr_star.png", layout="RightOut", relative="textAtkExt1">
+   				<Image="imageAtkAtr1Star2", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr1Star1", offset=[2, 0]>
+   				<Image="imageAtkAtr1Star3", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr1Star2", offset=[2, 0]>
+   				<Image="imageAtkAtr1Star4", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr1Star3", offset=[2, 0]>
+   				<Image="imageAtkAtr1Star5", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr1Star4", offset=[2, 0]>
+
+   				<Text="textAtk2", text="克制", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textAtk1", offset=[0,5]>
+   				<Text="textAtkAtr2", text="金", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textAtk2">
+   				<Text="textAtkExt2", text="防御：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textAtkAtr2">
+   				<Image="imageAtkAtr2Star1", image="banner_attr_star.png", layout="RightOut", relative="textAtkExt2">
+   				<Image="imageAtkAtr2Star2", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr2Star1", offset=[2, 0]>
+   				<Image="imageAtkAtr2Star3", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr2Star2", offset=[2, 0]>
+   				<Image="imageAtkAtr2Star4", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr2Star3", offset=[2, 0]>
+   				<Image="imageAtkAtr2Star5", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr2Star4", offset=[2, 0]>
+
+   				<Text="textAtk3", text="克制", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textAtk2", offset=[0,5]>
+   				<Text="textAtkAtr3", text="木", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textAtk3">
+   				<Text="textAtkExt3", text="防御：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textAtkAtr3">
+   				<Image="imageAtkAtr3Star1", image="banner_attr_star.png", layout="RightOut", relative="textAtkExt3">
+   				<Image="imageAtkAtr3Star2", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr3Star1", offset=[2, 0]>
+   				<Image="imageAtkAtr3Star3", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr3Star2", offset=[2, 0]>
+   				<Image="imageAtkAtr3Star4", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr3Star3", offset=[2, 0]>
+   				<Image="imageAtkAtr3Star5", image="banner_attr_star.png", layout="RightOut", relative="imageAtkAtr3Star4", offset=[2, 0]>
+			>
+
+			<Image="imageDefendBg", image="banner_effect_bg.png", layout="RightOut", relative="imageAttakBg",
+				offset=[5,0]
+				<Image="imageDefNameBg", image="banner_effect_name_bg.png", layout="LeftUp", offset=[5, 0]
+					<Image="imageDefName", image="zhanqifangyushuxing.png", layout="Center">
+				>
+
+				<Text="textDefDesc", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="imageDefNameBg", offset=[1, -11]>
+
+				<Image="iamgeBgDef1", relative="imageDefNameBg", layout="RightOut", image="banner_attr_bg1.png", offset=[1, 11]
+					<Image="imageDef1", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgDef2", relative="iamgeBgDef1", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageDef2", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgDef3", relative="iamgeBgDef2", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageDef3", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgDef4", relative="iamgeBgDef3", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageDef4", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Image="iamgeBgDef5", relative="iamgeBgDef4", layout="RightOut", image="banner_attr_bg1.png", offset=[-2, 0]
+					<Image="imageDef5", layout="Center", image="banner_attr1.png", visible=0>
+				>
+
+				<Button="btnDefLevelUp", relative="iamgeBgDef5", layout="RightOut", image="banner_levelup_bg.png", onClick="node:Parent(4):openLevelUpDlg(2)", touch=1, offset=[-2, -12]
+    				<Image="imgDefLevelUp", layout="Center", image="zhanqishengji.png">
+   				>
+
+   				<Text="textDefTitle", text="防御力：", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="imageDefNameBg", offset=[9, 5]>
+   				<Text="textDefValue",  fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textDefTitle">
+   				<Text="textDef1", text="抵御", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textDefTitle", offset=[-18,5]>
+   				<Text="textDefAtr1", text="无属性", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textDef1">
+   				<Text="textDefExt1", text="攻击：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textDefAtr1">
+   				<Image="imageDefAtr1Star1", image="banner_attr_star.png", layout="RightOut", relative="textDefExt1">
+   				<Image="imageDefAtr1Star2", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr1Star1", offset=[2, 0]>
+   				<Image="imageDefAtr1Star3", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr1Star2", offset=[2, 0]>
+   				<Image="imageDefAtr1Star4", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr1Star3", offset=[2, 0]>
+   				<Image="imageDefAtr1Star5", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr1Star4", offset=[2, 0]>
+
+   				<Text="textDef2", text="抵御", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textDef1", offset=[0,5]>
+   				<Text="textDefAtr2", text="金", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textDef2">
+   				<Text="textDefExt2", text="攻击：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textDefAtr2">
+   				<Image="imageDefAtr2Star1", image="banner_attr_star.png", layout="RightOut", relative="textDefExt2">
+   				<Image="imageDefAtr2Star2", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr2Star1", offset=[2, 0]>
+   				<Image="imageDefAtr2Star3", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr2Star2", offset=[2, 0]>
+   				<Image="imageDefAtr2Star4", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr2Star3", offset=[2, 0]>
+   				<Image="imageDefAtr2Star5", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr2Star4", offset=[2, 0]>
+
+   				<Text="textDef3", text="抵御", fontSize="fs_18", color="fc_6_", layout="DownOut", relative="textDef2", offset=[0,5]>
+   				<Text="textDefAtr3", text="木", fontSize="fs_18", color="fc_11_", layout="RightOut", relative="textDef3">
+   				<Text="textDefExt3", text="攻击：", fontSize="fs_18", color="fc_6_", layout="RightOut", relative="textDefAtr3">
+   				<Image="imageDefAtr3Star1", image="banner_attr_star.png", layout="RightOut", relative="textDefExt3">
+   				<Image="imageDefAtr3Star2", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr3Star1", offset=[2, 0]>
+   				<Image="imageDefAtr3Star3", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr3Star2", offset=[2, 0]>
+   				<Image="imageDefAtr3Star4", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr3Star3", offset=[2, 0]>
+   				<Image="imageDefAtr3Star5", image="banner_attr_star.png", layout="RightOut", relative="imageDefAtr3Star4", offset=[2, 0]>
+			>
+
+			<Button="btnActive", relative="imageAttakBg", layout="DownOut", image="banner_btn_bg.png", onClick="node:Parent(3):activate()", touch=1, step=[0.2, -0.06], scale=0.9
+    				<Image="imgActive", layout="Center", image="zhanqijihuo.png">
+   			>
+
+   			<Button="btnDecompose", relative="imageDefendBg", layout="DownOut", image="banner_btn_bg.png", onClick="node:Parent(3):openDecomposeDlg()", touch=1, step=[-0.20, -0.06], scale=0.9
+    				<Image="imgDecompose", layout="Center", image="fenjiezhanqi.png">
+   			>
+		>
+
+		<Image9="imageBannersTable", image="zhanqi_beijing.png", layout="LeftOut", relative="imageBannersInfo", capInset=[30,30,30,30], size=[223,338], step=[-0.02, 0]
+			<TableView="tableBanners", layout="Center", size=[233,335], cell="vBannerInfoCell.vui", offset=[7,0]>
+		>
+	>
+> 

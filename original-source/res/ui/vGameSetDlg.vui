@@ -1,0 +1,52 @@
+<GameSetDlg="gameSetDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="titleImage1", image="tongyongbiaotidi.png", layout="Up", visible=0>
+	<Image="centerImg", image="tongyongbeijingkuang.png", relative="titleImage1", layout="Down", step=[0,1], offset=[0,-34]
+		<Image="imgSoundBGameSet", image="shezhiditiao.png", layout="Up", step=[0,0.5], offset=[0,10]
+			<Layer="laySoundBTGameSet", layout="Left", fill=[0.14,1]
+				<Image="imgSoundBTGameSet", image="mv_yinyue.png", layout="Center", offset=[4,0]>
+			>
+			<Text="txSoundBGameSet", text="背景音乐", relative="laySoundBTGameSet", layout="Right", step=[1,-0.5], fontSize=24, color=[70,30,0], offset=[0,0]>
+			<Text="txisSoundBGameSet", text="是否开启背景音乐", relative="txSoundBGameSet", layout="DownLeft", step=[0,1], offset=[0,0], color=[130,80,40], fontSize=22>
+
+			<CheckBox="imgSoundBGGameSet",image="genrenziliaoxuanzedida.png", layout="Right", offset=[-22,0], touch=1, onClick="node:Parent(3):onMusicB()"
+				<Image="imgSoundBGGGameSet",image="mv_gou.png",layout="Center">
+			>
+		>
+
+		<Image="imgSoundEGameSet",image="shezhiditiao.png", layout="DownOut", relative="imgSoundBGameSet", offset=[0,8]
+			<Layer="laySoundBTGameSet", layout="Left", fill=[0.14,1]
+				<Image="imgSoundBTGameSet", image="mv_yinxiao.png", layout="Center", offset=[4,0]>
+			>
+
+			<Text="txSoundBGameSet", text="游戏音效", relative="laySoundBTGameSet", layout="Right", step=[1,-0.5], fontSize=24, color=[70,30,0], offset=[0,0]>
+			<Text="txisSoundBGameSet", text="是否开启游戏音效", relative="txSoundBGameSet", layout="DownLeft", step=[0,1], offset=[0,0], color=[130,80,40], fontSize=22>
+
+			<CheckBox="imgSoundBGGameSet",image="genrenziliaoxuanzedida.png", layout="Right", offset=[-22,0], touch=1, onClick="node:Parent(3):onMusicE()"
+				<Image="imgSoundBGGGameSet",image="mv_gou.png",layout="Center">
+			>
+		>
+
+		<Image="imgNoticeGameSet",image="shezhiditiao.png", layout="DownOut", relative="imgSoundEGameSet", offset=[0,8]
+			<Layer="laySoundBTGameSet", layout="Left", fill=[0.14,1]
+				<Image="imgSoundBTGameSet", image="mv_yinxiao.png", layout="Center", offset=[4,0]>
+			>
+
+			<Text="txSoundBGameSet", text="离线通知", relative="laySoundBTGameSet", layout="Right", step=[1,-0.5], fontSize=24, color=[70,30,0], offset=[0,0]>
+			<Text="txisSoundBGameSet", text="是否开启离线通知", relative="txSoundBGameSet", layout="DownLeft", step=[0,1], offset=[0,0], color=[130,80,40], fontSize=22>
+
+			<CheckBox="imgSoundBGGameSet",image="genrenziliaoxuanzedida.png", layout="Right", offset=[-22,0], touch=1, onClick="node:Parent(3):onNotice()"
+				<Image="imgSoundBGGGameSet",image="mv_gou.png",layout="Center">
+			>
+
+			<Editor="noticeUpper", bgImage="mv_noticeEditor.png", layout="Right", relative="txisSoundBGameSet", step=[1,0], size=[108,36], text="8:00", align="Center", offset=[12,0], fontColor=[160,100,60]>
+			<Text="staticText", text="到", fontSize=22, color=[130,80,40], layout="Right", relative="noticeUpper", step=[1,0], offset=[4,0]>
+			<Editor="noticeLower", bgImage="mv_noticeEditor.png", layout="Right", relative="staticText", step=[1,0], size=[108,36], text="24:00", align="Center", offset=[4,0], fontColor=[160,100,60]>
+		>
+	>
+
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="mv_youxishezhi.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+>

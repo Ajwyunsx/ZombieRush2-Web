@@ -1,0 +1,10 @@
+<FindAccount="FindAccount"
+	<Image="imgBackGround", image="xiaotankuang1.png", layout="Center", touch=1
+		<Button="btnMailFind", image="anniu14.png", layout="Center", step=[0,-1], offset=[0,6], onClick="node:Parent(2):mailFindAction()"
+			<Text="mailText", text="邮箱找回", color=[255,244,186], offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="Center">
+		>
+		<Button="btnCellPhoneFind", image="anniu14.png", layout="Center", step=[0,1], offset=[0,-6], onClick="node:Parent(2):cellphoneFindAction()"
+			<Text="phoneText", text="手机找回", color=[255,244,186], offset=[0,-2], shadow=[2,-2], effectColor=[0,0,0,127], layout="Center">
+		>
+	>
+>

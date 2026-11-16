@@ -1,0 +1,17 @@
+<ActivityDlg="activityDlg", size=[71,346], layout="RightUpOut", touch=1, clip=1, offset=[-10,30], level=80
+	<Image9="activityImg", image="mv_activity.png", layout="Center", capInset=[30,80,40,90], size=[71,346]
+		<Button="storeImg",  image="mv_activityBtn.png", layout="Up", offset=[0,24], topImage="mv_shangdian.png", onClick="gMainView:openShop()">
+
+        	<Button="cardImg", image="mv_activityBtn.png", layout="DownOut", relative="storeImg", offset=[0,0], topImage="mv_kapai.png", onClick="node:Parent(2):openCardDlg()">
+
+            <Button="btnBag", image="mv_activityBtn.png", layout="DownOut", relative="cardImg", offset=[0,0], topImage="mv_beibao.png", onClick="node:Parent(2):openBag()">
+
+            <Button="questBtn", image="mv_activityBtn.png", layout="DownOut", relative="btnBag", offset=[0,0], topImage="mv_renwu.png", onClick="node:Parent(2):openQuestDlg()">
+
+            <Button="attainmentBtn", image="mv_activityBtn.png", layout="DownOut", relative="questBtn", offset=[0,0], topImage="mv_chengjiu.png", onClick="node:Parent(2):openAttainmentDlg()">
+
+            <Button="friendBtn", image="mv_activityBtn.png", layout="DownOut", relative="attainmentBtn", offset=[0,0], topImage="mv_haoyou.png", onClick="node:Parent(2):openFriend()">
+
+            <Button="moreBtn", image="mv_activityBtn.png", layout="DownOut", relative="friendBtn", offset=[0,0], topImage="mv_gengduo.png", onClick="node:Parent(2):openMore()">
+	>
+>

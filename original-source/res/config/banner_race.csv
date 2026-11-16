@@ -1,0 +1,16 @@
+﻿种族ID,种族图标,种族名称,1植物2僵尸
+110,SunFlower,向日葵,1
+120,Marigold,菊花,1
+130,PeaShooter,豌豆,1
+140,WallNut,土豆,1
+150,Spikeweed,地刺,1
+160,KernelPult,玉米,1
+170,BonkChoy,白菜,1
+180,MelonPult,西瓜,1
+20,BasicZombie,僵尸,2
+30,MagicZombie,魔法师僵尸,2
+40,BoomZombie,炸弹僵尸,2
+50,FootballZombie,橄榄球僵尸,2
+60,DancingZombie,舞者僵尸,2
+80,Gargantuar,伽刚特尔,2
+10,SunHunterZombie,盗贼僵尸,2

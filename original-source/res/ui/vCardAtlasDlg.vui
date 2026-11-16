@@ -1,0 +1,11 @@
+<CardAtlasDlg="cardAtlasDlg"
+	<Image="bgImage", fit="Full", image="tongyongbeijing.jpg", touch=1>
+	<Image="centerImg", image="tongyongbeijingkuang.png", layout="Center"
+		<TableView="tbv", layout="Center", size=[630, 305], direction="Ver", cell="vCardAtlasDlgCell.vui", touch=1, offset=[0,-5]>
+		<Text="countTip", text="共计：99", fontSize=18, layout="UpOut", color=[239,185,77], offset=[-50,0]>
+	>
+	<Image="titleImage", image="tongyongbiaotidi.png", layout="LetfUp", offset=[124,0]
+		<Image="titliText", image="jiangshituqian.png", layout="Center", offset=[5,-12]>
+	>
+	<Button="backBtn", image="fanhui.png", layout="UpRight", offset=[-7,5], onClick="node:Parent(1):doPop()">
+>
